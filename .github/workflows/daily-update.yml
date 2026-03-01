@@ -1,6 +1,8 @@
-name: Daily Update
+name: Build & Deploy
 
 on:
+  push:
+    branches: [main]
   schedule:
     # KST 03:00 (UTC 18:00 previous day)
     - cron: '0 18 * * *'
@@ -12,7 +14,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "daily-update"
+  group: "build-deploy"
   cancel-in-progress: false
 
 jobs:
