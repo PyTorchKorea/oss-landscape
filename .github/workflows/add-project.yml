@@ -54,8 +54,8 @@ jobs:
             const moduleMatch = body.match(/### 분류 \(모듈\)\s*\n+([^\s(]+)/)
             const moduleId = moduleMatch?.[1]?.trim()
 
-            // Extract category_id
-            const catMatch = body.match(/### 카테고리 ID\s*\n+(.+)/m)
+            // Extract category_id (first word before space/parenthesis)
+            const catMatch = body.match(/### 카테고리\s*\n+([^\s(]+)/)
             const categoryId = catMatch?.[1]?.trim()
 
             // Extract optional description
@@ -71,6 +71,26 @@ jobs:
             core.setOutput('module_id', moduleId)
             core.setOutput('category_id', categoryId)
             core.setOutput('description', description ?? '')
+
+      - name: Validate module-category mapping
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs')
+            const modules = JSON.parse(fs.readFileSync('data/modules/index.json', 'utf8'))
+            const moduleId = '${{ steps.parse.outputs.module_id }}'
+            const categoryId = '${{ steps.parse.outputs.category_id }}'
+
+            const mod = modules.modules.find(m => m.id === moduleId)
+            if (!mod) {
+              core.setFailed(`알 수 없는 모듈: ${moduleId}`)
+              return
+            }
+            if (!mod.categories.includes(categoryId)) {
+              core.setFailed(`카테고리 "${categoryId}"는 모듈 "${mod.name}" (${moduleId})에 속하지 않습니다.\n유효한 카테고리: ${mod.categories.join(', ')}`)
+              return
+            }
+            core.info(`${moduleId} -> ${categoryId} 매핑 확인 완료`)
 
       - name: Add tool to JSON
         id: add_tool
@@ -104,7 +124,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              body: `✅ 프로젝트가 성공적으로 추가되었습니다!\n\n` +
+              body: `프로젝트가 성공적으로 추가되었습니다.\n\n` +
                     `- **GitHub URL**: ${{ steps.parse.outputs.github_url }}\n` +
                     `- **모듈**: ${{ steps.parse.outputs.module_id }}\n` +
                     `- **카테고리**: ${{ steps.parse.outputs.category_id }}\n\n` +
@@ -126,9 +146,9 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              body: `❌ 프로젝트 추가에 실패했습니다. [워크플로 로그](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})를 확인해 주세요.\n\n` +
+              body: `프로젝트 추가에 실패했습니다. [워크플로 로그](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})를 확인해 주세요.\n\n` +
                     `일반적인 원인:\n` +
                     `- 이미 등록된 프로젝트\n` +
-                    `- 잘못된 모듈/카테고리 ID\n` +
+                    `- 모듈과 카테고리가 일치하지 않음\n` +
                     `- 비공개 또는 존재하지 않는 저장소`
             })
