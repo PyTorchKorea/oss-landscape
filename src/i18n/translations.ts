@@ -74,7 +74,7 @@ const translations = {
     starTiers: ['≥ 50k', '≥ 10k', '< 10k'] as const,
     items: (n: number) => `${n}개`,
     moduleName: (id: string) => moduleNames[id]?.ko ?? id,
-    categoryName: (id: string, fallback: string) => fallback,
+    categoryName: (_id: string, fallback: string) => fallback,
     footerOrg: '© PyTorch Korea User Group',
     langKo: '한국어',
     langEn: 'English',
@@ -100,10 +100,10 @@ const translations = {
     langKo: '한국어',
     langEn: 'English',
   },
-} as const
+}
 
 export type Locale = 'ko' | 'en'
-export type Translations = typeof translations['ko']
+export type Translations = typeof translations[Locale]
 
 export function getTranslations(locale: Locale): Translations {
   return translations[locale]
