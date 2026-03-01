@@ -1,25 +1,36 @@
 import ToolCard from './ToolCard'
 import type { ModuleWithCategories } from '../types'
 import type { Translations } from '../i18n/translations'
+import type { ResolvedTheme } from '../theme/useTheme'
+import { moduleColors } from '../utils/treemapColors'
 
-const MODULE_COLORS: Record<string, { bg: string; border: string; header: string }> = {
-  'infra-computing':    { bg: '#E3F2FD', border: '#2196F3', header: '#1565C0' },
-  'data-storage':       { bg: '#E8F5E9', border: '#4CAF50', header: '#2E7D32' },
-  'model-algorithm':    { bg: '#FFEBEE', border: '#F44336', header: '#C62828' },
-  'training-inference': { bg: '#FFF3E0', border: '#FF9800', header: '#E65100' },
-  'platform-mlops':     { bg: '#F3E5F5', border: '#9C27B0', header: '#6A1B9A' },
-  'application-service':{ bg: '#E1F5FE', border: '#03A9F4', header: '#0277BD' },
-  'security-governance':{ bg: '#FCE4EC', border: '#E91E63', header: '#AD1457' },
+function hexToRgb(hex: string) {
+  const r = parseInt(hex.slice(1, 3), 16)
+  const g = parseInt(hex.slice(3, 5), 16)
+  const b = parseInt(hex.slice(5, 7), 16)
+  return { r, g, b }
+}
+
+function deriveColors(base: string) {
+  const { r, g, b } = hexToRgb(base)
+  return {
+    header: base,
+    border: base,
+    bg: `rgba(${r}, ${g}, ${b}, 0.08)`,
+    bgDark: `rgba(${r}, ${g}, ${b}, 0.15)`,
+  }
 }
 
 interface ModuleSectionProps {
   module: ModuleWithCategories
   dimmed: boolean
   t: Translations
+  resolvedTheme: ResolvedTheme
 }
 
-export default function ModuleSection({ module, dimmed, t }: ModuleSectionProps) {
-  const colors = MODULE_COLORS[module.id] ?? { bg: '#F5F5F5', border: '#9E9E9E', header: '#424242' }
+export default function ModuleSection({ module, dimmed, t, resolvedTheme }: ModuleSectionProps) {
+  const baseColor = moduleColors[module.id] ?? '#9E9E9E'
+  const colors = deriveColors(baseColor)
   const colCount = Math.min(module.categoryItems.length, 4)
 
   return (
@@ -47,14 +58,14 @@ export default function ModuleSection({ module, dimmed, t }: ModuleSectionProps)
       <div
         className="p-3 grid gap-3"
         style={{
-          backgroundColor: colors.bg,
+          backgroundColor: resolvedTheme === 'dark' ? colors.bgDark : colors.bg,
           gridTemplateColumns: `repeat(${colCount}, minmax(0, 1fr))`,
         }}
       >
         {module.categoryItems.map((category) => (
           <div key={category.id}>
             <p
-              className="text-xs font-semibold text-gray-500 mb-1.5 pb-1 border-b"
+              className="text-xs font-semibold text-gray-500 dark:text-gray-400 mb-1.5 pb-1 border-b"
               style={{ borderColor: colors.border }}
             >
               {t.categoryName(category.id, category.name)}

@@ -21,12 +21,12 @@ const tierStyles: Record<SizeTier, { card: string; avatar: string; name: string 
     name: 'text-xs font-bold',
   },
   md: {
-    card: 'w-24 h-12 border border-gray-300 shadow hover:shadow-md',
+    card: 'w-24 h-12 border border-gray-300 dark:border-gray-600 shadow hover:shadow-md',
     avatar: 'w-7 h-7 text-xs bg-purple-500',
     name: 'text-xs font-medium',
   },
   sm: {
-    card: 'w-20 h-11 border border-gray-200 shadow-sm hover:shadow',
+    card: 'w-20 h-11 border border-gray-200 dark:border-gray-600 shadow-sm hover:shadow',
     avatar: 'w-6 h-6 text-xs bg-gray-400',
     name: 'text-xs',
   },
@@ -56,7 +56,7 @@ export default function ToolCard({ tool }: ToolCardProps) {
         className={`
           ${styles.card}
           flex items-center gap-1.5 p-1.5 rounded-md
-          bg-white cursor-pointer transition-all duration-150
+          bg-white dark:bg-gray-800 cursor-pointer transition-all duration-150
           hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400
           disabled:opacity-50 disabled:cursor-not-allowed
         `}
@@ -74,7 +74,7 @@ export default function ToolCard({ tool }: ToolCardProps) {
 
         {/* Info */}
         <span className="flex flex-col min-w-0 text-left">
-          <span className={`${styles.name} truncate leading-tight text-gray-800`}>
+          <span className={`${styles.name} truncate leading-tight text-gray-800 dark:text-gray-200`}>
             {tool.name}
           </span>
           {tool.meta?.stars ? (

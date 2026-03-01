@@ -2,6 +2,7 @@ import { useMemo } from 'react'
 import ModuleSection from './ModuleSection'
 import type { Tool, Module, Category, ModuleWithCategories } from '../types'
 import type { Translations } from '../i18n/translations'
+import type { ResolvedTheme } from '../theme/useTheme'
 
 interface LandscapeGridProps {
   modules: Module[]
@@ -10,6 +11,7 @@ interface LandscapeGridProps {
   searchQuery: string
   selectedModules: Set<string>
   t: Translations
+  resolvedTheme: ResolvedTheme
 }
 
 export default function LandscapeGrid({
@@ -19,6 +21,7 @@ export default function LandscapeGrid({
   searchQuery,
   selectedModules,
   t,
+  resolvedTheme,
 }: LandscapeGridProps) {
   const landscapeData = useMemo<ModuleWithCategories[]>(() => {
     const query = searchQuery.toLowerCase()
@@ -71,6 +74,7 @@ export default function LandscapeGrid({
           module={module}
           dimmed={!selectedModules.has(module.id)}
           t={t}
+          resolvedTheme={resolvedTheme}
         />
       ))}
     </div>

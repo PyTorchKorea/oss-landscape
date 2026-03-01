@@ -6,6 +6,7 @@ import HeaderActions from './components/HeaderActions'
 import LegendPopup from './components/LegendPopup'
 import { getModules, getCategories, getTools } from './services/dataService'
 import { useI18n } from './i18n/useI18n'
+import { useTheme, ThemeSetting } from './theme/useTheme'
 
 const modules = getModules()
 const categories = getCategories()
@@ -19,6 +20,7 @@ export default function App() {
   const [legendAnchor, setLegendAnchor] = useState<DOMRect | null>(null)
 
   const { locale, setLocale, t } = useI18n()
+  const { setting: themeSetting, resolved: resolvedTheme, setSetting: setThemeSetting } = useTheme()
 
   const handleModuleToggle = (moduleId: string) => {
     setSelectedModules(prev => {
@@ -94,6 +96,7 @@ export default function App() {
             searchQuery=""
             selectedModules={selectedModules}
             t={t}
+            resolvedTheme={resolvedTheme}
           />
         ) : (
           <TreemapView
@@ -113,6 +116,21 @@ export default function App() {
         <div className="max-w-screen-xl mx-auto px-4 py-2 flex items-center justify-between text-xs text-gray-400">
           <span>{t.footerOrg}</span>
           <div className="flex items-center gap-3">
+            <div className="flex items-center border border-gray-200 dark:border-gray-600 rounded overflow-hidden">
+              {(['system', 'light', 'dark'] as ThemeSetting[]).map((theme) => (
+                <button
+                  key={theme}
+                  onClick={() => setThemeSetting(theme)}
+                  className={`px-2 py-0.5 text-[10px] transition-colors ${
+                    themeSetting === theme
+                      ? 'bg-gray-200 dark:bg-gray-600 text-gray-900 dark:text-white'
+                      : 'hover:bg-gray-100 dark:hover:bg-gray-700'
+                  }`}
+                >
+                  {theme === 'system' ? 'System' : theme === 'light' ? 'Light' : 'Dark'}
+                </button>
+              ))}
+            </div>
             <a href="https://pytorch.kr" target="_blank" rel="noopener noreferrer" title="pytorch.kr" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             </a>
