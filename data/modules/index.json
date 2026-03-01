@@ -1,0 +1,120 @@
+{
+    "modules": [
+        {
+            "id": "infra-computing",
+            "name": "인프라 & 컴퓨팅",
+            "description": "AI 시스템을 구동하기 위해 필요한 H/W, S/W 및 컴퓨팅 인프라 / 관리 도구",
+            "icon": "Cloud",
+            "order": 1,
+            "color": "#4A90D9",
+            "categories": [
+                "container-orchestration",
+                "distributed-cloud",
+                "ai-accelerator",
+                "sustainable-ai"
+            ]
+        },
+        {
+            "id": "data-storage",
+            "name": "데이터 & 저장소",
+            "description": "학습/추론 및 평가에 필요한 데이터 수집, 저장, 전처리, 관리",
+            "icon": "Storage",
+            "order": 2,
+            "color": "#50C878",
+            "categories": [
+                "vector-db",
+                "data-quality",
+                "data-labeling",
+                "synthetic-data",
+                "datasets-tools",
+                "catalog-lineage",
+                "etl-workflow"
+            ]
+        },
+        {
+            "id": "model-algorithm",
+            "name": "모델 & 알고리즘",
+            "description": "주요 AI 모델들을 카테고리로 정리 (Task, Modality, Size 등)",
+            "icon": "Psychology",
+            "order": 3,
+            "color": "#FF6B6B",
+            "categories": [
+                "llm",
+                "vision-model",
+                "embedding-model",
+                "multimodal"
+            ]
+        },
+        {
+            "id": "training-inference",
+            "name": "모델 개발/학습 및 추론",
+            "description": "모델 개발/학습/추론을 위한 라이브러리 및 프레임워크 (PyTorch, TensorFlow, JAX 등)",
+            "icon": "Memory",
+            "order": 4,
+            "color": "#FFB84D",
+            "categories": [
+                "feature-store",
+                "experiment-tracking",
+                "inference-optimization",
+                "model-compression",
+                "fine-tuning",
+                "automl-hpo",
+                "federated-learning",
+                "distributed-training",
+                "reinforcement-learning",
+                "deep-learning-framework"
+            ]
+        },
+        {
+            "id": "platform-mlops",
+            "name": "플랫폼 & MLOps",
+            "description": "학습된 모델의 활용/응용/운영을 위한 플랫폼 및 도구 (ML Pipeline, 모니터링 등)",
+            "icon": "Settings",
+            "order": 5,
+            "color": "#9B59B6",
+            "categories": [
+                "agent-orchestration",
+                "llmops-observability",
+                "testing-evaluation",
+                "interoperability",
+                "memory-knowledge",
+                "rag-graphrag",
+                "prompt-management",
+                "on-device-runtime",
+                "model-serving"
+            ]
+        },
+        {
+            "id": "application-service",
+            "name": "응용 & 서비스",
+            "description": "기업 및 소비자에게 제공/사용되는 제품 및 솔루션 (산업별 AI 솔루션, 검색 엔진, 콘텐츠 생성, 챗봇 등)",
+            "icon": "Apps",
+            "order": 6,
+            "color": "#3498DB",
+            "categories": [
+                "ai-chatbot",
+                "content-generation",
+                "recommendation-search",
+                "industry-solutions",
+                "autonomous-agent"
+            ]
+        },
+        {
+            "id": "security-governance",
+            "name": "보안, 정렬 & 거버넌스",
+            "description": "안전한 AI 서비스 제공 및 사용을 위한 정책 및 도구 (AI 시스템의 유용성, 안전성 및 신뢰성 확보)",
+            "icon": "Security",
+            "order": 7,
+            "color": "#E74C3C",
+            "categories": [
+                "alignment",
+                "security-testing",
+                "guardrails",
+                "xai",
+                "fairness-bias",
+                "data-privacy",
+                "governance"
+            ]
+        }
+    ]
+}

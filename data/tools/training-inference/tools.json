@@ -1,0 +1,1033 @@
+{
+  "tools": [
+    {
+      "id": "pytorch",
+      "name": "PyTorch",
+      "description": "Meta에서 개발한 오픈소스 딥러닝 프레임워크. 동적 신경망, 강력한 GPU 가속",
+      "categoryId": "deep-learning-framework",
+      "moduleId": "training-inference",
+      "license": "BSD-3-Clause",
+      "githubUrl": "https://github.com/pytorch/pytorch",
+      "docsUrl": "https://pytorch.org/docs/stable/",
+      "websiteUrl": "https://pytorch.org",
+      "koreanSupport": true,
+      "tags": [
+        "deep-learning",
+        "training",
+        "python",
+        "gpu"
+      ],
+      "meta": {
+        "stars": 96067,
+        "lastUpdated": "2025-12-22T03:55:19Z",
+        "fetchedAt": "2025-12-22T04:19:43.128Z",
+        "forks": 26323,
+        "lastCommit": "2025-12-22T04:15:40Z"
+      }
+    },
+    {
+      "id": "tensorflow",
+      "name": "TensorFlow",
+      "description": "Google에서 개발한 오픈소스 머신러닝 프레임워크. 프로덕션 배포 및 엣지 지원",
+      "categoryId": "deep-learning-framework",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/tensorflow/tensorflow",
+      "docsUrl": "https://www.tensorflow.org/api_docs",
+      "websiteUrl": "https://www.tensorflow.org",
+      "koreanSupport": true,
+      "tags": [
+        "deep-learning",
+        "training",
+        "production"
+      ],
+      "meta": {
+        "stars": 192898,
+        "lastUpdated": "2025-12-22T02:52:36Z",
+        "fetchedAt": "2025-12-22T04:19:43.727Z",
+        "forks": 75183,
+        "lastCommit": "2025-12-22T04:19:08Z"
+      }
+    },
+    {
+      "id": "jax",
+      "name": "JAX",
+      "description": "Google의 고성능 수치 연산 라이브러리. XLA 컴파일러 기반 자동 미분",
+      "categoryId": "deep-learning-framework",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/jax-ml/jax",
+      "docsUrl": "https://jax.readthedocs.io/",
+      "websiteUrl": "https://jax.readthedocs.io/",
+      "koreanSupport": false,
+      "tags": [
+        "autograd",
+        "xla",
+        "tpu",
+        "research"
+      ],
+      "meta": {
+        "stars": 34388,
+        "lastUpdated": "2025-12-22T01:00:38Z",
+        "fetchedAt": "2025-12-22T04:19:45.316Z",
+        "forks": 3316,
+        "lastCommit": "2025-12-21T08:07:03Z"
+      }
+    },
+    {
+      "id": "keras",
+      "name": "Keras",
+      "description": "사용하기 쉬운 고수준 딥러닝 API. TensorFlow, PyTorch, JAX 백엔드 지원",
+      "categoryId": "deep-learning-framework",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/keras-team/keras",
+      "docsUrl": "https://keras.io/api/",
+      "websiteUrl": "https://keras.io",
+      "koreanSupport": true,
+      "tags": [
+        "high-level-api",
+        "deep-learning",
+        "beginner-friendly"
+      ],
+      "meta": {
+        "stars": 63655,
+        "lastUpdated": "2025-12-22T03:42:22Z",
+        "fetchedAt": "2025-12-22T04:19:45.832Z",
+        "forks": 19654,
+        "lastCommit": "2025-12-20T00:20:41Z"
+      }
+    },
+    {
+      "id": "unsloth",
+      "name": "Unsloth",
+      "description": "LLM 파인튜닝을 2배 빠르게, 70% 적은 VRAM으로. LoRA, QLoRA 지원",
+      "categoryId": "fine-tuning",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/unslothai/unsloth",
+      "docsUrl": "https://docs.unsloth.ai/",
+      "websiteUrl": "https://unsloth.ai/",
+      "koreanSupport": false,
+      "tags": [
+        "fine-tuning",
+        "lora",
+        "efficient",
+        "vram-optimization"
+      ],
+      "meta": {
+        "stars": 49720,
+        "lastUpdated": "2025-12-22T04:06:22Z",
+        "fetchedAt": "2025-12-22T04:19:46.308Z",
+        "forks": 4102,
+        "lastCommit": "2025-12-20T03:38:00Z"
+      }
+    },
+    {
+      "id": "llama-factory",
+      "name": "LLaMA-Factory",
+      "description": "100개 이상의 LLM/VLM 통합 파인튜닝 프레임워크. WebUI 제공",
+      "categoryId": "fine-tuning",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/hiyouga/LLaMA-Factory",
+      "docsUrl": "https://llamafactory.readthedocs.io",
+      "websiteUrl": "https://llamafactory.readthedocs.io",
+      "koreanSupport": true,
+      "tags": [
+        "fine-tuning",
+        "unified",
+        "webui",
+        "lora"
+      ],
+      "meta": {
+        "stars": 64292,
+        "lastUpdated": "2025-12-22T03:52:14Z",
+        "fetchedAt": "2025-12-22T04:19:46.705Z",
+        "forks": 7793,
+        "lastCommit": "2025-12-21T17:03:11Z"
+      }
+    },
+    {
+      "id": "peft",
+      "name": "PEFT",
+      "description": "파라미터 효율적 파인튜닝 라이브러리. LoRA, Prefix Tuning 등 지원",
+      "categoryId": "fine-tuning",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/huggingface/peft",
+      "docsUrl": "https://huggingface.co/docs/peft",
+      "websiteUrl": "https://huggingface.co/docs/peft",
+      "koreanSupport": false,
+      "tags": [
+        "fine-tuning",
+        "lora",
+        "efficient",
+        "adapter"
+      ],
+      "meta": {
+        "stars": 20318,
+        "lastUpdated": "2025-12-22T01:52:01Z",
+        "fetchedAt": "2025-12-22T04:19:47.177Z",
+        "forks": 2131,
+        "lastCommit": "2025-12-18T10:52:52Z"
+      }
+    },
+    {
+      "id": "axolotl",
+      "name": "Axolotl",
+      "description": "다양한 AI 모델 파인튜닝을 위한 도구. 여러 학습 방식 지원",
+      "categoryId": "fine-tuning",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/axolotl-ai-cloud/axolotl",
+      "docsUrl": "https://github.com/axolotl-ai-cloud/axolotl#readme",
+      "websiteUrl": "https://github.com/axolotl-ai-cloud/axolotl",
+      "koreanSupport": false,
+      "tags": [
+        "fine-tuning",
+        "training",
+        "versatile"
+      ],
+      "meta": {
+        "stars": 10980,
+        "lastUpdated": "2025-12-22T01:34:41Z",
+        "fetchedAt": "2025-12-22T04:19:47.698Z",
+        "forks": 1223,
+        "lastCommit": "2025-12-19T16:34:57Z"
+      }
+    },
+    {
+      "id": "trl",
+      "name": "TRL",
+      "description": "Hugging Face의 RLHF/DPO 기반 LLM 학습 라이브러리",
+      "categoryId": "fine-tuning",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/huggingface/trl",
+      "docsUrl": "https://huggingface.co/docs/trl",
+      "websiteUrl": "https://huggingface.co/docs/trl",
+      "koreanSupport": false,
+      "tags": [
+        "rlhf",
+        "dpo",
+        "alignment",
+        "reinforcement-learning"
+      ],
+      "meta": {
+        "stars": 16728,
+        "lastUpdated": "2025-12-22T03:52:37Z",
+        "fetchedAt": "2025-12-22T04:19:48.299Z",
+        "forks": 2371,
+        "lastCommit": "2025-12-22T04:11:36Z"
+      }
+    },
+    {
+      "id": "vllm",
+      "name": "vLLM",
+      "description": "고처리량 및 메모리 효율적인 LLM 추론 및 서빙 엔진. PagedAttention",
+      "categoryId": "deep-learning-framework",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/vllm-project/vllm",
+      "docsUrl": "https://docs.vllm.ai",
+      "websiteUrl": "https://vllm.ai",
+      "koreanSupport": false,
+      "tags": [
+        "inference",
+        "serving",
+        "llm",
+        "high-throughput"
+      ],
+      "meta": {
+        "stars": 65895,
+        "lastUpdated": "2025-12-22T03:34:55Z",
+        "fetchedAt": "2025-12-22T04:19:48.778Z",
+        "forks": 12109,
+        "lastCommit": "2025-12-22T03:34:49Z"
+      }
+    },
+    {
+      "id": "ollama",
+      "name": "Ollama",
+      "description": "로컬에서 LLM을 쉽게 실행. Llama, Gemma, DeepSeek 등 지원",
+      "categoryId": "deep-learning-framework",
+      "moduleId": "training-inference",
+      "license": "MIT",
+      "githubUrl": "https://github.com/ollama/ollama",
+      "docsUrl": "https://github.com/ollama/ollama#readme",
+      "websiteUrl": "https://ollama.com",
+      "koreanSupport": true,
+      "tags": [
+        "local-inference",
+        "llm",
+        "easy-to-use"
+      ],
+      "meta": {
+        "stars": 158019,
+        "lastUpdated": "2025-12-22T04:04:30Z",
+        "fetchedAt": "2025-12-22T04:19:49.258Z",
+        "forks": 13981,
+        "lastCommit": "2025-12-21T06:46:55Z"
+      }
+    },
+    {
+      "id": "sglang",
+      "name": "SGLang",
+      "description": "LLM/VLM을 위한 빠른 서빙 프레임워크. vLLM 대비 성능 향상",
+      "categoryId": "deep-learning-framework",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/sgl-project/sglang",
+      "docsUrl": "https://docs.sglang.ai/",
+      "websiteUrl": "https://docs.sglang.ai/",
+      "koreanSupport": false,
+      "tags": [
+        "inference",
+        "serving",
+        "fast",
+        "vlm"
+      ],
+      "meta": {
+        "stars": 21883,
+        "lastUpdated": "2025-12-22T03:55:42Z",
+        "fetchedAt": "2025-12-22T04:19:49.774Z",
+        "forks": 3825,
+        "lastCommit": "2025-12-22T04:09:32Z"
+      }
+    },
+    {
+      "id": "llama-cpp",
+      "name": "llama.cpp",
+      "description": "C/C++ LLM 추론 엔진. CPU, Metal, CUDA 등 다양한 하드웨어 지원",
+      "categoryId": "deep-learning-framework",
+      "moduleId": "training-inference",
+      "license": "MIT",
+      "githubUrl": "https://github.com/ggml-org/llama.cpp",
+      "docsUrl": "https://github.com/ggml-org/llama.cpp#readme",
+      "websiteUrl": "https://github.com/ggml-org/llama.cpp",
+      "koreanSupport": false,
+      "tags": [
+        "inference",
+        "cpu",
+        "optimization",
+        "ggml"
+      ],
+      "meta": {
+        "stars": 91765,
+        "lastUpdated": "2025-12-22T04:05:50Z",
+        "fetchedAt": "2025-12-22T04:19:50.292Z",
+        "forks": 14182,
+        "lastCommit": "2025-12-21T22:34:30Z"
+      }
+    },
+    {
+      "id": "tgi",
+      "name": "Text Generation Inference",
+      "description": "Hugging Face의 프로덕션급 LLM 서빙 솔루션",
+      "categoryId": "deep-learning-framework",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/huggingface/text-generation-inference",
+      "docsUrl": "https://huggingface.co/docs/text-generation-inference",
+      "websiteUrl": "https://huggingface.co/docs/text-generation-inference",
+      "koreanSupport": false,
+      "tags": [
+        "inference",
+        "serving",
+        "huggingface"
+      ],
+      "meta": {
+        "stars": 10710,
+        "lastUpdated": "2025-12-21T17:01:59Z",
+        "fetchedAt": "2025-12-22T04:19:50.818Z",
+        "forks": 1247,
+        "lastCommit": "2025-12-19T14:28:02Z"
+      }
+    },
+    {
+      "id": "triton-inference-server",
+      "name": "NVIDIA Triton",
+      "description": "NVIDIA의 AI 모델 서빙 플랫폼. 다양한 프레임워크 지원",
+      "categoryId": "deep-learning-framework",
+      "moduleId": "training-inference",
+      "license": "BSD-3-Clause",
+      "githubUrl": "https://github.com/triton-inference-server/server",
+      "docsUrl": "https://docs.nvidia.com/deeplearning/triton-inference-server/",
+      "websiteUrl": "https://developer.nvidia.com/triton-inference-server",
+      "koreanSupport": false,
+      "tags": [
+        "inference",
+        "nvidia",
+        "production"
+      ],
+      "meta": {
+        "stars": 10152,
+        "lastUpdated": "2025-12-22T03:15:09Z",
+        "fetchedAt": "2025-12-22T04:19:51.324Z",
+        "forks": 1695,
+        "lastCommit": "2025-12-20T00:43:10Z"
+      }
+    },
+    {
+      "id": "bentoml",
+      "name": "BentoML",
+      "description": "ML 모델을 프로덕션에 배포하기 위한 오픈소스 플랫폼",
+      "categoryId": "deep-learning-framework",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/bentoml/BentoML",
+      "docsUrl": "https://docs.bentoml.com/",
+      "websiteUrl": "https://www.bentoml.com/",
+      "koreanSupport": false,
+      "tags": [
+        "model-serving",
+        "deployment",
+        "mlops"
+      ],
+      "meta": {
+        "stars": 8318,
+        "lastUpdated": "2025-12-22T03:23:48Z",
+        "fetchedAt": "2025-12-22T04:19:51.825Z",
+        "forks": 897,
+        "lastCommit": "2025-12-18T08:57:04Z"
+      }
+    },
+    {
+      "id": "bitsandbytes",
+      "name": "bitsandbytes",
+      "description": "8비트/4비트 양자화 PyTorch 라이브러리. 메모리 효율적 추론",
+      "categoryId": "model-compression",
+      "moduleId": "training-inference",
+      "license": "MIT",
+      "githubUrl": "https://github.com/bitsandbytes-foundation/bitsandbytes",
+      "docsUrl": "https://huggingface.co/docs/bitsandbytes",
+      "websiteUrl": "https://github.com/bitsandbytes-foundation/bitsandbytes",
+      "koreanSupport": false,
+      "tags": [
+        "quantization",
+        "8bit",
+        "4bit",
+        "memory-efficient"
+      ],
+      "meta": {
+        "stars": 7840,
+        "lastUpdated": "2025-12-21T20:53:22Z",
+        "fetchedAt": "2025-12-22T04:19:52.280Z",
+        "forks": 801,
+        "lastCommit": "2025-12-12T18:07:36Z"
+      }
+    },
+    {
+      "id": "gptq",
+      "name": "AutoGPTQ",
+      "description": "GPTQ 양자화 방법 구현. LLM 모델 압축",
+      "categoryId": "model-compression",
+      "moduleId": "training-inference",
+      "license": "MIT",
+      "githubUrl": "https://github.com/AutoGPTQ/AutoGPTQ",
+      "docsUrl": "https://github.com/AutoGPTQ/AutoGPTQ#readme",
+      "websiteUrl": "https://github.com/AutoGPTQ/AutoGPTQ",
+      "koreanSupport": false,
+      "tags": [
+        "quantization",
+        "gptq",
+        "compression"
+      ],
+      "meta": {
+        "stars": 5012,
+        "lastUpdated": "2025-12-21T06:07:36Z",
+        "fetchedAt": "2025-12-22T04:19:52.783Z",
+        "forks": 529,
+        "lastCommit": "2025-04-11T13:27:20Z"
+      }
+    },
+    {
+      "id": "awq",
+      "name": "AWQ",
+      "description": "Activation-aware Weight Quantization. LLM 양자화 방법",
+      "categoryId": "deep-learning-framework",
+      "moduleId": "training-inference",
+      "license": "MIT",
+      "githubUrl": "https://github.com/mit-han-lab/llm-awq",
+      "docsUrl": "https://github.com/mit-han-lab/llm-awq#readme",
+      "websiteUrl": "https://github.com/mit-han-lab/llm-awq",
+      "koreanSupport": false,
+      "tags": [
+        "quantization",
+        "awq",
+        "efficient"
+      ],
+      "meta": {
+        "stars": 3396,
+        "lastUpdated": "2025-12-22T03:33:30Z",
+        "fetchedAt": "2025-12-22T04:19:53.287Z",
+        "forks": 285,
+        "lastCommit": "2025-07-17T19:44:51Z"
+      }
+    },
+    {
+      "id": "optimum",
+      "name": "Optimum",
+      "description": "Hugging Face 모델 추론 최적화. ONNX, TensorRT 지원",
+      "categoryId": "model-compression",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/huggingface/optimum",
+      "docsUrl": "https://huggingface.co/docs/optimum",
+      "websiteUrl": "https://huggingface.co/docs/optimum",
+      "koreanSupport": false,
+      "tags": [
+        "optimization",
+        "quantization",
+        "onnx"
+      ],
+      "meta": {
+        "stars": 3222,
+        "lastUpdated": "2025-12-21T11:55:45Z",
+        "fetchedAt": "2025-12-22T04:19:53.855Z",
+        "forks": 611,
+        "lastCommit": "2025-12-19T15:32:55Z"
+      }
+    },
+    {
+      "id": "tensorrt",
+      "name": "TensorRT",
+      "description": "NVIDIA의 딥러닝 추론 최적화 툴킷. GPU 고성능 추론",
+      "categoryId": "inference-optimization",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/NVIDIA/TensorRT",
+      "docsUrl": "https://docs.nvidia.com/deeplearning/tensorrt/",
+      "websiteUrl": "https://developer.nvidia.com/tensorrt",
+      "koreanSupport": false,
+      "tags": [
+        "optimization",
+        "nvidia",
+        "inference"
+      ],
+      "meta": {
+        "stars": 12489,
+        "lastUpdated": "2025-12-21T07:26:18Z",
+        "fetchedAt": "2025-12-22T04:19:54.429Z",
+        "forks": 2294,
+        "lastCommit": "2025-12-11T04:38:52Z"
+      }
+    },
+    {
+      "id": "deepspeed",
+      "name": "DeepSpeed",
+      "description": "Microsoft의 대규모 분산 학습 라이브러리. ZeRO 최적화",
+      "categoryId": "distributed-training",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/deepspeedai/DeepSpeed",
+      "docsUrl": "https://www.deepspeed.ai/getting-started/",
+      "websiteUrl": "https://www.deepspeed.ai/",
+      "koreanSupport": false,
+      "tags": [
+        "distributed-training",
+        "optimization",
+        "large-scale"
+      ],
+      "meta": {
+        "stars": 41052,
+        "lastUpdated": "2025-12-21T17:06:05Z",
+        "fetchedAt": "2025-12-22T04:19:54.907Z",
+        "forks": 4669,
+        "lastCommit": "2025-12-19T20:57:08Z"
+      }
+    },
+    {
+      "id": "mini-sglang",
+      "name": "Mini-SGLang",
+      "description": "경량 고성능 LLM 추론 엔진. RadixCache, FlashAttention 등 최적화 지원",
+      "categoryId": "model-serving",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/sgl-project/mini-sglang",
+      "docsUrl": "https://github.com/sgl-project/mini-sglang#readme",
+      "websiteUrl": "https://github.com/sgl-project/mini-sglang",
+      "koreanSupport": false,
+      "tags": [
+        "inference",
+        "lightweight",
+        "radix-cache",
+        "optimized"
+      ],
+      "meta": {
+        "stars": 1980,
+        "lastUpdated": "2025-12-22T04:19:04Z",
+        "fetchedAt": "2025-12-22T04:19:55.753Z",
+        "forks": 161,
+        "lastCommit": "2025-12-21T16:34:05Z"
+      }
+    },
+    {
+      "id": "apache-tvm",
+      "name": "Apache TVM",
+      "description": "오픈소스 ML 컴파일러 프레임워크. 다양한 하드웨어에 모델 최적화 배포",
+      "categoryId": "model-optimization",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/apache/tvm",
+      "docsUrl": "https://tvm.apache.org/docs/",
+      "websiteUrl": "https://tvm.apache.org/",
+      "koreanSupport": false,
+      "tags": [
+        "compiler",
+        "optimization",
+        "hardware-agnostic",
+        "deployment"
+      ],
+      "meta": {
+        "stars": 12948,
+        "lastUpdated": "2025-12-21T22:25:19Z",
+        "fetchedAt": "2025-12-22T04:19:56.251Z",
+        "forks": 3740,
+        "lastCommit": "2025-12-21T12:14:21Z"
+      }
+    },
+    {
+      "id": "nni",
+      "name": "NNI",
+      "description": "An open source AutoML toolkit for hyperparameter tuning, neural architecture search, and model compression",
+      "categoryId": "automl-hpo",
+      "moduleId": "training-inference",
+      "license": "MIT",
+      "githubUrl": "https://github.com/microsoft/nni",
+      "koreanSupport": false,
+      "tags": [
+        "automl",
+        "hpo",
+        "nas",
+        "model-compression",
+        "microsoft"
+      ],
+      "meta": {
+        "stars": 14000,
+        "forks": 1900,
+        "lastUpdated": "2025-08-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "autokeras",
+      "name": "AutoKeras",
+      "description": "AutoML system based on Keras — automatically search for the best neural network architecture",
+      "categoryId": "automl-hpo",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/keras-team/autokeras",
+      "koreanSupport": false,
+      "tags": [
+        "automl",
+        "nas",
+        "keras",
+        "neural-architecture-search"
+      ],
+      "meta": {
+        "stars": 9100,
+        "forks": 1400,
+        "lastUpdated": "2025-09-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "gymnasium",
+      "name": "Gymnasium",
+      "description": "The standard API for reinforcement learning environments (successor to OpenAI Gym) by Farama Foundation",
+      "categoryId": "reinforcement-learning",
+      "moduleId": "training-inference",
+      "license": "MIT",
+      "githubUrl": "https://github.com/Farama-Foundation/Gymnasium",
+      "koreanSupport": false,
+      "tags": [
+        "reinforcement-learning",
+        "gym",
+        "environment",
+        "farama"
+      ],
+      "meta": {
+        "stars": 8000,
+        "forks": 1000,
+        "lastUpdated": "2025-12-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "optuna",
+      "name": "Optuna",
+      "description": "An automatic hyperparameter optimization framework — define-by-run API, efficient sampling, pruning",
+      "categoryId": "automl-hpo",
+      "moduleId": "training-inference",
+      "license": "MIT",
+      "githubUrl": "https://github.com/optuna/optuna",
+      "koreanSupport": false,
+      "tags": [
+        "hyperparameter-optimization",
+        "automl",
+        "bayesian",
+        "pruning"
+      ],
+      "meta": {
+        "stars": 11000,
+        "forks": 1100,
+        "lastUpdated": "2025-12-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "colossalai",
+      "name": "ColossalAI",
+      "description": "Making large AI models cheaper, faster, and more accessible — unified system for large-scale distributed training",
+      "categoryId": "distributed-training",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/hpcaitech/ColossalAI",
+      "koreanSupport": false,
+      "tags": [
+        "distributed-training",
+        "large-model",
+        "tensor-parallel",
+        "pipeline-parallel"
+      ],
+      "meta": {
+        "stars": 38000,
+        "forks": 4200,
+        "lastUpdated": "2025-12-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "flower",
+      "name": "Flower",
+      "description": "A friendly federated learning framework — simulate and deploy FL across diverse devices and data",
+      "categoryId": "federated-learning",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/adap/flower",
+      "koreanSupport": false,
+      "tags": [
+        "federated-learning",
+        "privacy",
+        "distributed",
+        "edge"
+      ],
+      "meta": {
+        "stars": 5200,
+        "forks": 560,
+        "lastUpdated": "2025-12-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "paddlepaddle",
+      "name": "PaddlePaddle",
+      "description": "Baidu's open source deep learning platform — production-grade, industrial-strength deep learning framework",
+      "categoryId": "deep-learning-framework",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/PaddlePaddle/Paddle",
+      "koreanSupport": false,
+      "tags": [
+        "deep-learning",
+        "framework",
+        "baidu",
+        "production"
+      ],
+      "meta": {
+        "stars": 22000,
+        "forks": 5600,
+        "lastUpdated": "2025-12-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "torchrl",
+      "name": "TorchRL",
+      "description": "A modular, primitive-first PyTorch library for reinforcement learning and decision making",
+      "categoryId": "reinforcement-learning",
+      "moduleId": "training-inference",
+      "license": "MIT",
+      "githubUrl": "https://github.com/pytorch/rl",
+      "koreanSupport": false,
+      "tags": [
+        "reinforcement-learning",
+        "pytorch",
+        "modular",
+        "policy-gradient"
+      ],
+      "meta": {
+        "stars": 2200,
+        "forks": 280,
+        "lastUpdated": "2025-12-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "megatron-lm",
+      "name": "Megatron-LM",
+      "description": "NVIDIA's ongoing research training transformer models at scale — tensor, pipeline, and sequence parallelism",
+      "categoryId": "distributed-training",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/NVIDIA/Megatron-LM",
+      "koreanSupport": false,
+      "tags": [
+        "distributed-training",
+        "transformer",
+        "nvidia",
+        "model-parallel",
+        "large-scale"
+      ],
+      "meta": {
+        "stars": 10500,
+        "forks": 2400,
+        "lastUpdated": "2025-12-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "pytorch-ao",
+      "name": "torchao",
+      "description": "PyTorch Architecture Optimization — quantization and sparsity for inference and training",
+      "categoryId": "model-compression",
+      "moduleId": "training-inference",
+      "license": "BSD-3-Clause",
+      "githubUrl": "https://github.com/pytorch/ao",
+      "koreanSupport": false,
+      "tags": [
+        "quantization",
+        "sparsity",
+        "pytorch",
+        "optimization",
+        "inference"
+      ],
+      "meta": {
+        "stars": 3200,
+        "forks": 320,
+        "lastUpdated": "2025-12-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "openai-triton",
+      "name": "Triton",
+      "description": "OpenAI's language and compiler for writing highly efficient GPU code — used for custom CUDA kernels",
+      "categoryId": "inference-optimization",
+      "moduleId": "training-inference",
+      "license": "MIT",
+      "githubUrl": "https://github.com/triton-lang/triton",
+      "koreanSupport": false,
+      "tags": [
+        "gpu",
+        "compiler",
+        "kernel",
+        "cuda",
+        "optimization"
+      ],
+      "meta": {
+        "stars": 14000,
+        "forks": 1700,
+        "lastUpdated": "2025-12-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "fate",
+      "name": "FATE",
+      "description": "An industrial-grade federated learning framework by WeBank — supports federated modeling, transfer learning, and multi-party computation",
+      "categoryId": "federated-learning",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/FederatedAI/FATE",
+      "koreanSupport": false,
+      "tags": [
+        "federated-learning",
+        "privacy",
+        "webank",
+        "secure-computation"
+      ],
+      "meta": {
+        "stars": 5700,
+        "forks": 1600,
+        "lastUpdated": "2025-12-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "nvflare",
+      "name": "NVIDIA FLARE",
+      "description": "NVIDIA Federated Learning Application Runtime Environment — enterprise-grade federated learning SDK",
+      "categoryId": "federated-learning",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/NVIDIA/NVFlare",
+      "koreanSupport": false,
+      "tags": [
+        "federated-learning",
+        "nvidia",
+        "enterprise",
+        "privacy"
+      ],
+      "meta": {
+        "stars": 2700,
+        "forks": 500,
+        "lastUpdated": "2025-12-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "pysyft",
+      "name": "PySyft",
+      "description": "A library for secure and private Deep Learning using Federated Learning, Differential Privacy and Encrypted Computation",
+      "categoryId": "federated-learning",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/OpenMined/PySyft",
+      "koreanSupport": false,
+      "tags": [
+        "federated-learning",
+        "privacy",
+        "differential-privacy"
+      ],
+      "meta": {
+        "stars": 9500,
+        "forks": 2100,
+        "lastUpdated": "2025-01-01T00:00:00Z",
+        "lastCommit": "2025-01-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00Z"
+      }
+    },
+    {
+      "id": "autogluon",
+      "name": "AutoGluon",
+      "description": "AutoML toolkit for deep learning - automatically trains and tunes deep neural networks",
+      "categoryId": "automl-hpo",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/autogluon/autogluon",
+      "koreanSupport": false,
+      "tags": [
+        "automl",
+        "deep-learning",
+        "hyperparameter-optimization"
+      ],
+      "meta": {
+        "stars": 7500,
+        "forks": 1100,
+        "lastUpdated": "2025-01-01T00:00:00Z",
+        "lastCommit": "2025-01-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00Z"
+      }
+    },
+    {
+      "id": "litgpt",
+      "name": "LitGPT",
+      "description": "20+ high-performance LLMs with recipes to pretrain, finetune and deploy at scale",
+      "categoryId": "fine-tuning",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/Lightning-AI/litgpt",
+      "koreanSupport": false,
+      "tags": [
+        "fine-tuning",
+        "llm",
+        "pretraining"
+      ],
+      "meta": {
+        "stars": 10000,
+        "forks": 1100,
+        "lastUpdated": "2025-01-01T00:00:00Z",
+        "lastCommit": "2025-01-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00Z"
+      }
+    },
+    {
+      "id": "verl",
+      "name": "veRL",
+      "description": "Volcano Engine Reinforcement Learning for LLM - a flexible, efficient and production-ready RL training framework",
+      "categoryId": "reinforcement-learning",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/volcengine/verl",
+      "koreanSupport": false,
+      "tags": [
+        "reinforcement-learning",
+        "rlhf",
+        "llm"
+      ],
+      "meta": {
+        "stars": 4500,
+        "forks": 500,
+        "lastUpdated": "2025-01-01T00:00:00Z",
+        "lastCommit": "2025-01-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00Z"
+      }
+    },
+    {
+      "id": "hopsworks",
+      "name": "Hopsworks",
+      "description": "A data platform for ML with a feature store, model registry, and MLOps pipelines",
+      "categoryId": "feature-store",
+      "moduleId": "training-inference",
+      "license": "AGPL-3.0",
+      "githubUrl": "https://github.com/logicalclocks/hopsworks",
+      "koreanSupport": false,
+      "tags": [
+        "feature-store",
+        "mlops",
+        "model-registry",
+        "data-platform"
+      ],
+      "meta": {
+        "stars": 1500,
+        "forks": 280,
+        "lastUpdated": "2025-01-01T00:00:00Z",
+        "lastCommit": "2025-01-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00Z"
+      }
+    },
+    {
+      "id": "slime",
+      "name": "Slime",
+      "description": "RL Scaling을 위한 LLM 후학습(post-training) 프레임워크. 강화학습 기반의 대규모 언어 모델 최적화 지원",
+      "categoryId": "reinforcement-learning",
+      "moduleId": "training-inference",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/THUDM/slime",
+      "docsUrl": "https://thudm.github.io/slime",
+      "websiteUrl": "https://thudm.github.io/slime",
+      "koreanSupport": false,
+      "tags": ["reinforcement-learning", "post-training", "llm", "rl-scaling"],
+      "meta": {
+        "stars": 4487,
+        "lastUpdated": "2026-03-01T03:31:54Z",
+        "fetchedAt": "2026-03-01T03:38:00.000Z",
+        "forks": 581,
+        "lastCommit": "2026-02-28T10:41:31Z"
+      }
+    },
+    {
+      "id": "mlx",
+      "name": "MLX",
+      "description": "Apple 실리콘에 최적화된 배열 연산 프레임워크. PyTorch와 유사한 API로 ML 학습 및 추론 지원",
+      "categoryId": "deep-learning-framework",
+      "moduleId": "training-inference",
+      "license": "MIT",
+      "githubUrl": "https://github.com/ml-explore/mlx",
+      "docsUrl": "https://ml-explore.github.io/mlx/",
+      "websiteUrl": "https://ml-explore.github.io/mlx/",
+      "koreanSupport": false,
+      "tags": ["apple-silicon", "deep-learning", "array-framework", "ml"],
+      "meta": {
+        "stars": 24124,
+        "lastUpdated": "2026-03-01T03:40:04Z",
+        "fetchedAt": "2026-03-01T03:40:00.000Z",
+        "forks": 1533,
+        "lastCommit": "2026-02-28T07:22:10Z"
+      }
+    }
+  ]
+}

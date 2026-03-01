@@ -1,0 +1,762 @@
+{
+  "tools": [
+    {
+      "id": "langchain-app",
+      "name": "LangChain",
+      "description": "LLM 애플리케이션 구축을 위한 프레임워크. RAG, 체인, 에이전트 지원",
+      "categoryId": "autonomous-agent",
+      "moduleId": "application-service",
+      "license": "MIT",
+      "githubUrl": "https://github.com/langchain-ai/langchain",
+      "docsUrl": "https://python.langchain.com/docs/",
+      "websiteUrl": "https://langchain.com",
+      "koreanSupport": true,
+      "tags": [
+        "llm",
+        "rag",
+        "ai-apps",
+        "chains"
+      ],
+      "meta": {
+        "stars": 122398,
+        "lastUpdated": "2025-12-22T04:18:38Z",
+        "fetchedAt": "2025-12-22T04:18:47.965Z",
+        "forks": 20173,
+        "lastCommit": "2025-12-22T01:31:51Z"
+      }
+    },
+    {
+      "id": "llamaindex-app",
+      "name": "LlamaIndex",
+      "description": "LLM 데이터 프레임워크. RAG 애플리케이션 및 에이전트 구축",
+      "categoryId": "autonomous-agent",
+      "moduleId": "application-service",
+      "license": "MIT",
+      "githubUrl": "https://github.com/run-llama/llama_index",
+      "docsUrl": "https://docs.llamaindex.ai",
+      "websiteUrl": "https://llamaindex.ai",
+      "koreanSupport": true,
+      "tags": [
+        "llm",
+        "rag",
+        "data-framework",
+        "agents"
+      ],
+      "meta": {
+        "stars": 45939,
+        "lastUpdated": "2025-12-22T03:29:15Z",
+        "fetchedAt": "2025-12-22T04:18:48.509Z",
+        "forks": 6653,
+        "lastCommit": "2025-12-19T03:24:37Z"
+      }
+    },
+    {
+      "id": "rasa",
+      "name": "Rasa",
+      "description": "대화형 AI 및 챗봇 구축을 위한 오픈소스 프레임워크",
+      "categoryId": "ai-chatbot",
+      "moduleId": "application-service",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/RasaHQ/rasa",
+      "docsUrl": "https://rasa.com/docs/",
+      "websiteUrl": "https://rasa.com",
+      "koreanSupport": false,
+      "tags": [
+        "chatbot",
+        "conversational-ai",
+        "nlu"
+      ],
+      "meta": {
+        "stars": 20940,
+        "lastUpdated": "2025-12-22T02:45:08Z",
+        "fetchedAt": "2025-12-22T04:18:48.999Z",
+        "forks": 4905,
+        "lastCommit": "2025-12-18T08:04:49Z"
+      }
+    },
+    {
+      "id": "autogen-app",
+      "name": "AutoGen",
+      "description": "Microsoft의 에이전틱 AI 프레임워크. 멀티 에이전트 대화 및 협업",
+      "categoryId": "autonomous-agent",
+      "moduleId": "application-service",
+      "license": "CC-BY-4.0",
+      "githubUrl": "https://github.com/microsoft/autogen",
+      "docsUrl": "https://microsoft.github.io/autogen/",
+      "websiteUrl": "https://microsoft.github.io/autogen/",
+      "koreanSupport": false,
+      "tags": [
+        "agent",
+        "multi-agent",
+        "conversation"
+      ],
+      "meta": {
+        "stars": 52725,
+        "lastUpdated": "2025-12-22T03:53:11Z",
+        "fetchedAt": "2025-12-22T04:18:50.207Z",
+        "forks": 8016,
+        "lastCommit": "2025-10-08T04:58:17Z"
+      }
+    },
+    {
+      "id": "crewai-app",
+      "name": "CrewAI",
+      "description": "역할 기반 멀티 에이전트 오케스트레이션 프레임워크",
+      "categoryId": "autonomous-agent",
+      "moduleId": "application-service",
+      "license": "MIT",
+      "githubUrl": "https://github.com/crewAIInc/crewAI",
+      "docsUrl": "https://docs.crewai.com",
+      "websiteUrl": "https://crewai.com",
+      "koreanSupport": false,
+      "tags": [
+        "agent",
+        "multi-agent",
+        "orchestration"
+      ],
+      "meta": {
+        "stars": 41628,
+        "lastUpdated": "2025-12-22T02:59:18Z",
+        "fetchedAt": "2025-12-22T04:18:50.873Z",
+        "forks": 5575,
+        "lastCommit": "2025-12-20T15:09:47Z"
+      }
+    },
+    {
+      "id": "phidata",
+      "name": "Phidata",
+      "description": "에이전틱 시스템 구축을 위한 프레임워크. 메모리, 지식, 도구 지원",
+      "categoryId": "autonomous-agent",
+      "moduleId": "application-service",
+      "license": "MPL-2.0",
+      "githubUrl": "https://github.com/phidatahq/phidata",
+      "docsUrl": "https://docs.phidata.com/",
+      "websiteUrl": "https://phidata.com/",
+      "koreanSupport": false,
+      "tags": [
+        "agent",
+        "agentic",
+        "framework"
+      ],
+      "meta": {
+        "stars": 36199,
+        "lastUpdated": "2025-12-22T03:50:54Z",
+        "fetchedAt": "2025-12-22T04:18:51.635Z",
+        "forks": 4786,
+        "lastCommit": "2025-12-22T03:56:57Z"
+      }
+    },
+    {
+      "id": "dify",
+      "name": "Dify",
+      "description": "오픈소스 LLM 앱 개발 플랫폼. RAG, 에이전트, 워크플로우 지원",
+      "categoryId": "autonomous-agent",
+      "moduleId": "application-service",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/langgenius/dify",
+      "docsUrl": "https://docs.dify.ai/",
+      "websiteUrl": "https://dify.ai/",
+      "koreanSupport": true,
+      "tags": [
+        "llm-platform",
+        "rag",
+        "workflow",
+        "agent"
+      ],
+      "meta": {
+        "stars": 122361,
+        "lastUpdated": "2025-12-22T04:08:31Z",
+        "fetchedAt": "2025-12-22T04:18:52.558Z",
+        "forks": 19027,
+        "lastCommit": "2025-12-22T01:40:41Z"
+      }
+    },
+    {
+      "id": "stable-diffusion",
+      "name": "Stable Diffusion",
+      "description": "Stability AI의 텍스트-이미지 생성 모델",
+      "categoryId": "content-generation",
+      "moduleId": "application-service",
+      "license": "CreativeML Open RAIL-M",
+      "githubUrl": "https://github.com/CompVis/stable-diffusion",
+      "docsUrl": "https://stability.ai/developers",
+      "websiteUrl": "https://stability.ai/",
+      "koreanSupport": false,
+      "tags": [
+        "image-generation",
+        "diffusion",
+        "generative-ai"
+      ],
+      "meta": {
+        "stars": 72042,
+        "lastUpdated": "2025-12-22T03:42:05Z",
+        "fetchedAt": "2025-12-22T04:18:53.073Z",
+        "forks": 10553,
+        "lastCommit": "2024-06-18T01:53:49Z"
+      }
+    },
+    {
+      "id": "comfyui",
+      "name": "ComfyUI",
+      "description": "노드 기반 Stable Diffusion GUI. 복잡한 워크플로우 구성",
+      "categoryId": "content-generation",
+      "moduleId": "application-service",
+      "license": "GPL-3.0",
+      "githubUrl": "https://github.com/comfyanonymous/ComfyUI",
+      "docsUrl": "https://github.com/comfyanonymous/ComfyUI#readme",
+      "websiteUrl": "https://www.comfy.org/",
+      "koreanSupport": false,
+      "tags": [
+        "image-generation",
+        "gui",
+        "workflow",
+        "nodes"
+      ],
+      "meta": {
+        "stars": 97660,
+        "lastUpdated": "2025-12-22T04:17:52Z",
+        "fetchedAt": "2025-12-22T04:18:53.486Z",
+        "forks": 11063,
+        "lastCommit": "2025-12-22T00:59:43Z"
+      }
+    },
+    {
+      "id": "dspy",
+      "name": "DSPy",
+      "description": "프롬프트 엔지니어링을 프로그래밍으로 대체. 자동 최적화",
+      "categoryId": "autonomous-agent",
+      "moduleId": "application-service",
+      "license": "MIT",
+      "githubUrl": "https://github.com/stanfordnlp/dspy",
+      "docsUrl": "https://dspy-docs.vercel.app/",
+      "websiteUrl": "https://dspy-docs.vercel.app/",
+      "koreanSupport": false,
+      "tags": [
+        "prompt",
+        "optimization",
+        "declarative"
+      ],
+      "meta": {
+        "stars": 30940,
+        "lastUpdated": "2025-12-22T03:54:24Z",
+        "fetchedAt": "2025-12-22T04:18:54.323Z",
+        "forks": 2488,
+        "lastCommit": "2025-12-21T16:58:56Z"
+      }
+    },
+    {
+      "id": "gradio",
+      "name": "Gradio",
+      "description": "ML 모델 데모를 위한 웹 인터페이스 빌더. Hugging Face Spaces 통합",
+      "categoryId": "autonomous-agent",
+      "moduleId": "application-service",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/gradio-app/gradio",
+      "docsUrl": "https://www.gradio.app/docs/",
+      "websiteUrl": "https://www.gradio.app",
+      "koreanSupport": true,
+      "tags": [
+        "demo",
+        "ui",
+        "web-app",
+        "huggingface"
+      ],
+      "meta": {
+        "stars": 41027,
+        "lastUpdated": "2025-12-22T03:01:00Z",
+        "fetchedAt": "2025-12-22T04:18:54.843Z",
+        "forks": 3202,
+        "lastCommit": "2025-12-19T18:17:55Z"
+      }
+    },
+    {
+      "id": "streamlit",
+      "name": "Streamlit",
+      "description": "Python으로 데이터 앱을 빠르게 구축할 수 있는 프레임워크",
+      "categoryId": "autonomous-agent",
+      "moduleId": "application-service",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/streamlit/streamlit",
+      "docsUrl": "https://docs.streamlit.io",
+      "websiteUrl": "https://streamlit.io",
+      "koreanSupport": true,
+      "tags": [
+        "data-app",
+        "python",
+        "dashboard"
+      ],
+      "meta": {
+        "stars": 42769,
+        "lastUpdated": "2025-12-22T03:37:50Z",
+        "fetchedAt": "2025-12-22T04:18:55.340Z",
+        "forks": 3986,
+        "lastCommit": "2025-12-21T06:43:36Z"
+      }
+    },
+    {
+      "id": "chainlit",
+      "name": "Chainlit",
+      "description": "LLM 기반 채팅 애플리케이션 구축 프레임워크",
+      "categoryId": "ai-chatbot",
+      "moduleId": "application-service",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/Chainlit/chainlit",
+      "docsUrl": "https://docs.chainlit.io/",
+      "websiteUrl": "https://chainlit.io/",
+      "koreanSupport": false,
+      "tags": [
+        "chat",
+        "llm",
+        "ui"
+      ],
+      "meta": {
+        "stars": 11219,
+        "lastUpdated": "2025-12-22T02:30:36Z",
+        "fetchedAt": "2025-12-22T04:18:55.846Z",
+        "forks": 1624,
+        "lastCommit": "2025-12-22T03:52:04Z"
+      }
+    },
+    {
+      "id": "open-webui",
+      "name": "Open WebUI",
+      "description": "사용자 친화적 AI 인터페이스. Ollama, OpenAI API 지원",
+      "categoryId": "ai-chatbot",
+      "moduleId": "application-service",
+      "license": "Other",
+      "githubUrl": "https://github.com/open-webui/open-webui",
+      "docsUrl": "https://docs.openwebui.com/",
+      "websiteUrl": "https://openwebui.com",
+      "koreanSupport": true,
+      "tags": [
+        "webui",
+        "ollama",
+        "self-hosted",
+        "chat"
+      ],
+      "meta": {
+        "stars": 118397,
+        "lastUpdated": "2025-12-22T03:59:48Z",
+        "fetchedAt": "2025-12-22T04:18:56.324Z",
+        "forks": 16685,
+        "lastCommit": "2025-12-21T21:09:09Z"
+      }
+    },
+    {
+      "id": "lobe-chat",
+      "name": "Lobe Chat",
+      "description": "현대적인 디자인의 오픈소스 ChatGPT/LLM UI",
+      "categoryId": "ai-chatbot",
+      "moduleId": "application-service",
+      "license": "MIT",
+      "githubUrl": "https://github.com/lobehub/lobe-chat",
+      "docsUrl": "https://lobehub.com/docs/",
+      "websiteUrl": "https://lobehub.com/",
+      "koreanSupport": true,
+      "tags": [
+        "chat",
+        "ui",
+        "modern",
+        "self-hosted"
+      ],
+      "meta": {
+        "stars": 69307,
+        "lastUpdated": "2025-12-22T04:09:27Z",
+        "fetchedAt": "2025-12-22T04:18:56.780Z",
+        "forks": 14275,
+        "lastCommit": "2025-12-22T04:06:08Z"
+      }
+    },
+    {
+      "id": "agent-framework",
+      "name": "Microsoft Agent Framework",
+      "description": "Python과 .NET을 지원하는 AI 에이전트 및 멀티-에이전트 워크플로우 구축 프레임워크",
+      "categoryId": "autonomous-agent",
+      "moduleId": "application-service",
+      "license": "MIT",
+      "githubUrl": "https://github.com/microsoft/agent-framework",
+      "docsUrl": "https://microsoft.github.io/agent-framework/",
+      "websiteUrl": "https://github.com/microsoft/agent-framework",
+      "koreanSupport": false,
+      "tags": [
+        "agents",
+        "multi-agent",
+        "workflow",
+        "microsoft",
+        "python",
+        "dotnet"
+      ],
+      "meta": {
+        "stars": 5984,
+        "lastUpdated": "2025-12-22T01:46:51Z",
+        "fetchedAt": "2025-12-22T04:18:57.318Z",
+        "forks": 927,
+        "lastCommit": "2025-12-21T08:57:59Z"
+      }
+    },
+    {
+      "id": "diffusers",
+      "name": "Diffusers",
+      "description": "PyTorch 기반의 최신 확산 모델 라이브러리. 이미지, 비디오, 오디오 생성 지원",
+      "categoryId": "content-generation",
+      "moduleId": "application-service",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/huggingface/diffusers",
+      "docsUrl": "https://huggingface.co/docs/diffusers",
+      "websiteUrl": "https://huggingface.co/diffusers",
+      "koreanSupport": true,
+      "tags": [
+        "diffusion",
+        "stable-diffusion",
+        "image-generation",
+        "huggingface",
+        "pytorch"
+      ],
+      "meta": {
+        "stars": 32160,
+        "lastUpdated": "2025-12-22T02:23:05Z",
+        "fetchedAt": "2025-12-22T04:18:57.847Z",
+        "forks": 6626,
+        "lastCommit": "2025-12-22T04:10:11Z"
+      }
+    },
+    {
+      "id": "elasticsearch",
+      "name": "Elasticsearch",
+      "description": "분산 검색 및 분석 엔진. 추천 시스템 및 RAG 검색에 활용",
+      "categoryId": "recommendation-search",
+      "moduleId": "application-service",
+      "license": "SSPL-1.0",
+      "githubUrl": "https://github.com/elastic/elasticsearch",
+      "docsUrl": "https://www.elastic.co/docs",
+      "websiteUrl": "https://www.elastic.co/elasticsearch",
+      "koreanSupport": true,
+      "tags": [
+        "search",
+        "analytics",
+        "distributed",
+        "rag"
+      ],
+      "meta": {
+        "stars": 75690,
+        "lastUpdated": "2025-12-22T03:41:30Z",
+        "fetchedAt": "2025-12-22T04:18:58.498Z",
+        "forks": 25795,
+        "lastCommit": "2025-12-21T11:02:44Z"
+      }
+    },
+    {
+      "id": "monai",
+      "name": "MONAI",
+      "description": "의료 영상 AI를 위한 PyTorch 기반 오픈소스 프레임워크",
+      "categoryId": "industry-solutions",
+      "moduleId": "application-service",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/Project-MONAI/MONAI",
+      "docsUrl": "https://docs.monai.io/",
+      "websiteUrl": "https://monai.io/",
+      "koreanSupport": false,
+      "tags": [
+        "healthcare",
+        "medical-imaging",
+        "pytorch",
+        "deep-learning"
+      ],
+      "meta": {
+        "stars": 7636,
+        "lastUpdated": "2025-12-21T23:40:48Z",
+        "fetchedAt": "2025-12-22T04:18:59.019Z",
+        "forks": 1386,
+        "lastCommit": "2025-12-02T07:11:50Z"
+      }
+    },
+    {
+      "id": "apollo-auto",
+      "name": "Apollo Auto",
+      "description": "Baidu의 자율주행 오픈 플랫폼. 자율주행 소프트웨어 스택 제공",
+      "categoryId": "industry-solutions",
+      "moduleId": "application-service",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/ApolloAuto/apollo",
+      "docsUrl": "https://apollo.auto/developer.html",
+      "websiteUrl": "https://apollo.auto/",
+      "koreanSupport": false,
+      "tags": [
+        "autonomous-driving",
+        "mobility",
+        "robotics",
+        "perception"
+      ],
+      "meta": {
+        "stars": 26316,
+        "lastUpdated": "2025-12-21T19:11:47Z",
+        "fetchedAt": "2025-12-22T04:18:59.510Z",
+        "forks": 9942,
+        "lastCommit": "2025-08-18T03:32:18Z"
+      }
+    },
+    {
+      "id": "openvoice",
+      "name": "OpenVoice",
+      "description": "즉각적인 음성 복제 및 다국어 지원 TTS 오픈소스 모델",
+      "categoryId": "content-generation",
+      "moduleId": "application-service",
+      "license": "MIT",
+      "githubUrl": "https://github.com/myshell-ai/OpenVoice",
+      "docsUrl": "https://github.com/myshell-ai/OpenVoice#readme",
+      "websiteUrl": "https://research.myshell.ai/open-voice",
+      "koreanSupport": false,
+      "tags": [
+        "voice-cloning",
+        "tts",
+        "audio-generation",
+        "multilingual"
+      ],
+      "meta": {
+        "stars": 35670,
+        "lastUpdated": "2025-12-22T03:14:29Z",
+        "fetchedAt": "2025-12-22T04:18:59.950Z",
+        "forks": 3974,
+        "lastCommit": "2025-04-19T16:00:00Z"
+      }
+    },
+    {
+      "id": "meilisearch",
+      "name": "Meilisearch",
+      "description": "Lightning-fast search engine that fits effortlessly into your apps, websites, and workflow",
+      "categoryId": "recommendation-search",
+      "moduleId": "application-service",
+      "license": "MIT",
+      "githubUrl": "https://github.com/meilisearch/meilisearch",
+      "koreanSupport": false,
+      "tags": [
+        "search",
+        "full-text-search",
+        "rust",
+        "typo-tolerant"
+      ],
+      "meta": {
+        "stars": 47000,
+        "forks": 1800,
+        "lastUpdated": "2025-12-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "typesense",
+      "name": "Typesense",
+      "description": "Open source, typo-tolerant search engine optimized for instant (as-you-type) search",
+      "categoryId": "recommendation-search",
+      "moduleId": "application-service",
+      "license": "GPL-3.0",
+      "githubUrl": "https://github.com/typesense/typesense",
+      "koreanSupport": false,
+      "tags": [
+        "search",
+        "instant-search",
+        "typo-tolerant",
+        "cpp"
+      ],
+      "meta": {
+        "stars": 21000,
+        "forks": 680,
+        "lastUpdated": "2025-12-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "vespa",
+      "name": "Vespa",
+      "description": "Yahoo's open source big data serving engine — search, recommendation, personalization at scale",
+      "categoryId": "recommendation-search",
+      "moduleId": "application-service",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/vespa-engine/vespa",
+      "koreanSupport": false,
+      "tags": [
+        "search",
+        "recommendation",
+        "vector-search",
+        "real-time"
+      ],
+      "meta": {
+        "stars": 5600,
+        "forks": 580,
+        "lastUpdated": "2025-12-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "deepchem",
+      "name": "DeepChem",
+      "description": "Deep learning for drug discovery, materials science, quantum chemistry, and biology",
+      "categoryId": "industry-solutions",
+      "moduleId": "application-service",
+      "license": "MIT",
+      "githubUrl": "https://github.com/deepchem/deepchem",
+      "koreanSupport": false,
+      "tags": [
+        "drug-discovery",
+        "chemistry",
+        "biology",
+        "materials-science"
+      ],
+      "meta": {
+        "stars": 5500,
+        "forks": 1800,
+        "lastUpdated": "2025-11-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "biogpt",
+      "name": "BioGPT",
+      "description": "Generative pre-trained transformer for biomedical text generation and mining by Microsoft Research",
+      "categoryId": "industry-solutions",
+      "moduleId": "application-service",
+      "license": "MIT",
+      "githubUrl": "https://github.com/microsoft/BioGPT",
+      "koreanSupport": false,
+      "tags": [
+        "biomedical",
+        "nlp",
+        "text-generation",
+        "healthcare"
+      ],
+      "meta": {
+        "stars": 3200,
+        "forks": 490,
+        "lastUpdated": "2025-06-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "stable-diffusion-webui",
+      "name": "Stable Diffusion WebUI",
+      "description": "A browser interface for Stable Diffusion — the most popular SD frontend with extensive extension ecosystem",
+      "categoryId": "content-generation",
+      "moduleId": "application-service",
+      "license": "AGPL-3.0",
+      "githubUrl": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+      "koreanSupport": false,
+      "tags": [
+        "stable-diffusion",
+        "image-generation",
+        "webui",
+        "txt2img"
+      ],
+      "meta": {
+        "stars": 145000,
+        "forks": 27000,
+        "lastUpdated": "2025-12-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "invoke-ai",
+      "name": "InvokeAI",
+      "description": "Creative engine for Stable Diffusion — professional creative tools for generating and editing images",
+      "categoryId": "content-generation",
+      "moduleId": "application-service",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/invoke-ai/InvokeAI",
+      "koreanSupport": false,
+      "tags": [
+        "stable-diffusion",
+        "image-generation",
+        "generative-ai",
+        "art"
+      ],
+      "meta": {
+        "stars": 23000,
+        "forks": 2300,
+        "lastUpdated": "2025-12-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "open-sora",
+      "name": "Open-Sora",
+      "description": "Democratizing efficient video production — open-source Sora-like video generation with up to 16s, 720p, any aspect ratio",
+      "categoryId": "content-generation",
+      "moduleId": "application-service",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/hpcaitech/Open-Sora",
+      "koreanSupport": false,
+      "tags": [
+        "video-generation",
+        "text-to-video",
+        "diffusion",
+        "sora"
+      ],
+      "meta": {
+        "stars": 22000,
+        "forks": 2100,
+        "lastUpdated": "2025-12-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "browser-use",
+      "name": "Browser Use",
+      "description": "Make websites accessible for AI agents — enable LLMs to interact with any website through natural language",
+      "categoryId": "autonomous-agent",
+      "moduleId": "application-service",
+      "license": "MIT",
+      "githubUrl": "https://github.com/browser-use/browser-use",
+      "koreanSupport": false,
+      "tags": [
+        "browser-automation",
+        "agent",
+        "web-interaction",
+        "llm"
+      ],
+      "meta": {
+        "stars": 51000,
+        "forks": 5200,
+        "lastUpdated": "2025-12-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "openclaw",
+      "name": "OpenClaw",
+      "description": "모든 OS와 플랫폼을 지원하는 개인 AI 어시스턴트. 데이터 소유권을 사용자에게 보장하는 오픈소스 AI 비서",
+      "categoryId": "ai-chatbot",
+      "moduleId": "application-service",
+      "license": "MIT",
+      "githubUrl": "https://github.com/openclaw/openclaw",
+      "docsUrl": "https://openclaw.ai",
+      "websiteUrl": "https://openclaw.ai",
+      "koreanSupport": false,
+      "tags": ["ai-assistant", "personal-ai", "own-your-data", "cross-platform"],
+      "meta": {
+        "stars": 240661,
+        "lastUpdated": "2026-03-01T03:33:17Z",
+        "fetchedAt": "2026-03-01T03:33:47.000Z",
+        "forks": 46493,
+        "lastCommit": "2026-03-01T03:25:31Z"
+      }
+    },
+    {
+      "id": "aionui",
+      "name": "AionUi",
+      "description": "다양한 AI CLI 도구(Claude Code, Gemini CLI, Codex 등)를 위한 무료 로컬 오픈소스 협업 앱 및 웹UI",
+      "categoryId": "ai-chatbot",
+      "moduleId": "application-service",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/iOfficeAI/AionUi",
+      "docsUrl": "https://www.aionui.com",
+      "websiteUrl": "https://www.aionui.com",
+      "koreanSupport": false,
+      "tags": ["ai-agent", "webui", "cowork", "chatbot", "local"],
+      "meta": {
+        "stars": 17424,
+        "lastUpdated": "2026-03-01T03:36:42Z",
+        "fetchedAt": "2026-03-01T03:36:00.000Z",
+        "forks": 1332,
+        "lastCommit": "2026-03-01T00:36:19Z"
+      }
+    }
+  ]
+}

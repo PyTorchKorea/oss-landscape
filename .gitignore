@@ -1,0 +1,29 @@
+# Dependencies
+node_modules
+
+# Build output
+dist/
+
+# Environment
+.env
+.env.*
+!.env.example
+*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode
+.idea
+*.swp
+*.swo
+
+# OMC / Claude
+.omc
+.claude
+
+# Logs
+*.log
+npm-debug.log*

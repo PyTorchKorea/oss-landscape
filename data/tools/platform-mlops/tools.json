@@ -1,0 +1,741 @@
+{
+    "tools": [
+        {
+            "id": "mlflow",
+            "name": "MLflow",
+            "description": "ML 라이프사이클 관리 오픈소스 플랫폼",
+            "categoryId": "llmops-observability",
+            "moduleId": "platform-mlops",
+            "license": "Apache-2.0",
+            "githubUrl": "https://github.com/mlflow/mlflow",
+            "docsUrl": "https://mlflow.org/docs/latest/",
+            "websiteUrl": "https://mlflow.org",
+            "koreanSupport": false,
+            "tags": [
+                "mlops",
+                "experiment-tracking",
+                "model-registry"
+            ],
+            "meta": {
+                "stars": 23401,
+                "lastUpdated": "2025-12-22T03:31:46Z",
+                "fetchedAt": "2025-12-22T04:19:25.728Z",
+                "forks": 5086,
+                "lastCommit": "2025-12-22T04:04:15Z"
+            }
+        },
+        {
+            "id": "wandb",
+            "name": "Weights & Biases",
+            "description": "ML 실험 추적, 시각화, 협업 플랫폼",
+            "categoryId": "llmops-observability",
+            "moduleId": "platform-mlops",
+            "license": "MIT",
+            "githubUrl": "https://github.com/wandb/wandb",
+            "docsUrl": "https://docs.wandb.ai",
+            "websiteUrl": "https://wandb.ai",
+            "koreanSupport": true,
+            "tags": [
+                "experiment-tracking",
+                "visualization",
+                "collaboration"
+            ],
+            "meta": {
+                "stars": 10649,
+                "lastUpdated": "2025-12-22T01:08:10Z",
+                "fetchedAt": "2025-12-22T04:19:26.245Z",
+                "forks": 800,
+                "lastCommit": "2025-12-22T01:09:19Z"
+            }
+        },
+        {
+            "id": "clearml",
+            "name": "ClearML",
+            "description": "E2E MLOps 플랫폼. 실험 추적, 데이터 관리, 파이프라인",
+            "categoryId": "llmops-observability",
+            "moduleId": "platform-mlops",
+            "license": "Apache-2.0",
+            "githubUrl": "https://github.com/allegroai/clearml",
+            "docsUrl": "https://clear.ml/docs/",
+            "websiteUrl": "https://clear.ml/",
+            "koreanSupport": false,
+            "tags": [
+                "mlops",
+                "experiment-tracking",
+                "data-management"
+            ],
+            "meta": {
+                "stars": 6422,
+                "lastUpdated": "2025-12-21T02:37:57Z",
+                "fetchedAt": "2025-12-22T04:19:26.996Z",
+                "forks": 724,
+                "lastCommit": "2025-12-19T03:35:06Z"
+            }
+        },
+        {
+            "id": "aim",
+            "name": "Aim",
+            "description": "오픈소스 AI 메타데이터 추적 도구. 시각화 및 비교",
+            "categoryId": "llmops-observability",
+            "moduleId": "platform-mlops",
+            "license": "Apache-2.0",
+            "githubUrl": "https://github.com/aimhubio/aim",
+            "docsUrl": "https://aimstack.readthedocs.io/",
+            "websiteUrl": "https://aimstack.io/",
+            "koreanSupport": false,
+            "tags": [
+                "experiment-tracking",
+                "visualization",
+                "metadata"
+            ],
+            "meta": {
+                "stars": 5923,
+                "lastUpdated": "2025-12-20T22:03:36Z",
+                "fetchedAt": "2025-12-22T04:19:27.456Z",
+                "forks": 363,
+                "lastCommit": "2025-12-21T20:02:07Z"
+            }
+        },
+        {
+            "id": "huggingface-hub",
+            "name": "Hugging Face Hub",
+            "description": "ML 모델, 데이터셋 공유 플랫폼",
+            "categoryId": "model-serving",
+            "moduleId": "platform-mlops",
+            "license": "Apache-2.0",
+            "githubUrl": "https://github.com/huggingface/huggingface_hub",
+            "docsUrl": "https://huggingface.co/docs/huggingface_hub",
+            "websiteUrl": "https://huggingface.co",
+            "koreanSupport": true,
+            "tags": [
+                "model-hub",
+                "sharing",
+                "community"
+            ],
+            "meta": {
+                "stars": 3154,
+                "lastUpdated": "2025-12-21T23:02:01Z",
+                "fetchedAt": "2025-12-22T04:19:27.982Z",
+                "forks": 878,
+                "lastCommit": "2025-12-19T15:20:46Z"
+            }
+        },
+        {
+            "id": "kubeflow",
+            "name": "Kubeflow",
+            "description": "Kubernetes 기반 ML 워크플로우 플랫폼",
+            "categoryId": "model-serving",
+            "moduleId": "platform-mlops",
+            "license": "Apache-2.0",
+            "githubUrl": "https://github.com/kubeflow/kubeflow",
+            "docsUrl": "https://www.kubeflow.org/docs/",
+            "websiteUrl": "https://www.kubeflow.org",
+            "koreanSupport": false,
+            "tags": [
+                "kubernetes",
+                "pipeline",
+                "mlops"
+            ],
+            "meta": {
+                "stars": 15352,
+                "lastUpdated": "2025-12-22T03:49:16Z",
+                "fetchedAt": "2025-12-22T04:19:28.466Z",
+                "forks": 2586,
+                "lastCommit": "2025-12-20T00:27:55Z"
+            }
+        },
+        {
+            "id": "langchain",
+            "name": "LangChain",
+            "description": "LLM 애플리케이션 개발 프레임워크. 체인, RAG, 에이전트",
+            "categoryId": "agent-orchestration",
+            "moduleId": "platform-mlops",
+            "license": "MIT",
+            "githubUrl": "https://github.com/langchain-ai/langchain",
+            "docsUrl": "https://python.langchain.com/docs/",
+            "websiteUrl": "https://langchain.com",
+            "koreanSupport": true,
+            "tags": [
+                "llm",
+                "agent",
+                "rag",
+                "chain"
+            ],
+            "meta": {
+                "stars": 122398,
+                "lastUpdated": "2025-12-22T04:18:38Z",
+                "fetchedAt": "2025-12-22T04:19:28.976Z",
+                "forks": 20173,
+                "lastCommit": "2025-12-22T01:31:51Z"
+            }
+        },
+        {
+            "id": "llamaindex",
+            "name": "LlamaIndex",
+            "description": "LLM 데이터 프레임워크. RAG 및 에이전트 구축",
+            "categoryId": "agent-orchestration",
+            "moduleId": "platform-mlops",
+            "license": "MIT",
+            "githubUrl": "https://github.com/run-llama/llama_index",
+            "docsUrl": "https://docs.llamaindex.ai/",
+            "websiteUrl": "https://llamaindex.ai",
+            "koreanSupport": false,
+            "tags": [
+                "llm",
+                "rag",
+                "data-framework",
+                "agents"
+            ],
+            "meta": {
+                "stars": 45939,
+                "lastUpdated": "2025-12-22T03:29:15Z",
+                "fetchedAt": "2025-12-22T04:19:29.490Z",
+                "forks": 6653,
+                "lastCommit": "2025-12-19T03:24:37Z"
+            }
+        },
+        {
+            "id": "autogen",
+            "name": "AutoGen",
+            "description": "Microsoft의 에이전틱 AI 프레임워크",
+            "categoryId": "agent-orchestration",
+            "moduleId": "platform-mlops",
+            "license": "CC-BY-4.0",
+            "githubUrl": "https://github.com/microsoft/autogen",
+            "docsUrl": "https://microsoft.github.io/autogen/",
+            "websiteUrl": "https://microsoft.github.io/autogen/",
+            "koreanSupport": false,
+            "tags": [
+                "agent",
+                "multi-agent",
+                "microsoft"
+            ],
+            "meta": {
+                "stars": 52725,
+                "lastUpdated": "2025-12-22T03:53:11Z",
+                "fetchedAt": "2025-12-22T04:19:30.058Z",
+                "forks": 8016,
+                "lastCommit": "2025-10-08T04:58:17Z"
+            }
+        },
+        {
+            "id": "crewai",
+            "name": "CrewAI",
+            "description": "역할 기반 멀티 에이전트 오케스트레이션",
+            "categoryId": "agent-orchestration",
+            "moduleId": "platform-mlops",
+            "license": "MIT",
+            "githubUrl": "https://github.com/crewAIInc/crewAI",
+            "docsUrl": "https://docs.crewai.com",
+            "websiteUrl": "https://crewai.com",
+            "koreanSupport": false,
+            "tags": [
+                "agent",
+                "multi-agent",
+                "orchestration"
+            ],
+            "meta": {
+                "stars": 41629,
+                "lastUpdated": "2025-12-22T04:19:19Z",
+                "fetchedAt": "2025-12-22T04:19:30.499Z",
+                "forks": 5575,
+                "lastCommit": "2025-12-20T15:09:47Z"
+            }
+        },
+        {
+            "id": "n8n",
+            "name": "n8n",
+            "description": "워크플로우 자동화 플랫폼. AI 에이전트 통합",
+            "categoryId": "interoperability",
+            "moduleId": "platform-mlops",
+            "license": "Apache-2.0",
+            "githubUrl": "https://github.com/n8n-io/n8n",
+            "docsUrl": "https://docs.n8n.io/",
+            "websiteUrl": "https://n8n.io/",
+            "koreanSupport": false,
+            "tags": [
+                "workflow",
+                "automation",
+                "integration"
+            ],
+            "meta": {
+                "stars": 164080,
+                "lastUpdated": "2025-12-22T04:02:28Z",
+                "fetchedAt": "2025-12-22T04:19:30.933Z",
+                "forks": 52436,
+                "lastCommit": "2025-12-22T00:23:31Z"
+            }
+        },
+        {
+            "id": "metaflow",
+            "name": "Metaflow",
+            "description": "Netflix의 ML 인프라 프레임워크",
+            "categoryId": "model-serving",
+            "moduleId": "platform-mlops",
+            "license": "Apache-2.0",
+            "githubUrl": "https://github.com/Netflix/metaflow",
+            "docsUrl": "https://docs.metaflow.org/",
+            "websiteUrl": "https://metaflow.org/",
+            "koreanSupport": false,
+            "tags": [
+                "ml-infrastructure",
+                "netflix",
+                "pipeline"
+            ],
+            "meta": {
+                "stars": 9678,
+                "lastUpdated": "2025-12-22T02:50:25Z",
+                "fetchedAt": "2025-12-22T04:19:31.416Z",
+                "forks": 933,
+                "lastCommit": "2025-12-19T01:56:45Z"
+            }
+        },
+        {
+            "id": "zenml",
+            "name": "ZenML",
+            "description": "ML 파이프라인 오케스트레이션 프레임워크",
+            "categoryId": "model-serving",
+            "moduleId": "platform-mlops",
+            "license": "Apache-2.0",
+            "githubUrl": "https://github.com/zenml-io/zenml",
+            "docsUrl": "https://docs.zenml.io/",
+            "websiteUrl": "https://zenml.io/",
+            "koreanSupport": false,
+            "tags": [
+                "mlops",
+                "pipeline",
+                "orchestration"
+            ],
+            "meta": {
+                "stars": 5107,
+                "lastUpdated": "2025-12-21T01:39:34Z",
+                "fetchedAt": "2025-12-22T04:19:31.983Z",
+                "forks": 563,
+                "lastCommit": "2025-12-19T13:47:05Z"
+            }
+        },
+        {
+            "id": "feast",
+            "name": "Feast",
+            "description": "오픈소스 피처 스토어. 온라인/오프라인 피처 서빙",
+            "categoryId": "model-serving",
+            "moduleId": "platform-mlops",
+            "license": "Apache-2.0",
+            "githubUrl": "https://github.com/feast-dev/feast",
+            "docsUrl": "https://docs.feast.dev/",
+            "websiteUrl": "https://feast.dev",
+            "koreanSupport": false,
+            "tags": [
+                "feature-store",
+                "mlops",
+                "data"
+            ],
+            "meta": {
+                "stars": 6553,
+                "lastUpdated": "2025-12-22T02:16:25Z",
+                "fetchedAt": "2025-12-22T04:19:32.493Z",
+                "forks": 1186,
+                "lastCommit": "2025-12-22T03:51:40Z"
+            }
+        },
+        {
+            "id": "mem0",
+            "name": "Mem0",
+            "description": "AI 에이전트를 위한 장기 메모리 레이어",
+            "categoryId": "memory-knowledge",
+            "moduleId": "platform-mlops",
+            "license": "Apache-2.0",
+            "githubUrl": "https://github.com/mem0ai/mem0",
+            "docsUrl": "https://docs.mem0.ai/",
+            "websiteUrl": "https://mem0.ai",
+            "koreanSupport": false,
+            "tags": [
+                "memory",
+                "agent",
+                "long-term-memory"
+            ],
+            "meta": {
+                "stars": 44536,
+                "lastUpdated": "2025-12-22T02:52:06Z",
+                "fetchedAt": "2025-12-22T04:19:33.008Z",
+                "forks": 4837,
+                "lastCommit": "2025-12-17T19:26:54Z"
+            }
+        },
+        {
+            "id": "graphrag",
+            "name": "GraphRAG",
+            "description": "Microsoft의 그래프 기반 RAG 시스템",
+            "categoryId": "rag-graphrag",
+            "moduleId": "platform-mlops",
+            "license": "MIT",
+            "githubUrl": "https://github.com/microsoft/graphrag",
+            "docsUrl": "https://microsoft.github.io/graphrag/",
+            "websiteUrl": "https://microsoft.github.io/graphrag/",
+            "koreanSupport": false,
+            "tags": [
+                "rag",
+                "graph",
+                "knowledge-graph"
+            ],
+            "meta": {
+                "stars": 29881,
+                "lastUpdated": "2025-12-22T03:33:14Z",
+                "fetchedAt": "2025-12-22T04:19:33.591Z",
+                "forks": 3155,
+                "lastCommit": "2025-12-20T01:41:15Z"
+            }
+        },
+        {
+            "id": "haystack",
+            "name": "Haystack",
+            "description": "LLM 애플리케이션 구축 프레임워크",
+            "categoryId": "rag-graphrag",
+            "moduleId": "platform-mlops",
+            "license": "Apache-2.0",
+            "githubUrl": "https://github.com/deepset-ai/haystack",
+            "docsUrl": "https://docs.haystack.deepset.ai/",
+            "websiteUrl": "https://haystack.deepset.ai/",
+            "koreanSupport": false,
+            "tags": [
+                "rag",
+                "nlp",
+                "search",
+                "pipeline"
+            ],
+            "meta": {
+                "stars": 23693,
+                "lastUpdated": "2025-12-21T23:13:46Z",
+                "fetchedAt": "2025-12-22T04:19:34.235Z",
+                "forks": 2534,
+                "lastCommit": "2025-12-19T17:45:46Z"
+            }
+        },
+        {
+            "id": "semantic-kernel",
+            "name": "Semantic Kernel",
+            "description": "Microsoft's SDK for integrating LLMs into conventional programming languages — plugins, planners, memory",
+            "categoryId": "agent-orchestration",
+            "moduleId": "platform-mlops",
+            "license": "MIT",
+            "githubUrl": "https://github.com/microsoft/semantic-kernel",
+            "koreanSupport": false,
+            "tags": [
+                "llm",
+                "agent",
+                "orchestration",
+                "microsoft",
+                "plugins"
+            ],
+            "meta": {
+                "stars": 23000,
+                "forks": 3400,
+                "lastUpdated": "2025-12-01T00:00:00Z",
+                "fetchedAt": "2026-03-01T00:00:00.000Z"
+            }
+        },
+        {
+            "id": "camel",
+            "name": "CAMEL",
+            "description": "Communicative Agents for Mind Exploration of Large Scale Language Model Society",
+            "categoryId": "agent-orchestration",
+            "moduleId": "platform-mlops",
+            "license": "Apache-2.0",
+            "githubUrl": "https://github.com/camel-ai/camel",
+            "koreanSupport": false,
+            "tags": [
+                "multi-agent",
+                "llm",
+                "role-playing",
+                "camel"
+            ],
+            "meta": {
+                "stars": 6500,
+                "forks": 820,
+                "lastUpdated": "2025-12-01T00:00:00Z",
+                "fetchedAt": "2026-03-01T00:00:00.000Z"
+            }
+        },
+        {
+            "id": "litellm",
+            "name": "LiteLLM",
+            "description": "Call 100+ LLMs using the OpenAI format — Bedrock, Azure, OpenAI, Cohere, Anthropic, Ollama, etc.",
+            "categoryId": "prompt-management",
+            "moduleId": "platform-mlops",
+            "license": "MIT",
+            "githubUrl": "https://github.com/BerriAI/litellm",
+            "koreanSupport": false,
+            "tags": [
+                "llm",
+                "proxy",
+                "openai-compatible",
+                "multi-provider"
+            ],
+            "meta": {
+                "stars": 16000,
+                "forks": 1900,
+                "lastUpdated": "2025-12-01T00:00:00Z",
+                "fetchedAt": "2026-03-01T00:00:00.000Z"
+            }
+        },
+        {
+            "id": "composio",
+            "name": "Composio",
+            "description": "Toolset for AI agents — 250+ integrations (GitHub, Slack, Gmail, etc.) with managed auth",
+            "categoryId": "interoperability",
+            "moduleId": "platform-mlops",
+            "license": "Apache-2.0",
+            "githubUrl": "https://github.com/ComposioHQ/composio",
+            "koreanSupport": false,
+            "tags": [
+                "tools",
+                "integrations",
+                "agent",
+                "mcp",
+                "apis"
+            ],
+            "meta": {
+                "stars": 18000,
+                "forks": 2200,
+                "lastUpdated": "2025-12-01T00:00:00Z",
+                "fetchedAt": "2026-03-01T00:00:00.000Z"
+            }
+        },
+        {
+            "id": "langfuse",
+            "name": "Langfuse",
+            "description": "Open source LLM engineering platform — tracing, evals, prompt management, and metrics",
+            "categoryId": "llmops-observability",
+            "moduleId": "platform-mlops",
+            "license": "MIT",
+            "githubUrl": "https://github.com/langfuse/langfuse",
+            "koreanSupport": false,
+            "tags": [
+                "llmops",
+                "observability",
+                "tracing",
+                "prompt-management",
+                "evals"
+            ],
+            "meta": {
+                "stars": 8500,
+                "forks": 780,
+                "lastUpdated": "2025-12-01T00:00:00Z",
+                "fetchedAt": "2026-03-01T00:00:00.000Z"
+            }
+        },
+        {
+            "id": "mcp-sdk",
+            "name": "Model Context Protocol SDK",
+            "description": "Official Python SDK for the Model Context Protocol — connect AI assistants to data sources and tools",
+            "categoryId": "interoperability",
+            "moduleId": "platform-mlops",
+            "license": "MIT",
+            "githubUrl": "https://github.com/modelcontextprotocol/python-sdk",
+            "koreanSupport": false,
+            "tags": [
+                "mcp",
+                "protocol",
+                "tool-use",
+                "ai-integration",
+                "context"
+            ],
+            "meta": {
+                "stars": 4200,
+                "forks": 420,
+                "lastUpdated": "2025-12-01T00:00:00Z",
+                "fetchedAt": "2026-03-01T00:00:00.000Z"
+            }
+        },
+        {
+            "id": "kserve",
+            "name": "KServe",
+            "description": "Kubernetes-native model inference platform — standard serverless ML inference on Kubernetes",
+            "categoryId": "model-serving",
+            "moduleId": "platform-mlops",
+            "license": "Apache-2.0",
+            "githubUrl": "https://github.com/kserve/kserve",
+            "koreanSupport": false,
+            "tags": [
+                "model-serving",
+                "kubernetes",
+                "serverless",
+                "inference",
+                "mlops"
+            ],
+            "meta": {
+                "stars": 3700,
+                "forks": 680,
+                "lastUpdated": "2025-12-01T00:00:00Z",
+                "fetchedAt": "2026-03-01T00:00:00.000Z"
+            }
+        },
+        {
+            "id": "superagi",
+            "name": "SuperAGI",
+            "description": "A dev-first open source autonomous AI agent framework — build, manage, and run useful autonomous agents",
+            "categoryId": "agent-orchestration",
+            "moduleId": "platform-mlops",
+            "license": "MIT",
+            "githubUrl": "https://github.com/TransformerOptimus/SuperAGI",
+            "koreanSupport": false,
+            "tags": [
+                "autonomous-agent",
+                "agi",
+                "agent-framework",
+                "tools",
+                "memory"
+            ],
+            "meta": {
+                "stars": 15500,
+                "forks": 1900,
+                "lastUpdated": "2025-12-01T00:00:00Z",
+                "fetchedAt": "2026-03-01T00:00:00.000Z"
+            }
+        },
+        {
+            "id": "letta",
+            "name": "Letta",
+            "description": "Framework for creating stateful LLM agents with long-term memory — formerly MemGPT",
+            "categoryId": "memory-knowledge",
+            "moduleId": "platform-mlops",
+            "license": "Apache-2.0",
+            "githubUrl": "https://github.com/letta-ai/letta",
+            "koreanSupport": false,
+            "tags": [
+                "memory",
+                "agent",
+                "stateful",
+                "memgpt",
+                "long-term-memory"
+            ],
+            "meta": {
+                "stars": 12500,
+                "forks": 1400,
+                "lastUpdated": "2025-12-01T00:00:00Z",
+                "fetchedAt": "2026-03-01T00:00:00.000Z"
+            }
+        },
+        {
+            "id": "cognee",
+            "name": "Cognee",
+            "description": "Memory management for AI applications — deterministic memory layer for agents using knowledge graphs and vector stores",
+            "categoryId": "memory-knowledge",
+            "moduleId": "platform-mlops",
+            "license": "Apache-2.0",
+            "githubUrl": "https://github.com/topoteretes/cognee",
+            "koreanSupport": false,
+            "tags": [
+                "memory",
+                "knowledge-graph",
+                "agent",
+                "rag"
+            ],
+            "meta": {
+                "stars": 2200,
+                "forks": 200,
+                "lastUpdated": "2025-12-01T00:00:00Z",
+                "fetchedAt": "2026-03-01T00:00:00.000Z"
+            }
+        },
+        {
+            "id": "promptflow",
+            "name": "Prompt Flow",
+            "description": "Microsoft's suite of tools for building high-quality LLM apps — from prototyping to production with prompt engineering and evaluation",
+            "categoryId": "prompt-management",
+            "moduleId": "platform-mlops",
+            "license": "MIT",
+            "githubUrl": "https://github.com/microsoft/promptflow",
+            "koreanSupport": false,
+            "tags": [
+                "prompt-engineering",
+                "evaluation",
+                "microsoft",
+                "llm-app",
+                "flow"
+            ],
+            "meta": {
+                "stars": 10000,
+                "forks": 900,
+                "lastUpdated": "2025-12-01T00:00:00Z",
+                "fetchedAt": "2026-03-01T00:00:00.000Z"
+            }
+        },
+        {
+            "id": "ragflow",
+            "name": "RAGFlow",
+            "description": "Open-source RAG engine based on deep document understanding — chunk-free parsing, grounded citations, reduced hallucinations",
+            "categoryId": "rag-graphrag",
+            "moduleId": "platform-mlops",
+            "license": "Apache-2.0",
+            "githubUrl": "https://github.com/infiniflow/ragflow",
+            "koreanSupport": false,
+            "tags": [
+                "rag",
+                "document-understanding",
+                "chunking",
+                "citation"
+            ],
+            "meta": {
+                "stars": 30000,
+                "forks": 3000,
+                "lastUpdated": "2025-12-01T00:00:00Z",
+                "fetchedAt": "2026-03-01T00:00:00.000Z"
+            }
+        },
+        {
+            "id": "evidently-ai",
+            "name": "Evidently AI",
+            "description": "An open-source ML and LLM observability framework for evaluating, testing, and monitoring AI-powered products",
+            "categoryId": "llmops-observability",
+            "moduleId": "platform-mlops",
+            "license": "Apache-2.0",
+            "githubUrl": "https://github.com/evidentlyai/evidently",
+            "koreanSupport": false,
+            "tags": ["monitoring", "observability", "data-drift", "llm"],
+            "meta": {
+                "stars": 5500,
+                "forks": 900,
+                "lastUpdated": "2025-01-01T00:00:00Z",
+                "lastCommit": "2025-01-01T00:00:00Z",
+                "fetchedAt": "2026-03-01T00:00:00Z"
+            }
+        },
+        {
+            "id": "txtai",
+            "name": "txtai",
+            "description": "All-in-one open-source embeddings database for semantic search, LLM orchestration and language model workflows",
+            "categoryId": "memory-knowledge",
+            "moduleId": "platform-mlops",
+            "license": "Apache-2.0",
+            "githubUrl": "https://github.com/neuml/txtai",
+            "koreanSupport": false,
+            "tags": ["embeddings", "semantic-search", "knowledge-graph", "memory"],
+            "meta": {
+                "stars": 9000,
+                "forks": 650,
+                "lastUpdated": "2025-01-01T00:00:00Z",
+                "lastCommit": "2025-01-01T00:00:00Z",
+                "fetchedAt": "2026-03-01T00:00:00Z"
+            }
+        },
+        {
+            "id": "ncnn",
+            "name": "ncnn",
+            "description": "A high-performance neural network inference framework optimized for the mobile platform",
+            "categoryId": "on-device-runtime",
+            "moduleId": "platform-mlops",
+            "license": "BSD-3-Clause",
+            "githubUrl": "https://github.com/Tencent/ncnn",
+            "koreanSupport": false,
+            "tags": ["mobile", "inference", "on-device", "edge-ai"],
+            "meta": {
+                "stars": 20000,
+                "forks": 4100,
+                "lastUpdated": "2025-01-01T00:00:00Z",
+                "lastCommit": "2025-01-01T00:00:00Z",
+                "fetchedAt": "2026-03-01T00:00:00Z"
+            }
+        }
+    ]
+}

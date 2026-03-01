@@ -1,0 +1,134 @@
+name: Add Project from Issue
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: "add-project"
+  cancel-in-progress: false
+
+jobs:
+  add-project:
+    # Only run on issue comments (not PR comments) that contain /approve
+    if: |
+      github.event.issue.pull_request == null &&
+      contains(github.event.comment.body, '/approve') &&
+      contains(github.event.issue.labels.*.name, 'add-project') &&
+      (
+        github.event.comment.author_association == 'OWNER' ||
+        github.event.comment.author_association == 'MEMBER' ||
+        github.event.comment.author_association == 'COLLABORATOR'
+      )
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Parse issue body
+        id: parse
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.issue.body ?? ''
+
+            // Extract github_url
+            const urlMatch = body.match(/### GitHub 저장소 URL\s*\n+(.+)/m)
+            const githubUrl = urlMatch?.[1]?.trim()
+
+            // Extract module_id (first word before space/parenthesis)
+            const moduleMatch = body.match(/### 분류 \(모듈\)\s*\n+([^\s(]+)/)
+            const moduleId = moduleMatch?.[1]?.trim()
+
+            // Extract category_id
+            const catMatch = body.match(/### 카테고리 ID\s*\n+(.+)/m)
+            const categoryId = catMatch?.[1]?.trim()
+
+            // Extract optional description
+            const descMatch = body.match(/### 설명 \(선택\)\s*\n+([\s\S]+?)(?:\n###|$)/)
+            const description = descMatch?.[1]?.trim()
+
+            if (!githubUrl || !moduleId || !categoryId) {
+              core.setFailed(`Could not parse issue body. URL: ${githubUrl}, Module: ${moduleId}, Category: ${categoryId}`)
+              return
+            }
+
+            core.setOutput('github_url', githubUrl)
+            core.setOutput('module_id', moduleId)
+            core.setOutput('category_id', categoryId)
+            core.setOutput('description', description ?? '')
+
+      - name: Add tool to JSON
+        id: add_tool
+        run: |
+          ARGS="--github-url '${{ steps.parse.outputs.github_url }}' \
+                --module-id '${{ steps.parse.outputs.module_id }}' \
+                --category-id '${{ steps.parse.outputs.category_id }}'"
+
+          if [ -n "${{ steps.parse.outputs.description }}" ]; then
+            ARGS="$ARGS --description '${{ steps.parse.outputs.description }}'"
+          fi
+
+          eval "npm run add-tool -- $ARGS"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "feat: add ${{ steps.parse.outputs.github_url }} (closes #${{ github.event.issue.number }})"
+          file_pattern: 'data/**/*.json'
+          commit_user_name: 'github-actions[bot]'
+          commit_user_email: 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Comment success on issue
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `✅ 프로젝트가 성공적으로 추가되었습니다!\n\n` +
+                    `- **GitHub URL**: ${{ steps.parse.outputs.github_url }}\n` +
+                    `- **모듈**: ${{ steps.parse.outputs.module_id }}\n` +
+                    `- **카테고리**: ${{ steps.parse.outputs.category_id }}\n\n` +
+                    `다음 빌드 시 [OSS Landscape](https://oss-landscape.pytorch.kr)에 반영됩니다.`
+            })
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed'
+            })
+
+      - name: Comment failure on issue
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `❌ 프로젝트 추가에 실패했습니다. [워크플로 로그](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})를 확인해 주세요.\n\n` +
+                    `일반적인 원인:\n` +
+                    `- 이미 등록된 프로젝트\n` +
+                    `- 잘못된 모듈/카테고리 ID\n` +
+                    `- 비공개 또는 존재하지 않는 저장소`
+            })
