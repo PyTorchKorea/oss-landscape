@@ -1,548 +1,585 @@
 {
-    "tools": [
-        {
-            "id": "nemo-guardrails",
-            "name": "NeMo Guardrails",
-            "description": "NVIDIA의 LLM 대화 가드레일 프레임워크",
-            "categoryId": "guardrails",
-            "moduleId": "security-governance",
-            "license": "Apache-2.0",
-            "githubUrl": "https://github.com/NVIDIA/NeMo-Guardrails",
-            "docsUrl": "https://docs.nvidia.com/nemo/guardrails/",
-            "websiteUrl": "https://github.com/NVIDIA/NeMo-Guardrails",
-            "koreanSupport": false,
-            "tags": [
-                "guardrails",
-                "safety",
-                "llm",
-                "nvidia"
-            ],
-            "meta": {
-                "stars": 5426,
-                "lastUpdated": "2025-12-21T20:21:16Z",
-                "fetchedAt": "2025-12-22T04:19:35.243Z",
-                "forks": 575,
-                "lastCommit": "2025-12-21T01:08:27Z"
-            }
-        },
-        {
-            "id": "llm-guard",
-            "name": "LLM Guard",
-            "description": "LLM 입출력 보안 가드레일. 프롬프트 인젝션 방어",
-            "categoryId": "security-testing",
-            "moduleId": "security-governance",
-            "license": "MIT",
-            "githubUrl": "https://github.com/protectai/llm-guard",
-            "docsUrl": "https://llm-guard.com/",
-            "websiteUrl": "https://llm-guard.com/",
-            "koreanSupport": false,
-            "tags": [
-                "guardrails",
-                "security",
-                "llm",
-                "protection"
-            ],
-            "meta": {
-                "stars": 2337,
-                "lastUpdated": "2025-12-21T22:12:57Z",
-                "fetchedAt": "2025-12-22T04:19:35.737Z",
-                "forks": 315,
-                "lastCommit": "2025-12-15T13:07:25Z"
-            }
-        },
-        {
-            "id": "guardrails-ai",
-            "name": "Guardrails AI",
-            "description": "LLM 출력을 구조화하고 검증하는 프레임워크",
-            "categoryId": "guardrails",
-            "moduleId": "security-governance",
-            "license": "Apache-2.0",
-            "githubUrl": "https://github.com/guardrails-ai/guardrails",
-            "docsUrl": "https://docs.guardrailsai.com/",
-            "websiteUrl": "https://www.guardrailsai.com/",
-            "koreanSupport": false,
-            "tags": [
-                "guardrails",
-                "validation",
-                "structured-output"
-            ],
-            "meta": {
-                "stars": 6175,
-                "lastUpdated": "2025-12-22T02:19:51Z",
-                "fetchedAt": "2025-12-22T04:19:36.191Z",
-                "forks": 493,
-                "lastCommit": "2025-12-18T02:08:59Z"
-            }
-        },
-        {
-            "id": "rebuff",
-            "name": "Rebuff",
-            "description": "LLM 프롬프트 인젝션 탐지 도구",
-            "categoryId": "guardrails",
-            "moduleId": "security-governance",
-            "license": "MIT",
-            "githubUrl": "https://github.com/protectai/rebuff",
-            "docsUrl": "https://github.com/protectai/rebuff#readme",
-            "websiteUrl": "https://github.com/protectai/rebuff",
-            "koreanSupport": false,
-            "tags": [
-                "prompt-injection",
-                "detection",
-                "security"
-            ],
-            "meta": {
-                "stars": 1390,
-                "lastUpdated": "2025-12-21T20:53:39Z",
-                "fetchedAt": "2025-12-22T04:19:36.662Z",
-                "forks": 121,
-                "lastCommit": "2024-08-07T23:35:48Z"
-            }
-        },
-        {
-            "id": "openrlhf",
-            "name": "OpenRLHF",
-            "description": "RLHF 기반 LLM 정렬 학습 오픈소스 프레임워크",
-            "categoryId": "alignment",
-            "moduleId": "security-governance",
-            "license": "Apache-2.0",
-            "githubUrl": "https://github.com/OpenRLHF/OpenRLHF",
-            "docsUrl": "https://github.com/OpenRLHF/OpenRLHF#readme",
-            "websiteUrl": "https://github.com/OpenRLHF/OpenRLHF",
-            "koreanSupport": false,
-            "tags": [
-                "rlhf",
-                "alignment",
-                "llm",
-                "training"
-            ],
-            "meta": {
-                "stars": 8635,
-                "lastUpdated": "2025-12-22T00:35:10Z",
-                "fetchedAt": "2025-12-22T04:19:37.119Z",
-                "forks": 838,
-                "lastCommit": "2025-12-18T14:18:48Z"
-            }
-        },
-        {
-            "id": "aif360",
-            "name": "AIF360",
-            "description": "IBM의 AI 공정성 툴킷. 편향 탐지 및 완화",
-            "categoryId": "fairness-bias",
-            "moduleId": "security-governance",
-            "license": "Apache-2.0",
-            "githubUrl": "https://github.com/Trusted-AI/AIF360",
-            "docsUrl": "https://aif360.readthedocs.io/",
-            "websiteUrl": "https://aif360.res.ibm.com/",
-            "koreanSupport": false,
-            "tags": [
-                "fairness",
-                "bias",
-                "ethics",
-                "ml"
-            ],
-            "meta": {
-                "stars": 2723,
-                "lastUpdated": "2025-12-18T06:37:33Z",
-                "fetchedAt": "2025-12-22T04:19:37.568Z",
-                "forks": 897,
-                "lastCommit": "2025-11-13T16:48:24Z"
-            }
-        },
-        {
-            "id": "fairlearn",
-            "name": "Fairlearn",
-            "description": "Microsoft의 AI 공정성 평가 및 완화 툴킷",
-            "categoryId": "fairness-bias",
-            "moduleId": "security-governance",
-            "license": "MIT",
-            "githubUrl": "https://github.com/fairlearn/fairlearn",
-            "docsUrl": "https://fairlearn.org/",
-            "websiteUrl": "https://fairlearn.org/",
-            "koreanSupport": false,
-            "tags": [
-                "fairness",
-                "bias",
-                "microsoft",
-                "ml"
-            ],
-            "meta": {
-                "stars": 2177,
-                "lastUpdated": "2025-12-21T14:06:40Z",
-                "fetchedAt": "2025-12-22T04:19:38.047Z",
-                "forks": 478,
-                "lastCommit": "2025-12-19T18:48:58Z"
-            }
-        },
-        {
-            "id": "pyrit",
-            "name": "PyRIT",
-            "description": "Microsoft Azure의 AI 레드팀 자동화 프레임워크",
-            "categoryId": "security-testing",
-            "moduleId": "security-governance",
-            "license": "MIT",
-            "githubUrl": "https://github.com/Azure/PyRIT",
-            "docsUrl": "https://azure.github.io/PyRIT/",
-            "websiteUrl": "https://azure.github.io/PyRIT/",
-            "koreanSupport": false,
-            "tags": [
-                "red-team",
-                "security",
-                "testing",
-                "azure"
-            ],
-            "meta": {
-                "stars": 3226,
-                "lastUpdated": "2025-12-21T15:14:54Z",
-                "fetchedAt": "2025-12-22T04:19:38.612Z",
-                "forks": 630,
-                "lastCommit": "2025-12-21T14:41:20Z"
-            }
-        },
-        {
-            "id": "lm-evaluation-harness",
-            "name": "LM Evaluation Harness",
-            "description": "EleutherAI의 언어 모델 평가 프레임워크",
-            "categoryId": "governance",
-            "moduleId": "security-governance",
-            "license": "MIT",
-            "githubUrl": "https://github.com/EleutherAI/lm-evaluation-harness",
-            "docsUrl": "https://github.com/EleutherAI/lm-evaluation-harness#readme",
-            "websiteUrl": "https://github.com/EleutherAI/lm-evaluation-harness",
-            "koreanSupport": false,
-            "tags": [
-                "evaluation",
-                "benchmark",
-                "llm"
-            ],
-            "meta": {
-                "stars": 10991,
-                "lastUpdated": "2025-12-22T03:30:21Z",
-                "fetchedAt": "2025-12-22T04:19:39.150Z",
-                "forks": 2915,
-                "lastCommit": "2025-12-18T21:45:37Z"
-            }
-        },
-        {
-            "id": "ragas",
-            "name": "RAGAS",
-            "description": "RAG 파이프라인 평가 프레임워크. 자동 평가 지표",
-            "categoryId": "governance",
-            "moduleId": "security-governance",
-            "license": "Apache-2.0",
-            "githubUrl": "https://github.com/explodinggradients/ragas",
-            "docsUrl": "https://docs.ragas.io/",
-            "websiteUrl": "https://ragas.io/",
-            "koreanSupport": false,
-            "tags": [
-                "rag",
-                "evaluation",
-                "testing"
-            ],
-            "meta": {
-                "stars": 11807,
-                "lastUpdated": "2025-12-22T03:34:50Z",
-                "fetchedAt": "2025-12-22T04:19:39.926Z",
-                "forks": 1180,
-                "lastCommit": "2025-12-20T16:26:02Z"
-            }
-        },
-        {
-            "id": "promptfoo",
-            "name": "promptfoo",
-            "description": "LLM 프롬프트 테스트, 평가 및 레드팀 도구",
-            "categoryId": "governance",
-            "moduleId": "security-governance",
-            "license": "MIT",
-            "githubUrl": "https://github.com/promptfoo/promptfoo",
-            "docsUrl": "https://www.promptfoo.dev/docs/intro/",
-            "websiteUrl": "https://promptfoo.dev",
-            "koreanSupport": false,
-            "tags": [
-                "prompt",
-                "testing",
-                "evaluation",
-                "llm"
-            ],
-            "meta": {
-                "stars": 9521,
-                "lastUpdated": "2025-12-22T03:36:23Z",
-                "fetchedAt": "2025-12-22T04:19:40.366Z",
-                "forks": 827,
-                "lastCommit": "2025-12-22T04:16:26Z"
-            }
-        },
-        {
-            "id": "deepeval",
-            "name": "DeepEval",
-            "description": "LLM 애플리케이션 테스트 및 평가 프레임워크",
-            "categoryId": "governance",
-            "moduleId": "security-governance",
-            "license": "Apache-2.0",
-            "githubUrl": "https://github.com/confident-ai/deepeval",
-            "docsUrl": "https://docs.confident-ai.com/",
-            "websiteUrl": "https://www.confident-ai.com/",
-            "koreanSupport": false,
-            "tags": [
-                "evaluation",
-                "testing",
-                "llm",
-                "rag"
-            ],
-            "meta": {
-                "stars": 12676,
-                "lastUpdated": "2025-12-22T01:21:11Z",
-                "fetchedAt": "2025-12-22T04:19:40.870Z",
-                "forks": 1118,
-                "lastCommit": "2025-12-21T15:15:34Z"
-            }
-        },
-        {
-            "id": "trulens",
-            "name": "TruLens",
-            "description": "LLM 애플리케이션 평가 및 추적 라이브러리",
-            "categoryId": "governance",
-            "moduleId": "security-governance",
-            "license": "MIT",
-            "githubUrl": "https://github.com/truera/trulens",
-            "docsUrl": "https://www.trulens.org/",
-            "websiteUrl": "https://www.trulens.org/",
-            "koreanSupport": false,
-            "tags": [
-                "evaluation",
-                "observability",
-                "llm"
-            ],
-            "meta": {
-                "stars": 2988,
-                "lastUpdated": "2025-12-21T22:45:57Z",
-                "fetchedAt": "2025-12-22T04:19:41.507Z",
-                "forks": 237,
-                "lastCommit": "2025-12-20T01:17:26Z"
-            }
-        },
-        {
-            "id": "model-card-toolkit",
-            "name": "Model Card Toolkit",
-            "description": "Google의 ML 모델 문서화 도구",
-            "categoryId": "governance",
-            "moduleId": "security-governance",
-            "license": "Apache-2.0",
-            "githubUrl": "https://github.com/tensorflow/model-card-toolkit",
-            "docsUrl": "https://www.tensorflow.org/responsible_ai/model_card_toolkit/guide",
-            "websiteUrl": "https://www.tensorflow.org/responsible_ai/model_card_toolkit",
-            "koreanSupport": false,
-            "tags": [
-                "governance",
-                "documentation",
-                "responsible-ai"
-            ],
-            "meta": {
-                "stars": 441,
-                "lastUpdated": "2025-12-08T20:14:18Z",
-                "fetchedAt": "2025-12-22T04:19:42.120Z",
-                "forks": 90,
-                "lastCommit": "2023-07-26T12:05:00Z"
-            }
-        },
-        {
-            "id": "art",
-            "name": "Adversarial Robustness Toolbox",
-            "description": "IBM의 ML 보안 라이브러리. 적대적 공격/방어",
-            "categoryId": "security-testing",
-            "moduleId": "security-governance",
-            "license": "MIT",
-            "githubUrl": "https://github.com/Trusted-AI/adversarial-robustness-toolbox",
-            "docsUrl": "https://adversarial-robustness-toolbox.readthedocs.io/",
-            "websiteUrl": "https://adversarial-robustness-toolbox.readthedocs.io/",
-            "koreanSupport": false,
-            "tags": [
-                "adversarial",
-                "robustness",
-                "security",
-                "ml"
-            ],
-            "meta": {
-                "stars": 5734,
-                "lastUpdated": "2025-12-20T12:35:51Z",
-                "fetchedAt": "2025-12-22T04:19:42.621Z",
-                "forks": 1278,
-                "lastCommit": "2025-12-12T07:01:28Z"
-            }
-        },
-        {
-            "id": "shap",
-            "name": "SHAP",
-            "description": "A game theoretic approach to explain the output of any machine learning model using Shapley values",
-            "categoryId": "xai",
-            "moduleId": "security-governance",
-            "license": "MIT",
-            "githubUrl": "https://github.com/shap/shap",
-            "koreanSupport": false,
-            "tags": [
-                "xai",
-                "explainability",
-                "shapley",
-                "interpretability"
-            ],
-            "meta": {
-                "stars": 22000,
-                "forks": 3200,
-                "lastUpdated": "2025-12-01T00:00:00Z",
-                "fetchedAt": "2026-03-01T00:00:00.000Z"
-            }
-        },
-        {
-            "id": "lime",
-            "name": "LIME",
-            "description": "Local Interpretable Model-agnostic Explanations — explains predictions of any classifier",
-            "categoryId": "xai",
-            "moduleId": "security-governance",
-            "license": "BSD-2-Clause",
-            "githubUrl": "https://github.com/marcotcr/lime",
-            "koreanSupport": false,
-            "tags": [
-                "xai",
-                "explainability",
-                "local-explanation",
-                "interpretability"
-            ],
-            "meta": {
-                "stars": 11500,
-                "forks": 1800,
-                "lastUpdated": "2025-10-01T00:00:00Z",
-                "fetchedAt": "2026-03-01T00:00:00.000Z"
-            }
-        },
-        {
-            "id": "captum",
-            "name": "Captum",
-            "description": "Model interpretability and understanding library for PyTorch — integrated gradients, saliency maps, and more",
-            "categoryId": "xai",
-            "moduleId": "security-governance",
-            "license": "BSD-3-Clause",
-            "githubUrl": "https://github.com/pytorch/captum",
-            "koreanSupport": false,
-            "tags": [
-                "xai",
-                "pytorch",
-                "interpretability",
-                "attribution"
-            ],
-            "meta": {
-                "stars": 4800,
-                "forks": 490,
-                "lastUpdated": "2025-11-01T00:00:00Z",
-                "fetchedAt": "2026-03-01T00:00:00.000Z"
-            }
-        },
-        {
-            "id": "interpret",
-            "name": "InterpretML",
-            "description": "Fit interpretable models and explain blackbox systems with glassbox models and SHAP",
-            "categoryId": "xai",
-            "moduleId": "security-governance",
-            "license": "MIT",
-            "githubUrl": "https://github.com/interpretml/interpret",
-            "koreanSupport": false,
-            "tags": [
-                "xai",
-                "explainability",
-                "ebm",
-                "glassbox"
-            ],
-            "meta": {
-                "stars": 6100,
-                "forks": 720,
-                "lastUpdated": "2025-11-01T00:00:00Z",
-                "fetchedAt": "2026-03-01T00:00:00.000Z"
-            }
-        },
-        {
-            "id": "presidio",
-            "name": "Presidio",
-            "description": "Context aware, pluggable and customizable PII anonymization service for text and images",
-            "categoryId": "data-privacy",
-            "moduleId": "security-governance",
-            "license": "MIT",
-            "githubUrl": "https://github.com/microsoft/presidio",
-            "koreanSupport": false,
-            "tags": [
-                "pii",
-                "anonymization",
-                "data-privacy",
-                "nlp"
-            ],
-            "meta": {
-                "stars": 3500,
-                "forks": 680,
-                "lastUpdated": "2025-12-01T00:00:00Z",
-                "fetchedAt": "2026-03-01T00:00:00.000Z"
-            }
-        },
-        {
-            "id": "diffprivlib",
-            "name": "Diffprivlib",
-            "description": "IBM's general-purpose library for experimenting with, investigating, and developing differential privacy applications",
-            "categoryId": "data-privacy",
-            "moduleId": "security-governance",
-            "license": "MIT",
-            "githubUrl": "https://github.com/IBM/diffprivlib",
-            "koreanSupport": false,
-            "tags": [
-                "differential-privacy",
-                "privacy",
-                "machine-learning"
-            ],
-            "meta": {
-                "stars": 1800,
-                "forks": 250,
-                "lastUpdated": "2025-10-01T00:00:00Z",
-                "fetchedAt": "2026-03-01T00:00:00.000Z"
-            }
-        },
-        {
-            "id": "tensorflow-privacy",
-            "name": "TensorFlow Privacy",
-            "description": "Library for training machine learning models with privacy guarantees (differential privacy)",
-            "categoryId": "data-privacy",
-            "moduleId": "security-governance",
-            "license": "Apache-2.0",
-            "githubUrl": "https://github.com/tensorflow/privacy",
-            "koreanSupport": false,
-            "tags": [
-                "differential-privacy",
-                "tensorflow",
-                "privacy-preserving"
-            ],
-            "meta": {
-                "stars": 1900,
-                "forks": 430,
-                "lastUpdated": "2025-11-01T00:00:00Z",
-                "fetchedAt": "2026-03-01T00:00:00.000Z"
-            }
-        },
-        {
-            "id": "safe-rlhf",
-            "name": "Safe RLHF",
-            "description": "PKU-Alignment's constrained RLHF framework — aligning LLMs with human values through safe reinforcement learning from human feedback",
-            "categoryId": "alignment",
-            "moduleId": "security-governance",
-            "license": "Apache-2.0",
-            "githubUrl": "https://github.com/PKU-Alignment/safe-rlhf",
-            "koreanSupport": false,
-            "tags": [
-                "alignment",
-                "rlhf",
-                "safety",
-                "constrained-rl",
-                "human-values"
-            ],
-            "meta": {
-                "stars": 1500,
-                "forks": 140,
-                "lastUpdated": "2025-12-01T00:00:00Z",
-                "fetchedAt": "2026-03-01T00:00:00.000Z"
-            }
-        }
-    ]
+  "tools": [
+    {
+      "id": "nemo-guardrails",
+      "name": "NeMo Guardrails",
+      "description": "NVIDIA의 LLM 대화 가드레일 프레임워크",
+      "categoryId": "guardrails",
+      "moduleId": "security-governance",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/NVIDIA/NeMo-Guardrails",
+      "docsUrl": "https://docs.nvidia.com/nemo/guardrails/",
+      "websiteUrl": "https://github.com/NVIDIA/NeMo-Guardrails",
+      "koreanSupport": false,
+      "tags": [
+        "guardrails",
+        "safety",
+        "llm",
+        "nvidia"
+      ],
+      "meta": {
+        "stars": 5426,
+        "lastUpdated": "2025-12-21T20:21:16Z",
+        "fetchedAt": "2025-12-22T04:19:35.243Z",
+        "forks": 575,
+        "lastCommit": "2025-12-21T01:08:27Z"
+      }
+    },
+    {
+      "id": "llm-guard",
+      "name": "LLM Guard",
+      "description": "LLM 입출력 보안 가드레일. 프롬프트 인젝션 방어",
+      "categoryId": "security-testing",
+      "moduleId": "security-governance",
+      "license": "MIT",
+      "githubUrl": "https://github.com/protectai/llm-guard",
+      "docsUrl": "https://llm-guard.com/",
+      "websiteUrl": "https://llm-guard.com/",
+      "koreanSupport": false,
+      "tags": [
+        "guardrails",
+        "security",
+        "llm",
+        "protection"
+      ],
+      "meta": {
+        "stars": 2337,
+        "lastUpdated": "2025-12-21T22:12:57Z",
+        "fetchedAt": "2025-12-22T04:19:35.737Z",
+        "forks": 315,
+        "lastCommit": "2025-12-15T13:07:25Z"
+      }
+    },
+    {
+      "id": "guardrails-ai",
+      "name": "Guardrails AI",
+      "description": "LLM 출력을 구조화하고 검증하는 프레임워크",
+      "categoryId": "guardrails",
+      "moduleId": "security-governance",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/guardrails-ai/guardrails",
+      "docsUrl": "https://docs.guardrailsai.com/",
+      "websiteUrl": "https://www.guardrailsai.com/",
+      "koreanSupport": false,
+      "tags": [
+        "guardrails",
+        "validation",
+        "structured-output"
+      ],
+      "meta": {
+        "stars": 6175,
+        "lastUpdated": "2025-12-22T02:19:51Z",
+        "fetchedAt": "2025-12-22T04:19:36.191Z",
+        "forks": 493,
+        "lastCommit": "2025-12-18T02:08:59Z"
+      }
+    },
+    {
+      "id": "rebuff",
+      "name": "Rebuff",
+      "description": "LLM 프롬프트 인젝션 탐지 도구",
+      "categoryId": "guardrails",
+      "moduleId": "security-governance",
+      "license": "MIT",
+      "githubUrl": "https://github.com/protectai/rebuff",
+      "docsUrl": "https://github.com/protectai/rebuff#readme",
+      "websiteUrl": "https://github.com/protectai/rebuff",
+      "koreanSupport": false,
+      "tags": [
+        "prompt-injection",
+        "detection",
+        "security"
+      ],
+      "meta": {
+        "stars": 1390,
+        "lastUpdated": "2025-12-21T20:53:39Z",
+        "fetchedAt": "2025-12-22T04:19:36.662Z",
+        "forks": 121,
+        "lastCommit": "2024-08-07T23:35:48Z"
+      }
+    },
+    {
+      "id": "openrlhf",
+      "name": "OpenRLHF",
+      "description": "RLHF 기반 LLM 정렬 학습 오픈소스 프레임워크",
+      "categoryId": "alignment",
+      "moduleId": "security-governance",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/OpenRLHF/OpenRLHF",
+      "docsUrl": "https://github.com/OpenRLHF/OpenRLHF#readme",
+      "websiteUrl": "https://github.com/OpenRLHF/OpenRLHF",
+      "koreanSupport": false,
+      "tags": [
+        "rlhf",
+        "alignment",
+        "llm",
+        "training"
+      ],
+      "meta": {
+        "stars": 8635,
+        "lastUpdated": "2025-12-22T00:35:10Z",
+        "fetchedAt": "2025-12-22T04:19:37.119Z",
+        "forks": 838,
+        "lastCommit": "2025-12-18T14:18:48Z"
+      }
+    },
+    {
+      "id": "aif360",
+      "name": "AIF360",
+      "description": "IBM의 AI 공정성 툴킷. 편향 탐지 및 완화",
+      "categoryId": "fairness-bias",
+      "moduleId": "security-governance",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/Trusted-AI/AIF360",
+      "docsUrl": "https://aif360.readthedocs.io/",
+      "websiteUrl": "https://aif360.res.ibm.com/",
+      "koreanSupport": false,
+      "tags": [
+        "fairness",
+        "bias",
+        "ethics",
+        "ml"
+      ],
+      "meta": {
+        "stars": 2723,
+        "lastUpdated": "2025-12-18T06:37:33Z",
+        "fetchedAt": "2025-12-22T04:19:37.568Z",
+        "forks": 897,
+        "lastCommit": "2025-11-13T16:48:24Z"
+      }
+    },
+    {
+      "id": "fairlearn",
+      "name": "Fairlearn",
+      "description": "Microsoft의 AI 공정성 평가 및 완화 툴킷",
+      "categoryId": "fairness-bias",
+      "moduleId": "security-governance",
+      "license": "MIT",
+      "githubUrl": "https://github.com/fairlearn/fairlearn",
+      "docsUrl": "https://fairlearn.org/",
+      "websiteUrl": "https://fairlearn.org/",
+      "koreanSupport": false,
+      "tags": [
+        "fairness",
+        "bias",
+        "microsoft",
+        "ml"
+      ],
+      "meta": {
+        "stars": 2177,
+        "lastUpdated": "2025-12-21T14:06:40Z",
+        "fetchedAt": "2025-12-22T04:19:38.047Z",
+        "forks": 478,
+        "lastCommit": "2025-12-19T18:48:58Z"
+      }
+    },
+    {
+      "id": "pyrit",
+      "name": "PyRIT",
+      "description": "Microsoft Azure의 AI 레드팀 자동화 프레임워크",
+      "categoryId": "security-testing",
+      "moduleId": "security-governance",
+      "license": "MIT",
+      "githubUrl": "https://github.com/Azure/PyRIT",
+      "docsUrl": "https://azure.github.io/PyRIT/",
+      "websiteUrl": "https://azure.github.io/PyRIT/",
+      "koreanSupport": false,
+      "tags": [
+        "red-team",
+        "security",
+        "testing",
+        "azure"
+      ],
+      "meta": {
+        "stars": 3226,
+        "lastUpdated": "2025-12-21T15:14:54Z",
+        "fetchedAt": "2025-12-22T04:19:38.612Z",
+        "forks": 630,
+        "lastCommit": "2025-12-21T14:41:20Z"
+      }
+    },
+    {
+      "id": "lm-evaluation-harness",
+      "name": "LM Evaluation Harness",
+      "description": "EleutherAI의 언어 모델 평가 프레임워크",
+      "categoryId": "governance",
+      "moduleId": "security-governance",
+      "license": "MIT",
+      "githubUrl": "https://github.com/EleutherAI/lm-evaluation-harness",
+      "docsUrl": "https://github.com/EleutherAI/lm-evaluation-harness#readme",
+      "websiteUrl": "https://github.com/EleutherAI/lm-evaluation-harness",
+      "koreanSupport": false,
+      "tags": [
+        "evaluation",
+        "benchmark",
+        "llm"
+      ],
+      "meta": {
+        "stars": 10991,
+        "lastUpdated": "2025-12-22T03:30:21Z",
+        "fetchedAt": "2025-12-22T04:19:39.150Z",
+        "forks": 2915,
+        "lastCommit": "2025-12-18T21:45:37Z"
+      }
+    },
+    {
+      "id": "ragas",
+      "name": "RAGAS",
+      "description": "RAG 파이프라인 평가 프레임워크. 자동 평가 지표",
+      "categoryId": "governance",
+      "moduleId": "security-governance",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/explodinggradients/ragas",
+      "docsUrl": "https://docs.ragas.io/",
+      "websiteUrl": "https://ragas.io/",
+      "koreanSupport": false,
+      "tags": [
+        "rag",
+        "evaluation",
+        "testing"
+      ],
+      "meta": {
+        "stars": 11807,
+        "lastUpdated": "2025-12-22T03:34:50Z",
+        "fetchedAt": "2025-12-22T04:19:39.926Z",
+        "forks": 1180,
+        "lastCommit": "2025-12-20T16:26:02Z"
+      }
+    },
+    {
+      "id": "promptfoo",
+      "name": "promptfoo",
+      "description": "LLM 프롬프트 테스트, 평가 및 레드팀 도구",
+      "categoryId": "governance",
+      "moduleId": "security-governance",
+      "license": "MIT",
+      "githubUrl": "https://github.com/promptfoo/promptfoo",
+      "docsUrl": "https://www.promptfoo.dev/docs/intro/",
+      "websiteUrl": "https://promptfoo.dev",
+      "koreanSupport": false,
+      "tags": [
+        "prompt",
+        "testing",
+        "evaluation",
+        "llm"
+      ],
+      "meta": {
+        "stars": 9521,
+        "lastUpdated": "2025-12-22T03:36:23Z",
+        "fetchedAt": "2025-12-22T04:19:40.366Z",
+        "forks": 827,
+        "lastCommit": "2025-12-22T04:16:26Z"
+      }
+    },
+    {
+      "id": "deepeval",
+      "name": "DeepEval",
+      "description": "LLM 애플리케이션 테스트 및 평가 프레임워크",
+      "categoryId": "governance",
+      "moduleId": "security-governance",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/confident-ai/deepeval",
+      "docsUrl": "https://docs.confident-ai.com/",
+      "websiteUrl": "https://www.confident-ai.com/",
+      "koreanSupport": false,
+      "tags": [
+        "evaluation",
+        "testing",
+        "llm",
+        "rag"
+      ],
+      "meta": {
+        "stars": 12676,
+        "lastUpdated": "2025-12-22T01:21:11Z",
+        "fetchedAt": "2025-12-22T04:19:40.870Z",
+        "forks": 1118,
+        "lastCommit": "2025-12-21T15:15:34Z"
+      }
+    },
+    {
+      "id": "trulens",
+      "name": "TruLens",
+      "description": "LLM 애플리케이션 평가 및 추적 라이브러리",
+      "categoryId": "governance",
+      "moduleId": "security-governance",
+      "license": "MIT",
+      "githubUrl": "https://github.com/truera/trulens",
+      "docsUrl": "https://www.trulens.org/",
+      "websiteUrl": "https://www.trulens.org/",
+      "koreanSupport": false,
+      "tags": [
+        "evaluation",
+        "observability",
+        "llm"
+      ],
+      "meta": {
+        "stars": 2988,
+        "lastUpdated": "2025-12-21T22:45:57Z",
+        "fetchedAt": "2025-12-22T04:19:41.507Z",
+        "forks": 237,
+        "lastCommit": "2025-12-20T01:17:26Z"
+      }
+    },
+    {
+      "id": "model-card-toolkit",
+      "name": "Model Card Toolkit",
+      "description": "Google의 ML 모델 문서화 도구",
+      "categoryId": "governance",
+      "moduleId": "security-governance",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/tensorflow/model-card-toolkit",
+      "docsUrl": "https://www.tensorflow.org/responsible_ai/model_card_toolkit/guide",
+      "websiteUrl": "https://www.tensorflow.org/responsible_ai/model_card_toolkit",
+      "koreanSupport": false,
+      "tags": [
+        "governance",
+        "documentation",
+        "responsible-ai"
+      ],
+      "meta": {
+        "stars": 441,
+        "lastUpdated": "2025-12-08T20:14:18Z",
+        "fetchedAt": "2025-12-22T04:19:42.120Z",
+        "forks": 90,
+        "lastCommit": "2023-07-26T12:05:00Z"
+      }
+    },
+    {
+      "id": "art",
+      "name": "Adversarial Robustness Toolbox",
+      "description": "IBM의 ML 보안 라이브러리. 적대적 공격/방어",
+      "categoryId": "security-testing",
+      "moduleId": "security-governance",
+      "license": "MIT",
+      "githubUrl": "https://github.com/Trusted-AI/adversarial-robustness-toolbox",
+      "docsUrl": "https://adversarial-robustness-toolbox.readthedocs.io/",
+      "websiteUrl": "https://adversarial-robustness-toolbox.readthedocs.io/",
+      "koreanSupport": false,
+      "tags": [
+        "adversarial",
+        "robustness",
+        "security",
+        "ml"
+      ],
+      "meta": {
+        "stars": 5734,
+        "lastUpdated": "2025-12-20T12:35:51Z",
+        "fetchedAt": "2025-12-22T04:19:42.621Z",
+        "forks": 1278,
+        "lastCommit": "2025-12-12T07:01:28Z"
+      }
+    },
+    {
+      "id": "shap",
+      "name": "SHAP",
+      "description": "A game theoretic approach to explain the output of any machine learning model using Shapley values",
+      "categoryId": "xai",
+      "moduleId": "security-governance",
+      "license": "MIT",
+      "githubUrl": "https://github.com/shap/shap",
+      "koreanSupport": false,
+      "tags": [
+        "xai",
+        "explainability",
+        "shapley",
+        "interpretability"
+      ],
+      "meta": {
+        "stars": 22000,
+        "forks": 3200,
+        "lastUpdated": "2025-12-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "lime",
+      "name": "LIME",
+      "description": "Local Interpretable Model-agnostic Explanations — explains predictions of any classifier",
+      "categoryId": "xai",
+      "moduleId": "security-governance",
+      "license": "BSD-2-Clause",
+      "githubUrl": "https://github.com/marcotcr/lime",
+      "koreanSupport": false,
+      "tags": [
+        "xai",
+        "explainability",
+        "local-explanation",
+        "interpretability"
+      ],
+      "meta": {
+        "stars": 11500,
+        "forks": 1800,
+        "lastUpdated": "2025-10-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "captum",
+      "name": "Captum",
+      "description": "Model interpretability and understanding library for PyTorch — integrated gradients, saliency maps, and more",
+      "categoryId": "xai",
+      "moduleId": "security-governance",
+      "license": "BSD-3-Clause",
+      "githubUrl": "https://github.com/pytorch/captum",
+      "koreanSupport": false,
+      "tags": [
+        "xai",
+        "pytorch",
+        "interpretability",
+        "attribution"
+      ],
+      "meta": {
+        "stars": 4800,
+        "forks": 490,
+        "lastUpdated": "2025-11-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "interpret",
+      "name": "InterpretML",
+      "description": "Fit interpretable models and explain blackbox systems with glassbox models and SHAP",
+      "categoryId": "xai",
+      "moduleId": "security-governance",
+      "license": "MIT",
+      "githubUrl": "https://github.com/interpretml/interpret",
+      "koreanSupport": false,
+      "tags": [
+        "xai",
+        "explainability",
+        "ebm",
+        "glassbox"
+      ],
+      "meta": {
+        "stars": 6100,
+        "forks": 720,
+        "lastUpdated": "2025-11-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "presidio",
+      "name": "Presidio",
+      "description": "Context aware, pluggable and customizable PII anonymization service for text and images",
+      "categoryId": "data-privacy",
+      "moduleId": "security-governance",
+      "license": "MIT",
+      "githubUrl": "https://github.com/microsoft/presidio",
+      "koreanSupport": false,
+      "tags": [
+        "pii",
+        "anonymization",
+        "data-privacy",
+        "nlp"
+      ],
+      "meta": {
+        "stars": 3500,
+        "forks": 680,
+        "lastUpdated": "2025-12-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "diffprivlib",
+      "name": "Diffprivlib",
+      "description": "IBM's general-purpose library for experimenting with, investigating, and developing differential privacy applications",
+      "categoryId": "data-privacy",
+      "moduleId": "security-governance",
+      "license": "MIT",
+      "githubUrl": "https://github.com/IBM/diffprivlib",
+      "koreanSupport": false,
+      "tags": [
+        "differential-privacy",
+        "privacy",
+        "machine-learning"
+      ],
+      "meta": {
+        "stars": 1800,
+        "forks": 250,
+        "lastUpdated": "2025-10-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "tensorflow-privacy",
+      "name": "TensorFlow Privacy",
+      "description": "Library for training machine learning models with privacy guarantees (differential privacy)",
+      "categoryId": "data-privacy",
+      "moduleId": "security-governance",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/tensorflow/privacy",
+      "koreanSupport": false,
+      "tags": [
+        "differential-privacy",
+        "tensorflow",
+        "privacy-preserving"
+      ],
+      "meta": {
+        "stars": 1900,
+        "forks": 430,
+        "lastUpdated": "2025-11-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "safe-rlhf",
+      "name": "Safe RLHF",
+      "description": "PKU-Alignment's constrained RLHF framework — aligning LLMs with human values through safe reinforcement learning from human feedback",
+      "categoryId": "alignment",
+      "moduleId": "security-governance",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/PKU-Alignment/safe-rlhf",
+      "koreanSupport": false,
+      "tags": [
+        "alignment",
+        "rlhf",
+        "safety",
+        "constrained-rl",
+        "human-values"
+      ],
+      "meta": {
+        "stars": 1500,
+        "forks": 140,
+        "lastUpdated": "2025-12-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "vxcontrol-pentagi",
+      "name": "pentagi",
+      "description": "_No response_",
+      "categoryId": "security-testing",
+      "moduleId": "security-governance",
+      "license": "MIT",
+      "githubUrl": "https://github.com/vxcontrol/pentagi",
+      "koreanSupport": false,
+      "tags": [
+        "ai-agents",
+        "ai-security-tool",
+        "anthropic",
+        "autonomous-agents",
+        "golang",
+        "gpt",
+        "graphql",
+        "multi-agent-system",
+        "offensive-security",
+        "open-source",
+        "openai",
+        "penetration-testing",
+        "penetration-testing-tools",
+        "react",
+        "security-automation",
+        "security-testing",
+        "security-tools",
+        "self-hosted"
+      ],
+      "meta": {
+        "stars": 8848,
+        "forks": 991,
+        "lastUpdated": "2026-03-02T08:14:45Z",
+        "lastCommit": "2026-03-01T20:24:42Z",
+        "fetchedAt": "2026-03-02T08:27:41.405Z"
+      }
+    }
+  ]
 }

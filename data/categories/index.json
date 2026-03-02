@@ -1,680 +1,681 @@
 {
-    "categories": [
-        {
-            "id": "container-orchestration",
-            "moduleId": "infra-computing",
-            "name": "컨테이너·오케스트레이션",
-            "description": "대규모 컴퓨팅 인프라의 자원 관리 및 최적화",
-            "order": 1,
-            "tools": [
-                "kubernetes",
-                "docker",
-                "helm",
-                "containerd"
-            ]
-        },
-        {
-            "id": "distributed-cloud",
-            "moduleId": "infra-computing",
-            "name": "대규모/분산 컴퓨팅 인프라",
-            "description": "AI 모델 훈련/배포에 필요한 컴퓨팅 자원, 스토리지, 네트워크를 제공하는 IaaS 플랫폼",
-            "order": 2,
-            "tools": [
-                "openstack",
-                "cloudstack",
-                "ray",
-                "dask",
-                "spark",
-                "horovod",
-                "volcano",
-                "terraform",
-                "backend-ai"
-            ]
-        },
-        {
-            "id": "ai-accelerator",
-            "moduleId": "infra-computing",
-            "name": "AI 가속기 (GPU/NPU 등)",
-            "description": "대규모 모델 학습에 필요한 고성능 병렬 처리 하드웨어 및 연산 환경",
-            "order": 3,
-            "tools": [
-                "opencl",
-                "rocm",
-                "vulkan",
-                "onnx-runtime",
-                "tflite",
-                "openvino",
-                "mlc-llm"
-            ]
-        },
-        {
-            "id": "sustainable-ai",
-            "moduleId": "infra-computing",
-            "name": "지속 가능한 AI 인프라",
-            "description": "탄소 효율, 에너지 최적화를 고려한 AI 인프라 운영 전략 및 기술",
-            "order": 4,
-            "tools": [
-                "codecarbon",
-                "experiment-impact-tracker",
-                "carbontracker",
-                "zeus"
-            ]
-        },
-        {
-            "id": "vector-db",
-            "moduleId": "data-storage",
-            "name": "벡터 데이터베이스",
-            "description": "임베딩 벡터를 저장·검색하여 RAG, 유사도 기반 검색 등에 활용",
-            "order": 1,
-            "tools": [
-                "milvus",
-                "qdrant",
-                "chroma",
-                "weaviate",
-                "faiss",
-                "pgvector",
-                "lancedb"
-            ]
-        },
-        {
-            "id": "data-quality",
-            "moduleId": "data-storage",
-            "name": "데이터 품질 관리/보증",
-            "description": "데이터 정제, 스키마 검증, 이상/드리프트 탐지, 정합성 확인 등 데이터 품질 관리",
-            "order": 2,
-            "tools": [
-                "openrefine",
-                "elementary",
-                "greatexpectations",
-                "soda-core",
-                "apache-griffin",
-                "ydata-profiling",
-                "pandera"
-            ]
-        },
-        {
-            "id": "data-labeling",
-            "moduleId": "data-storage",
-            "name": "데이터 라벨링",
-            "description": "모델 학습에 필요한 데이터 라벨 생성/관리 및 협업/검수/자동화 도구",
-            "order": 3,
-            "tools": [
-                "cvat",
-                "label-studio",
-                "argilla",
-                "cleanlab",
-                "snorkel"
-            ]
-        },
-        {
-            "id": "synthetic-data",
-            "moduleId": "data-storage",
-            "name": "합성 데이터 생성",
-            "description": "실제와 유사한 가짜 데이터를 생성하여 프라이버시 보호 또는 데이터 보완",
-            "order": 4,
-            "tools": [
-                "faker",
-                "sdv",
-                "synthea",
-                "ydata-synthetic"
-            ]
-        },
-        {
-            "id": "datasets-tools",
-            "moduleId": "data-storage",
-            "name": "학습 데이터셋 및 관련 도구",
-            "description": "모델 학습에 사용되는 대규모 공개 데이터셋 및 관련 저장소/도구",
-            "order": 5,
-            "tools": [
-                "common-crawl",
-                "laion-5b",
-                "hf-datasets",
-                "openml"
-            ]
-        },
-        {
-            "id": "catalog-lineage",
-            "moduleId": "data-storage",
-            "name": "카탈로그 및 버전/계보",
-            "description": "거버넌스 강화 등을 위해 메타데이터 및 데이터 버전/계보(lineage) 관리",
-            "order": 6,
-            "tools": [
-                "datahub",
-                "openmetadata",
-                "openlineage",
-                "amundsen",
-                "dvc",
-                "lakefs",
-                "delta-lake"
-            ]
-        },
-        {
-            "id": "etl-workflow",
-            "moduleId": "data-storage",
-            "name": "ETL & Workflow",
-            "description": "다양한 데이터 소스로부터 ETL(Extract/Transform/Load) 수행을 위한 파이프라인 관리",
-            "order": 7,
-            "tools": [
-                "airflow",
-                "dagster",
-                "prefect",
-                "apache-beam",
-                "apache-nifi"
-            ]
-        },
-        {
-            "id": "llm",
-            "moduleId": "model-algorithm",
-            "name": "대규모 언어 모델 (LLM)",
-            "description": "텍스트 생성, 대화, 추론을 위한 대규모 언어 모델",
-            "order": 1,
-            "tools": [
-                "huggingface-transformers",
-                "llama",
-                "mistral",
-                "qwen",
-                "gemma",
-                "phi",
-                "deepseek",
-                "chatglm",
-                "gpt-neox",
-                "olmo"
-            ]
-        },
-        {
-            "id": "vision-model",
-            "moduleId": "model-algorithm",
-            "name": "비전 모델",
-            "description": "이미지 분류, 객체 탐지, 세그멘테이션 등 컴퓨터 비전 모델",
-            "order": 2,
-            "tools": [
-                "clip",
-                "sam",
-                "yolo",
-                "dino"
-            ]
-        },
-        {
-            "id": "embedding-model",
-            "moduleId": "model-algorithm",
-            "name": "임베딩 모델",
-            "description": "텍스트, 이미지를 벡터로 변환하는 임베딩 모델",
-            "order": 3,
-            "tools": [
-                "sentence-transformers",
-                "bge",
-                "e5",
-                "jina-embeddings"
-            ]
-        },
-        {
-            "id": "multimodal",
-            "moduleId": "model-algorithm",
-            "name": "멀티모달 모델",
-            "description": "텍스트, 이미지, 음성 등 여러 모달리티를 처리하는 모델",
-            "order": 4,
-            "tools": [
-                "llava",
-                "whisper",
-                "cogvlm",
-                "qwen-vl",
-                "imagebind",
-                "audiocraft",
-                "bark"
-            ]
-        },
-        {
-            "id": "feature-store",
-            "moduleId": "training-inference",
-            "name": "피처 스토어",
-            "description": "모델 학습 및 서빙을 위한 특징(feature) 저장 / 버전 관리 및 데이터/모델 파이프라인 연계",
-            "order": 1,
-            "tools": [
-                "feast",
-                "hopsworks",
-                "featureform",
-                "openmldb"
-            ]
-        },
-        {
-            "id": "experiment-tracking",
-            "moduleId": "training-inference",
-            "name": "실험 추적 및 버전 관리",
-            "description": "모델 학습 / 파인튜닝 시 실험 추적 및 버전 관리",
-            "order": 2,
-            "tools": [
-                "mlflow",
-                "dvc",
-                "clearml",
-                "aim",
-                "sacred"
-            ]
-        },
-        {
-            "id": "inference-optimization",
-            "moduleId": "training-inference",
-            "name": "추론 최적화 / 컴파일러",
-            "description": "연산 병합, 메모리 접근 최적화 및 다양한 H/W 백엔드별 코드 생성 등 최적화 작업 수행",
-            "order": 3,
-            "tools": [
-                "apache-tvm",
-                "openai-triton",
-                "onnx-runtime",
-                "tensorrt",
-                "openvino",
-                "iree"
-            ]
-        },
-        {
-            "id": "model-compression",
-            "moduleId": "training-inference",
-            "name": "모델 경량화",
-            "description": "Quantization, Pruning, KD 등, 모델을 변경하여 메모리 및 연산량 감소",
-            "order": 4,
-            "tools": [
-                "optimum",
-                "pytorch-ao",
-                "bitsandbytes",
-                "gptq",
-                "neural-compressor"
-            ]
-        },
-        {
-            "id": "fine-tuning",
-            "moduleId": "training-inference",
-            "name": "파인튜닝 / 커스터마이징",
-            "description": "대규모 모델을 소규모 데이터셋으로 빠르게 미세조정 (LoRA, QLoRA, Prefix Tuning 등)",
-            "order": 5,
-            "tools": [
-                "peft",
-                "litgpt",
-                "adapters",
-                "ray-tune",
-                "unsloth",
-                "axolotl",
-                "llama-factory",
-                "trl"
-            ]
-        },
-        {
-            "id": "automl-hpo",
-            "moduleId": "training-inference",
-            "name": "AutoML / HPO",
-            "description": "모델/파이프라인 생성, Hyper Parameter 최적화(HPO) 등 모델 개발 과정 자동화",
-            "order": 6,
-            "tools": [
-                "auto-sklearn",
-                "autogluon",
-                "optuna",
-                "tpot",
-                "hyperopt",
-                "nni",
-                "autokeras"
-            ]
-        },
-        {
-            "id": "federated-learning",
-            "moduleId": "training-inference",
-            "name": "연합 학습 프레임워크",
-            "description": "여러 클라이언트/엣지 장치 등에서 데이터 이동 없이 중앙 서버를 통해 학습하는 연합 학습",
-            "order": 7,
-            "tools": [
-                "fedml",
-                "flower",
-                "fate",
-                "pysyft",
-                "tensorflow-federated",
-                "nvflare"
-            ]
-        },
-        {
-            "id": "distributed-training",
-            "moduleId": "training-inference",
-            "name": "분산 학습 프레임워크",
-            "description": "여러 서버/노드를 활용해 병렬화된 학습을 통해 학습 속도/확장성를 높이는 프레임워크",
-            "order": 8,
-            "tools": [
-                "horovod",
-                "deepspeed",
-                "colossalai",
-                "determined",
-                "ray-train",
-                "megatron-lm"
-            ]
-        },
-        {
-            "id": "reinforcement-learning",
-            "moduleId": "training-inference",
-            "name": "강화학습 프레임워크",
-            "description": "에이전트 학습, 문장 생성, 이미지 생성 등 다양한 핵심 알고리즘",
-            "order": 9,
-            "tools": [
-                "openai-baselines",
-                "catalyst",
-                "torchrl",
-                "ray-rllib",
-                "verl",
-                "trl",
-                "gymnasium",
-                "slime"
-            ]
-        },
-        {
-            "id": "deep-learning-framework",
-            "moduleId": "training-inference",
-            "name": "딥러닝 프레임워크",
-            "description": "모델 정의 및 학습, 추론의 토대가 되는 범용 프레임워크",
-            "order": 10,
-            "tools": [
-                "pytorch",
-                "tensorflow",
-                "jax",
-                "paddlepaddle",
-                "keras",
-                "vllm",
-                "ollama",
-                "llama-cpp",
-                "tgi",
-                "sglang",
-                "triton-inference-server",
-                "bentoml",
-                "awq",
-                "mlx"
-            ]
-        },
-        {
-            "id": "agent-orchestration",
-            "moduleId": "platform-mlops",
-            "name": "에이전트 오케스트레이션 프레임워크",
-            "description": "도구 호출, 상태 관리, 장기 실행, HITL 등 에이전트 및 플로우 프레임워크",
-            "order": 1,
-            "tools": [
-                "langchain",
-                "crewai",
-                "autogen",
-                "llamaindex",
-                "superagi",
-                "semantic-kernel",
-                "camel"
-            ]
-        },
-        {
-            "id": "llmops-observability",
-            "moduleId": "platform-mlops",
-            "name": "LLMOps & 관측성",
-            "description": "AI 모델 및 시스템의 Prompt/Chain Tracing, 평가, 품질/비용 지표 관리, 모니터링",
-            "order": 2,
-            "tools": [
-                "evidently-ai",
-                "whylogs",
-                "mlflow",
-                "wandb",
-                "clearml",
-                "aim",
-                "langfuse"
-            ]
-        },
-        {
-            "id": "testing-evaluation",
-            "moduleId": "platform-mlops",
-            "name": "테스트 및 성능 평가",
-            "description": "AI 시스템 전체(E2E) 또는 모듈의 전반적인 성능을 테스트 및 평가",
-            "order": 3,
-            "tools": [
-                "ragas",
-                "trulens",
-                "deepeval"
-            ]
-        },
-        {
-            "id": "interoperability",
-            "moduleId": "platform-mlops",
-            "name": "에이전트 및 도구 상호 운용",
-            "description": "에이전트의 외부 데이터 소스 접근, 도구 활용(MCP) 및 에이전트들 간의 통신(A2A)",
-            "order": 4,
-            "tools": [
-                "mcp-sdk",
-                "n8n",
-                "composio"
-            ]
-        },
-        {
-            "id": "memory-knowledge",
-            "moduleId": "platform-mlops",
-            "name": "메모리 및 지식 그래프",
-            "description": "모델 및 에이전트의 대화 기억, 지식 관리 등을 위한 장/단기 메모리 시스템",
-            "order": 5,
-            "tools": [
-                "mem0",
-                "cognee",
-                "letta",
-                "memary",
-                "txtai"
-            ]
-        },
-        {
-            "id": "rag-graphrag",
-            "moduleId": "platform-mlops",
-            "name": "RAG & GraphRAG",
-            "description": "모델에 외부 지식을 주입하고 최종 결과를 생성하는 RAG 파이프라인 프레임워크",
-            "order": 6,
-            "tools": [
-                "graphrag",
-                "haystack",
-                "ragflow"
-            ]
-        },
-        {
-            "id": "prompt-management",
-            "moduleId": "platform-mlops",
-            "name": "프롬프트 관리 및 실험",
-            "description": "프롬프트 엔지니어링 및 성능 평가 / A/B 테스트 / 버전 관리",
-            "order": 7,
-            "tools": [
-                "promptfoo",
-                "dspy",
-                "promptflow",
-                "prompttools",
-                "openprompt",
-                "litellm"
-            ]
-        },
-        {
-            "id": "on-device-runtime",
-            "moduleId": "platform-mlops",
-            "name": "온디바이스 런타임",
-            "description": "특정 하드웨어(PC, 모바일 등)에 최적화하여 모델을 실시간으로 서빙 및 추론할 수 있도록 하는 런타임",
-            "order": 8,
-            "tools": [
-                "ollama",
-                "llama-cpp",
-                "mlc-llm",
-                "mnn",
-                "ncnn"
-            ]
-        },
-        {
-            "id": "model-serving",
-            "moduleId": "platform-mlops",
-            "name": "모델 서빙 / 추론 엔진",
-            "description": "서버나 클러스터 등에서 실시간 모델 서비스를 위한 고성능 서빙 / 추론 엔진",
-            "order": 9,
-            "tools": [
-                "ray-serve",
-                "vllm",
-                "triton-inference-server",
-                "bentoml",
-                "kserve",
-                "kubeflow",
-                "metaflow",
-                "zenml",
-                "huggingface-hub"
-            ]
-        },
-        {
-            "id": "ai-chatbot",
-            "moduleId": "application-service",
-            "name": "AI 챗봇·어시스턴트",
-            "description": "사용자와의 대화를 통해 정보를 제공하거나 업무를 돕는 서비스 (상담 챗봇, 음성 비서 등)",
-            "order": 1,
-            "tools": [
-                "rasa",
-                "open-webui",
-                "lobe-chat",
-                "chainlit",
-                "openclaw",
-                "aionui"
-            ]
-        },
-        {
-            "id": "content-generation",
-            "moduleId": "application-service",
-            "name": "콘텐츠 생성 서비스",
-            "description": "텍스트, 이미지, 오디오, 비디오 등 콘텐츠를 생성하는 서비스",
-            "order": 2,
-            "tools": [
-                "stable-diffusion",
-                "comfyui",
-                "diffusers",
-                "openvoice",
-                "stable-diffusion-webui",
-                "invoke-ai",
-                "open-sora"
-            ]
-        },
-        {
-            "id": "recommendation-search",
-            "moduleId": "application-service",
-            "name": "추천 시스템 및 검색 엔진",
-            "description": "사용자 행동 기반으로 콘텐츠, 제품 추천 및 정보 검색 서비스를 위한 기술",
-            "order": 3,
-            "tools": [
-                "elasticsearch",
-                "meilisearch",
-                "typesense",
-                "vespa"
-            ]
-        },
-        {
-            "id": "industry-solutions",
-            "moduleId": "application-service",
-            "name": "산업별 AI 솔루션",
-            "description": "제조, 의료, 금융 등 특정 산업 도메인에 특화된 AI 솔루션",
-            "order": 4,
-            "tools": [
-                "monai",
-                "apollo-auto",
-                "deepchem",
-                "biogpt"
-            ]
-        },
-        {
-            "id": "autonomous-agent",
-            "moduleId": "application-service",
-            "name": "자율형 에이전트 서비스",
-            "description": "LLM 기반으로 자율적으로 복합 작업을 생성 및 수행하는 서비스",
-            "order": 5,
-            "tools": [
-                "langchain-app",
-                "llamaindex-app",
-                "autogen-app",
-                "crewai-app",
-                "phidata",
-                "dify",
-                "agent-framework",
-                "dspy",
-                "gradio",
-                "streamlit",
-                "ragflow",
-                "browser-use"
-            ]
-        },
-        {
-            "id": "alignment",
-            "moduleId": "security-governance",
-            "name": "AI 정렬 (Alignment)",
-            "description": "RLHF 기반 학습 등, 인간의 가치관 및 윤리에 맞도록 AI 시스템의 유용성/안전성/신뢰성 확보",
-            "order": 1,
-            "tools": [
-                "openrlhf",
-                "safe-rlhf",
-                "snort"
-            ]
-        },
-        {
-            "id": "security-testing",
-            "moduleId": "security-governance",
-            "name": "보안 테스트 및 레드팀",
-            "description": "탈옥, 악성 프롬프트 방어 등, AI 시스템 전반의 보안 검증 및 운영 체계를 관리",
-            "order": 2,
-            "tools": [
-                "pyrit",
-                "llm-guard",
-                "art"
-            ]
-        },
-        {
-            "id": "guardrails",
-            "moduleId": "security-governance",
-            "name": "가드레일 및 정책 엔진",
-            "description": "주제 제한, 개인식별정보(PII) 마스킹 등, 시스템의 목적에 맞는 대화를 하도록 제한",
-            "order": 3,
-            "tools": [
-                "nemo-guardrails",
-                "guardrails-ai",
-                "rebuff"
-            ]
-        },
-        {
-            "id": "xai",
-            "moduleId": "security-governance",
-            "name": "설명 가능한 AI (XAI)",
-            "description": "AI 모델의 의사 결정 과정을 설명하여 투명성을 향상",
-            "order": 4,
-            "tools": [
-                "shap",
-                "lime",
-                "captum",
-                "interpret"
-            ]
-        },
-        {
-            "id": "fairness-bias",
-            "moduleId": "security-governance",
-            "name": "공정성 및 편향 탐지",
-            "description": "특정 성별 또는 인종 등에 대한 데이터 및 모델의 편향을 진단하고 공정성을 확보",
-            "order": 5,
-            "tools": [
-                "aif360",
-                "fairlearn"
-            ]
-        },
-        {
-            "id": "data-privacy",
-            "moduleId": "security-governance",
-            "name": "데이터 프라이버시 및 비식별화",
-            "description": "개인식별정보(PII) 탐지 및 마스킹, 차등 프라이버시 적용 등 학습 데이터 보호",
-            "order": 6,
-            "tools": [
-                "presidio",
-                "diffprivlib",
-                "tensorflow-privacy"
-            ]
-        },
-        {
-            "id": "governance",
-            "moduleId": "security-governance",
-            "name": "AI 거버넌스",
-            "description": "AI 시스템의 윤리성, 규정/규제 준수 여부 및 운영 체계 전반을 검증 및 관리",
-            "order": 7,
-            "tools": [
-                "model-card-toolkit",
-                "lm-evaluation-harness",
-                "ragas",
-                "promptfoo",
-                "deepeval",
-                "trulens"
-            ]
-        }
-    ]
+  "categories": [
+    {
+      "id": "container-orchestration",
+      "moduleId": "infra-computing",
+      "name": "컨테이너·오케스트레이션",
+      "description": "대규모 컴퓨팅 인프라의 자원 관리 및 최적화",
+      "order": 1,
+      "tools": [
+        "kubernetes",
+        "docker",
+        "helm",
+        "containerd"
+      ]
+    },
+    {
+      "id": "distributed-cloud",
+      "moduleId": "infra-computing",
+      "name": "대규모/분산 컴퓨팅 인프라",
+      "description": "AI 모델 훈련/배포에 필요한 컴퓨팅 자원, 스토리지, 네트워크를 제공하는 IaaS 플랫폼",
+      "order": 2,
+      "tools": [
+        "openstack",
+        "cloudstack",
+        "ray",
+        "dask",
+        "spark",
+        "horovod",
+        "volcano",
+        "terraform",
+        "backend-ai"
+      ]
+    },
+    {
+      "id": "ai-accelerator",
+      "moduleId": "infra-computing",
+      "name": "AI 가속기 (GPU/NPU 등)",
+      "description": "대규모 모델 학습에 필요한 고성능 병렬 처리 하드웨어 및 연산 환경",
+      "order": 3,
+      "tools": [
+        "opencl",
+        "rocm",
+        "vulkan",
+        "onnx-runtime",
+        "tflite",
+        "openvino",
+        "mlc-llm"
+      ]
+    },
+    {
+      "id": "sustainable-ai",
+      "moduleId": "infra-computing",
+      "name": "지속 가능한 AI 인프라",
+      "description": "탄소 효율, 에너지 최적화를 고려한 AI 인프라 운영 전략 및 기술",
+      "order": 4,
+      "tools": [
+        "codecarbon",
+        "experiment-impact-tracker",
+        "carbontracker",
+        "zeus"
+      ]
+    },
+    {
+      "id": "vector-db",
+      "moduleId": "data-storage",
+      "name": "벡터 데이터베이스",
+      "description": "임베딩 벡터를 저장·검색하여 RAG, 유사도 기반 검색 등에 활용",
+      "order": 1,
+      "tools": [
+        "milvus",
+        "qdrant",
+        "chroma",
+        "weaviate",
+        "faiss",
+        "pgvector",
+        "lancedb"
+      ]
+    },
+    {
+      "id": "data-quality",
+      "moduleId": "data-storage",
+      "name": "데이터 품질 관리/보증",
+      "description": "데이터 정제, 스키마 검증, 이상/드리프트 탐지, 정합성 확인 등 데이터 품질 관리",
+      "order": 2,
+      "tools": [
+        "openrefine",
+        "elementary",
+        "greatexpectations",
+        "soda-core",
+        "apache-griffin",
+        "ydata-profiling",
+        "pandera"
+      ]
+    },
+    {
+      "id": "data-labeling",
+      "moduleId": "data-storage",
+      "name": "데이터 라벨링",
+      "description": "모델 학습에 필요한 데이터 라벨 생성/관리 및 협업/검수/자동화 도구",
+      "order": 3,
+      "tools": [
+        "cvat",
+        "label-studio",
+        "argilla",
+        "cleanlab",
+        "snorkel"
+      ]
+    },
+    {
+      "id": "synthetic-data",
+      "moduleId": "data-storage",
+      "name": "합성 데이터 생성",
+      "description": "실제와 유사한 가짜 데이터를 생성하여 프라이버시 보호 또는 데이터 보완",
+      "order": 4,
+      "tools": [
+        "faker",
+        "sdv",
+        "synthea",
+        "ydata-synthetic"
+      ]
+    },
+    {
+      "id": "datasets-tools",
+      "moduleId": "data-storage",
+      "name": "학습 데이터셋 및 관련 도구",
+      "description": "모델 학습에 사용되는 대규모 공개 데이터셋 및 관련 저장소/도구",
+      "order": 5,
+      "tools": [
+        "common-crawl",
+        "laion-5b",
+        "hf-datasets",
+        "openml"
+      ]
+    },
+    {
+      "id": "catalog-lineage",
+      "moduleId": "data-storage",
+      "name": "카탈로그 및 버전/계보",
+      "description": "거버넌스 강화 등을 위해 메타데이터 및 데이터 버전/계보(lineage) 관리",
+      "order": 6,
+      "tools": [
+        "datahub",
+        "openmetadata",
+        "openlineage",
+        "amundsen",
+        "dvc",
+        "lakefs",
+        "delta-lake"
+      ]
+    },
+    {
+      "id": "etl-workflow",
+      "moduleId": "data-storage",
+      "name": "ETL & Workflow",
+      "description": "다양한 데이터 소스로부터 ETL(Extract/Transform/Load) 수행을 위한 파이프라인 관리",
+      "order": 7,
+      "tools": [
+        "airflow",
+        "dagster",
+        "prefect",
+        "apache-beam",
+        "apache-nifi"
+      ]
+    },
+    {
+      "id": "llm",
+      "moduleId": "model-algorithm",
+      "name": "대규모 언어 모델 (LLM)",
+      "description": "텍스트 생성, 대화, 추론을 위한 대규모 언어 모델",
+      "order": 1,
+      "tools": [
+        "huggingface-transformers",
+        "llama",
+        "mistral",
+        "qwen",
+        "gemma",
+        "phi",
+        "deepseek",
+        "chatglm",
+        "gpt-neox",
+        "olmo"
+      ]
+    },
+    {
+      "id": "vision-model",
+      "moduleId": "model-algorithm",
+      "name": "비전 모델",
+      "description": "이미지 분류, 객체 탐지, 세그멘테이션 등 컴퓨터 비전 모델",
+      "order": 2,
+      "tools": [
+        "clip",
+        "sam",
+        "yolo",
+        "dino"
+      ]
+    },
+    {
+      "id": "embedding-model",
+      "moduleId": "model-algorithm",
+      "name": "임베딩 모델",
+      "description": "텍스트, 이미지를 벡터로 변환하는 임베딩 모델",
+      "order": 3,
+      "tools": [
+        "sentence-transformers",
+        "bge",
+        "e5",
+        "jina-embeddings"
+      ]
+    },
+    {
+      "id": "multimodal",
+      "moduleId": "model-algorithm",
+      "name": "멀티모달 모델",
+      "description": "텍스트, 이미지, 음성 등 여러 모달리티를 처리하는 모델",
+      "order": 4,
+      "tools": [
+        "llava",
+        "whisper",
+        "cogvlm",
+        "qwen-vl",
+        "imagebind",
+        "audiocraft",
+        "bark"
+      ]
+    },
+    {
+      "id": "feature-store",
+      "moduleId": "training-inference",
+      "name": "피처 스토어",
+      "description": "모델 학습 및 서빙을 위한 특징(feature) 저장 / 버전 관리 및 데이터/모델 파이프라인 연계",
+      "order": 1,
+      "tools": [
+        "feast",
+        "hopsworks",
+        "featureform",
+        "openmldb"
+      ]
+    },
+    {
+      "id": "experiment-tracking",
+      "moduleId": "training-inference",
+      "name": "실험 추적 및 버전 관리",
+      "description": "모델 학습 / 파인튜닝 시 실험 추적 및 버전 관리",
+      "order": 2,
+      "tools": [
+        "mlflow",
+        "dvc",
+        "clearml",
+        "aim",
+        "sacred"
+      ]
+    },
+    {
+      "id": "inference-optimization",
+      "moduleId": "training-inference",
+      "name": "추론 최적화 / 컴파일러",
+      "description": "연산 병합, 메모리 접근 최적화 및 다양한 H/W 백엔드별 코드 생성 등 최적화 작업 수행",
+      "order": 3,
+      "tools": [
+        "apache-tvm",
+        "openai-triton",
+        "onnx-runtime",
+        "tensorrt",
+        "openvino",
+        "iree"
+      ]
+    },
+    {
+      "id": "model-compression",
+      "moduleId": "training-inference",
+      "name": "모델 경량화",
+      "description": "Quantization, Pruning, KD 등, 모델을 변경하여 메모리 및 연산량 감소",
+      "order": 4,
+      "tools": [
+        "optimum",
+        "pytorch-ao",
+        "bitsandbytes",
+        "gptq",
+        "neural-compressor"
+      ]
+    },
+    {
+      "id": "fine-tuning",
+      "moduleId": "training-inference",
+      "name": "파인튜닝 / 커스터마이징",
+      "description": "대규모 모델을 소규모 데이터셋으로 빠르게 미세조정 (LoRA, QLoRA, Prefix Tuning 등)",
+      "order": 5,
+      "tools": [
+        "peft",
+        "litgpt",
+        "adapters",
+        "ray-tune",
+        "unsloth",
+        "axolotl",
+        "llama-factory",
+        "trl"
+      ]
+    },
+    {
+      "id": "automl-hpo",
+      "moduleId": "training-inference",
+      "name": "AutoML / HPO",
+      "description": "모델/파이프라인 생성, Hyper Parameter 최적화(HPO) 등 모델 개발 과정 자동화",
+      "order": 6,
+      "tools": [
+        "auto-sklearn",
+        "autogluon",
+        "optuna",
+        "tpot",
+        "hyperopt",
+        "nni",
+        "autokeras"
+      ]
+    },
+    {
+      "id": "federated-learning",
+      "moduleId": "training-inference",
+      "name": "연합 학습 프레임워크",
+      "description": "여러 클라이언트/엣지 장치 등에서 데이터 이동 없이 중앙 서버를 통해 학습하는 연합 학습",
+      "order": 7,
+      "tools": [
+        "fedml",
+        "flower",
+        "fate",
+        "pysyft",
+        "tensorflow-federated",
+        "nvflare"
+      ]
+    },
+    {
+      "id": "distributed-training",
+      "moduleId": "training-inference",
+      "name": "분산 학습 프레임워크",
+      "description": "여러 서버/노드를 활용해 병렬화된 학습을 통해 학습 속도/확장성를 높이는 프레임워크",
+      "order": 8,
+      "tools": [
+        "horovod",
+        "deepspeed",
+        "colossalai",
+        "determined",
+        "ray-train",
+        "megatron-lm"
+      ]
+    },
+    {
+      "id": "reinforcement-learning",
+      "moduleId": "training-inference",
+      "name": "강화학습 프레임워크",
+      "description": "에이전트 학습, 문장 생성, 이미지 생성 등 다양한 핵심 알고리즘",
+      "order": 9,
+      "tools": [
+        "openai-baselines",
+        "catalyst",
+        "torchrl",
+        "ray-rllib",
+        "verl",
+        "trl",
+        "gymnasium",
+        "slime"
+      ]
+    },
+    {
+      "id": "deep-learning-framework",
+      "moduleId": "training-inference",
+      "name": "딥러닝 프레임워크",
+      "description": "모델 정의 및 학습, 추론의 토대가 되는 범용 프레임워크",
+      "order": 10,
+      "tools": [
+        "pytorch",
+        "tensorflow",
+        "jax",
+        "paddlepaddle",
+        "keras",
+        "vllm",
+        "ollama",
+        "llama-cpp",
+        "tgi",
+        "sglang",
+        "triton-inference-server",
+        "bentoml",
+        "awq",
+        "mlx"
+      ]
+    },
+    {
+      "id": "agent-orchestration",
+      "moduleId": "platform-mlops",
+      "name": "에이전트 오케스트레이션 프레임워크",
+      "description": "도구 호출, 상태 관리, 장기 실행, HITL 등 에이전트 및 플로우 프레임워크",
+      "order": 1,
+      "tools": [
+        "langchain",
+        "crewai",
+        "autogen",
+        "llamaindex",
+        "superagi",
+        "semantic-kernel",
+        "camel"
+      ]
+    },
+    {
+      "id": "llmops-observability",
+      "moduleId": "platform-mlops",
+      "name": "LLMOps & 관측성",
+      "description": "AI 모델 및 시스템의 Prompt/Chain Tracing, 평가, 품질/비용 지표 관리, 모니터링",
+      "order": 2,
+      "tools": [
+        "evidently-ai",
+        "whylogs",
+        "mlflow",
+        "wandb",
+        "clearml",
+        "aim",
+        "langfuse"
+      ]
+    },
+    {
+      "id": "testing-evaluation",
+      "moduleId": "platform-mlops",
+      "name": "테스트 및 성능 평가",
+      "description": "AI 시스템 전체(E2E) 또는 모듈의 전반적인 성능을 테스트 및 평가",
+      "order": 3,
+      "tools": [
+        "ragas",
+        "trulens",
+        "deepeval"
+      ]
+    },
+    {
+      "id": "interoperability",
+      "moduleId": "platform-mlops",
+      "name": "에이전트 및 도구 상호 운용",
+      "description": "에이전트의 외부 데이터 소스 접근, 도구 활용(MCP) 및 에이전트들 간의 통신(A2A)",
+      "order": 4,
+      "tools": [
+        "mcp-sdk",
+        "n8n",
+        "composio"
+      ]
+    },
+    {
+      "id": "memory-knowledge",
+      "moduleId": "platform-mlops",
+      "name": "메모리 및 지식 그래프",
+      "description": "모델 및 에이전트의 대화 기억, 지식 관리 등을 위한 장/단기 메모리 시스템",
+      "order": 5,
+      "tools": [
+        "mem0",
+        "cognee",
+        "letta",
+        "memary",
+        "txtai"
+      ]
+    },
+    {
+      "id": "rag-graphrag",
+      "moduleId": "platform-mlops",
+      "name": "RAG & GraphRAG",
+      "description": "모델에 외부 지식을 주입하고 최종 결과를 생성하는 RAG 파이프라인 프레임워크",
+      "order": 6,
+      "tools": [
+        "graphrag",
+        "haystack",
+        "ragflow"
+      ]
+    },
+    {
+      "id": "prompt-management",
+      "moduleId": "platform-mlops",
+      "name": "프롬프트 관리 및 실험",
+      "description": "프롬프트 엔지니어링 및 성능 평가 / A/B 테스트 / 버전 관리",
+      "order": 7,
+      "tools": [
+        "promptfoo",
+        "dspy",
+        "promptflow",
+        "prompttools",
+        "openprompt",
+        "litellm"
+      ]
+    },
+    {
+      "id": "on-device-runtime",
+      "moduleId": "platform-mlops",
+      "name": "온디바이스 런타임",
+      "description": "특정 하드웨어(PC, 모바일 등)에 최적화하여 모델을 실시간으로 서빙 및 추론할 수 있도록 하는 런타임",
+      "order": 8,
+      "tools": [
+        "ollama",
+        "llama-cpp",
+        "mlc-llm",
+        "mnn",
+        "ncnn"
+      ]
+    },
+    {
+      "id": "model-serving",
+      "moduleId": "platform-mlops",
+      "name": "모델 서빙 / 추론 엔진",
+      "description": "서버나 클러스터 등에서 실시간 모델 서비스를 위한 고성능 서빙 / 추론 엔진",
+      "order": 9,
+      "tools": [
+        "ray-serve",
+        "vllm",
+        "triton-inference-server",
+        "bentoml",
+        "kserve",
+        "kubeflow",
+        "metaflow",
+        "zenml",
+        "huggingface-hub"
+      ]
+    },
+    {
+      "id": "ai-chatbot",
+      "moduleId": "application-service",
+      "name": "AI 챗봇·어시스턴트",
+      "description": "사용자와의 대화를 통해 정보를 제공하거나 업무를 돕는 서비스 (상담 챗봇, 음성 비서 등)",
+      "order": 1,
+      "tools": [
+        "rasa",
+        "open-webui",
+        "lobe-chat",
+        "chainlit",
+        "openclaw",
+        "aionui"
+      ]
+    },
+    {
+      "id": "content-generation",
+      "moduleId": "application-service",
+      "name": "콘텐츠 생성 서비스",
+      "description": "텍스트, 이미지, 오디오, 비디오 등 콘텐츠를 생성하는 서비스",
+      "order": 2,
+      "tools": [
+        "stable-diffusion",
+        "comfyui",
+        "diffusers",
+        "openvoice",
+        "stable-diffusion-webui",
+        "invoke-ai",
+        "open-sora"
+      ]
+    },
+    {
+      "id": "recommendation-search",
+      "moduleId": "application-service",
+      "name": "추천 시스템 및 검색 엔진",
+      "description": "사용자 행동 기반으로 콘텐츠, 제품 추천 및 정보 검색 서비스를 위한 기술",
+      "order": 3,
+      "tools": [
+        "elasticsearch",
+        "meilisearch",
+        "typesense",
+        "vespa"
+      ]
+    },
+    {
+      "id": "industry-solutions",
+      "moduleId": "application-service",
+      "name": "산업별 AI 솔루션",
+      "description": "제조, 의료, 금융 등 특정 산업 도메인에 특화된 AI 솔루션",
+      "order": 4,
+      "tools": [
+        "monai",
+        "apollo-auto",
+        "deepchem",
+        "biogpt"
+      ]
+    },
+    {
+      "id": "autonomous-agent",
+      "moduleId": "application-service",
+      "name": "자율형 에이전트 서비스",
+      "description": "LLM 기반으로 자율적으로 복합 작업을 생성 및 수행하는 서비스",
+      "order": 5,
+      "tools": [
+        "langchain-app",
+        "llamaindex-app",
+        "autogen-app",
+        "crewai-app",
+        "phidata",
+        "dify",
+        "agent-framework",
+        "dspy",
+        "gradio",
+        "streamlit",
+        "ragflow",
+        "browser-use"
+      ]
+    },
+    {
+      "id": "alignment",
+      "moduleId": "security-governance",
+      "name": "AI 정렬 (Alignment)",
+      "description": "RLHF 기반 학습 등, 인간의 가치관 및 윤리에 맞도록 AI 시스템의 유용성/안전성/신뢰성 확보",
+      "order": 1,
+      "tools": [
+        "openrlhf",
+        "safe-rlhf",
+        "snort"
+      ]
+    },
+    {
+      "id": "security-testing",
+      "moduleId": "security-governance",
+      "name": "보안 테스트 및 레드팀",
+      "description": "탈옥, 악성 프롬프트 방어 등, AI 시스템 전반의 보안 검증 및 운영 체계를 관리",
+      "order": 2,
+      "tools": [
+        "pyrit",
+        "llm-guard",
+        "art",
+        "vxcontrol-pentagi"
+      ]
+    },
+    {
+      "id": "guardrails",
+      "moduleId": "security-governance",
+      "name": "가드레일 및 정책 엔진",
+      "description": "주제 제한, 개인식별정보(PII) 마스킹 등, 시스템의 목적에 맞는 대화를 하도록 제한",
+      "order": 3,
+      "tools": [
+        "nemo-guardrails",
+        "guardrails-ai",
+        "rebuff"
+      ]
+    },
+    {
+      "id": "xai",
+      "moduleId": "security-governance",
+      "name": "설명 가능한 AI (XAI)",
+      "description": "AI 모델의 의사 결정 과정을 설명하여 투명성을 향상",
+      "order": 4,
+      "tools": [
+        "shap",
+        "lime",
+        "captum",
+        "interpret"
+      ]
+    },
+    {
+      "id": "fairness-bias",
+      "moduleId": "security-governance",
+      "name": "공정성 및 편향 탐지",
+      "description": "특정 성별 또는 인종 등에 대한 데이터 및 모델의 편향을 진단하고 공정성을 확보",
+      "order": 5,
+      "tools": [
+        "aif360",
+        "fairlearn"
+      ]
+    },
+    {
+      "id": "data-privacy",
+      "moduleId": "security-governance",
+      "name": "데이터 프라이버시 및 비식별화",
+      "description": "개인식별정보(PII) 탐지 및 마스킹, 차등 프라이버시 적용 등 학습 데이터 보호",
+      "order": 6,
+      "tools": [
+        "presidio",
+        "diffprivlib",
+        "tensorflow-privacy"
+      ]
+    },
+    {
+      "id": "governance",
+      "moduleId": "security-governance",
+      "name": "AI 거버넌스",
+      "description": "AI 시스템의 윤리성, 규정/규제 준수 여부 및 운영 체계 전반을 검증 및 관리",
+      "order": 7,
+      "tools": [
+        "model-card-toolkit",
+        "lm-evaluation-harness",
+        "ragas",
+        "promptfoo",
+        "deepeval",
+        "trulens"
+      ]
+    }
+  ]
 }
