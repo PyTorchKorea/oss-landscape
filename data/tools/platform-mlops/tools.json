@@ -802,6 +802,36 @@
         "lastCommit": "2026-02-27T02:41:07Z",
         "fetchedAt": "2026-03-02T12:25:09.930Z"
       }
+    },
+    {
+      "id": "emcie-co-parlant",
+      "name": "parlant",
+      "description": "실제 서비스 환경에서 LLM 에이전트의 행동을 체계적으로 제어할 수 있는 오픈소스 프레임워크입니다.",
+      "categoryId": "agent-orchestration",
+      "moduleId": "platform-mlops",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/emcie-co/parlant",
+      "koreanSupport": false,
+      "tags": [
+        "ai-agents",
+        "ai-alignment",
+        "customer-service",
+        "customer-success",
+        "gemini",
+        "genai",
+        "hacktoberfest",
+        "llama3",
+        "llm",
+        "openai",
+        "python"
+      ],
+      "meta": {
+        "stars": 17788,
+        "forks": 1498,
+        "lastUpdated": "2026-03-02T12:20:54Z",
+        "lastCommit": "2026-02-27T08:54:51Z",
+        "fetchedAt": "2026-03-02T12:25:37.240Z"
+      }
     }
   ]
 }
