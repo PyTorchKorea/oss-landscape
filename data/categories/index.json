@@ -476,7 +476,8 @@
         "promptflow",
         "prompttools",
         "openprompt",
-        "litellm"
+        "litellm",
+        "fission-ai-openspec"
       ]
     },
     {
