@@ -104,17 +104,17 @@ jobs:
       - name: Add tool to JSON
         id: add_tool
         run: |
-          ARGS="--github-url '${{ steps.parse.outputs.github_url }}' \
-                --module-id '${{ steps.parse.outputs.module_id }}' \
-                --category-id '${{ steps.parse.outputs.category_id }}'"
-
-          if [ -n "${{ steps.parse.outputs.description }}" ]; then
-            ARGS="$ARGS --description '${{ steps.parse.outputs.description }}'"
+          ARGS=(--github-url "$TOOL_GITHUB_URL" --module-id "$TOOL_MODULE_ID" --category-id "$TOOL_CATEGORY_ID")
+          if [ -n "$TOOL_DESCRIPTION" ]; then
+            ARGS+=(--description "$TOOL_DESCRIPTION")
           fi
-
-          eval "npm run add-tool -- $ARGS"
+          npm run add-tool -- "${ARGS[@]}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TOOL_GITHUB_URL: ${{ steps.parse.outputs.github_url }}
+          TOOL_MODULE_ID: ${{ steps.parse.outputs.module_id }}
+          TOOL_CATEGORY_ID: ${{ steps.parse.outputs.category_id }}
+          TOOL_DESCRIPTION: ${{ steps.parse.outputs.description }}
 
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
