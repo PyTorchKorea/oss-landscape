@@ -780,6 +780,28 @@
         "lastCommit": "2026-02-27T08:52:45Z",
         "fetchedAt": "2026-03-02T12:24:47.206Z"
       }
+    },
+    {
+      "id": "kortix-ai-suna",
+      "name": "suna",
+      "description": "AI 에이전트를 구축, 관리 및 학습할 수 있는 오픈소스 플랫폼으로, 자율형 에이전트의 전체 라이프사이클을 지원합니다.",
+      "categoryId": "agent-orchestration",
+      "moduleId": "platform-mlops",
+      "license": "NOASSERTION",
+      "githubUrl": "https://github.com/kortix-ai/suna",
+      "koreanSupport": false,
+      "tags": [
+        "ai",
+        "ai-agents",
+        "llm"
+      ],
+      "meta": {
+        "stars": 19444,
+        "forks": 3364,
+        "lastUpdated": "2026-03-02T11:05:07Z",
+        "lastCommit": "2026-02-27T02:41:07Z",
+        "fetchedAt": "2026-03-02T12:25:09.930Z"
+      }
     }
   ]
 }

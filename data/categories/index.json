@@ -395,7 +395,8 @@
         "llamaindex",
         "superagi",
         "semantic-kernel",
-        "camel"
+        "camel",
+        "kortix-ai-suna"
       ]
     },
     {
