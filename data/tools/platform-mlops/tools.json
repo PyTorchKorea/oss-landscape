@@ -832,6 +832,40 @@
         "lastCommit": "2026-02-27T08:54:51Z",
         "fetchedAt": "2026-03-02T12:25:37.240Z"
       }
+    },
+    {
+      "id": "memorilabs-memori",
+      "name": "Memori",
+      "description": "LLM 및 멀티 에이전트 시스템을 위한 SQL 네이티브 메모리 계층으로, 구조화된 메모리 관리를 지원합니다.",
+      "categoryId": "memory-knowledge",
+      "moduleId": "platform-mlops",
+      "license": "NOASSERTION",
+      "githubUrl": "https://github.com/MemoriLabs/Memori",
+      "koreanSupport": false,
+      "tags": [
+        "agent",
+        "agent-memory",
+        "ai",
+        "ai-memory",
+        "aiagent",
+        "awesome",
+        "chatgpt",
+        "llm",
+        "long-short-term-memory",
+        "memori-ai",
+        "memory",
+        "memory-management",
+        "python",
+        "rag",
+        "state-management"
+      ],
+      "meta": {
+        "stars": 12274,
+        "forks": 1094,
+        "lastUpdated": "2026-03-02T11:56:45Z",
+        "lastCommit": "2026-02-26T18:10:24Z",
+        "fetchedAt": "2026-03-02T12:26:07.802Z"
+      }
     }
   ]
 }
