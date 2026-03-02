@@ -1,593 +1,615 @@
 {
-    "tools": [
-        {
-            "id": "huggingface-transformers",
-            "name": "Transformers",
-            "description": "Hugging Face의 트랜스포머 모델 라이브러리. 수천 개의 사전학습 모델",
-            "categoryId": "llm",
-            "moduleId": "model-algorithm",
-            "license": "Apache-2.0",
-            "githubUrl": "https://github.com/huggingface/transformers",
-            "docsUrl": "https://huggingface.co/docs/transformers",
-            "websiteUrl": "https://huggingface.co/transformers",
-            "koreanSupport": true,
-            "tags": [
-                "transformers",
-                "pretrained",
-                "nlp"
-            ],
-            "meta": {
-                "stars": 154117,
-                "lastUpdated": "2025-12-22T04:07:29Z",
-                "fetchedAt": "2025-12-22T04:19:15.676Z",
-                "forks": 31500,
-                "lastCommit": "2025-12-21T17:06:00Z"
-            }
-        },
-        {
-            "id": "llama",
-            "name": "Llama",
-            "description": "Meta의 오픈소스 대규모 언어 모델 시리즈",
-            "categoryId": "llm",
-            "moduleId": "model-algorithm",
-            "license": "Llama Community License",
-            "githubUrl": "https://github.com/meta-llama/llama",
-            "docsUrl": "https://llama.meta.com/docs/",
-            "websiteUrl": "https://llama.meta.com",
-            "koreanSupport": true,
-            "tags": [
-                "llm",
-                "text-generation",
-                "foundation-model"
-            ],
-            "meta": {
-                "stars": 58997,
-                "lastUpdated": "2025-12-22T00:55:15Z",
-                "fetchedAt": "2025-12-22T04:19:16.155Z",
-                "forks": 9816,
-                "lastCommit": "2025-01-26T21:42:26Z"
-            }
-        },
-        {
-            "id": "mistral",
-            "name": "Mistral",
-            "description": "Mistral AI의 효율적인 오픈 웨이트 언어 모델",
-            "categoryId": "llm",
-            "moduleId": "model-algorithm",
-            "license": "Apache-2.0",
-            "githubUrl": "https://github.com/mistralai/mistral-inference",
-            "docsUrl": "https://docs.mistral.ai",
-            "websiteUrl": "https://mistral.ai",
-            "koreanSupport": false,
-            "tags": [
-                "llm",
-                "text-generation",
-                "efficient",
-                "moe"
-            ],
-            "meta": {
-                "stars": 10607,
-                "lastUpdated": "2025-12-21T21:16:02Z",
-                "fetchedAt": "2025-12-22T04:19:16.659Z",
-                "forks": 1002,
-                "lastCommit": "2025-11-21T11:07:09Z"
-            }
-        },
-        {
-            "id": "qwen",
-            "name": "Qwen",
-            "description": "Alibaba의 다국어 대규모 언어 모델",
-            "categoryId": "llm",
-            "moduleId": "model-algorithm",
-            "license": "Apache-2.0",
-            "githubUrl": "https://github.com/QwenLM/Qwen",
-            "docsUrl": "https://qwen.readthedocs.io",
-            "websiteUrl": "https://qwenlm.github.io",
-            "koreanSupport": true,
-            "tags": [
-                "llm",
-                "multilingual",
-                "chinese",
-                "korean"
-            ],
-            "meta": {
-                "stars": 19993,
-                "lastUpdated": "2025-12-22T02:31:11Z",
-                "fetchedAt": "2025-12-22T04:19:17.127Z",
-                "forks": 1670,
-                "lastCommit": "2025-11-26T13:48:46Z"
-            }
-        },
-        {
-            "id": "deepseek",
-            "name": "DeepSeek",
-            "description": "DeepSeek AI의 오픈소스 LLM. 추론 및 코딩 특화",
-            "categoryId": "llm",
-            "moduleId": "model-algorithm",
-            "license": "MIT",
-            "githubUrl": "https://github.com/deepseek-ai/DeepSeek-LLM",
-            "docsUrl": "https://github.com/deepseek-ai/DeepSeek-LLM#readme",
-            "websiteUrl": "https://www.deepseek.com/",
-            "koreanSupport": false,
-            "tags": [
-                "llm",
-                "reasoning",
-                "coding",
-                "moe"
-            ],
-            "meta": {
-                "stars": 6677,
-                "lastUpdated": "2025-12-21T15:21:40Z",
-                "fetchedAt": "2025-12-22T04:19:17.609Z",
-                "forks": 1042,
-                "lastCommit": "2024-02-04T12:22:16Z"
-            }
-        },
-        {
-            "id": "gemma",
-            "name": "Gemma",
-            "description": "Google의 경량 오픈 모델. Gemini 기술 기반",
-            "categoryId": "llm",
-            "moduleId": "model-algorithm",
-            "license": "Gemma Community License",
-            "githubUrl": "https://github.com/google/gemma_pytorch",
-            "docsUrl": "https://ai.google.dev/gemma/docs",
-            "websiteUrl": "https://ai.google.dev/gemma",
-            "koreanSupport": false,
-            "tags": [
-                "llm",
-                "lightweight",
-                "google"
-            ],
-            "meta": {
-                "stars": 5588,
-                "lastUpdated": "2025-12-19T19:47:28Z",
-                "fetchedAt": "2025-12-22T04:19:18.125Z",
-                "forks": 567,
-                "lastCommit": "2025-05-30T20:45:51Z"
-            }
-        },
-        {
-            "id": "phi",
-            "name": "Phi",
-            "description": "Microsoft의 소형 언어 모델. 모바일 및 엣지용",
-            "categoryId": "llm",
-            "moduleId": "model-algorithm",
-            "license": "MIT",
-            "githubUrl": "https://github.com/microsoft/Phi-3CookBook",
-            "docsUrl": "https://huggingface.co/microsoft/phi-3",
-            "websiteUrl": "https://azure.microsoft.com/en-us/products/ai-services/phi-3/",
-            "koreanSupport": false,
-            "tags": [
-                "llm",
-                "small-model",
-                "edge"
-            ],
-            "meta": {
-                "stars": 3629,
-                "lastUpdated": "2025-12-21T20:53:55Z",
-                "fetchedAt": "2025-12-22T04:19:19.001Z",
-                "forks": 474,
-                "lastCommit": "2025-12-19T09:34:45Z"
-            }
-        },
-        {
-            "id": "clip",
-            "name": "CLIP",
-            "description": "OpenAI의 이미지-텍스트 대조 학습 모델",
-            "categoryId": "vision-model",
-            "moduleId": "model-algorithm",
-            "license": "MIT",
-            "githubUrl": "https://github.com/openai/CLIP",
-            "docsUrl": "https://github.com/openai/CLIP#readme",
-            "websiteUrl": "https://openai.com/research/clip",
-            "koreanSupport": false,
-            "tags": [
-                "vision",
-                "multimodal",
-                "contrastive-learning"
-            ],
-            "meta": {
-                "stars": 32030,
-                "lastUpdated": "2025-12-22T03:58:17Z",
-                "fetchedAt": "2025-12-22T04:19:19.489Z",
-                "forks": 3865,
-                "lastCommit": "2024-07-23T01:30:44Z"
-            }
-        },
-        {
-            "id": "sam",
-            "name": "SAM",
-            "description": "Meta의 Segment Anything Model. 범용 이미지 세그멘테이션",
-            "categoryId": "vision-model",
-            "moduleId": "model-algorithm",
-            "license": "Apache-2.0",
-            "githubUrl": "https://github.com/facebookresearch/segment-anything",
-            "docsUrl": "https://segment-anything.com/",
-            "websiteUrl": "https://segment-anything.com/",
-            "koreanSupport": false,
-            "tags": [
-                "vision",
-                "segmentation",
-                "zero-shot"
-            ],
-            "meta": {
-                "stars": 52972,
-                "lastUpdated": "2025-12-22T03:14:47Z",
-                "fetchedAt": "2025-12-22T04:19:20.060Z",
-                "forks": 6181,
-                "lastCommit": "2024-09-18T17:46:55Z"
-            }
-        },
-        {
-            "id": "yolo",
-            "name": "YOLOv8 (Ultralytics)",
-            "description": "실시간 객체 탐지 모델. 탐지, 세그멘테이션, 포즈 추정",
-            "categoryId": "vision-model",
-            "moduleId": "model-algorithm",
-            "license": "AGPL-3.0",
-            "githubUrl": "https://github.com/ultralytics/ultralytics",
-            "docsUrl": "https://docs.ultralytics.com/",
-            "websiteUrl": "https://ultralytics.com/",
-            "koreanSupport": false,
-            "tags": [
-                "object-detection",
-                "real-time",
-                "computer-vision"
-            ],
-            "meta": {
-                "stars": 50186,
-                "lastUpdated": "2025-12-22T03:28:17Z",
-                "fetchedAt": "2025-12-22T04:19:20.585Z",
-                "forks": 9691,
-                "lastCommit": "2025-12-22T03:11:18Z"
-            }
-        },
-        {
-            "id": "dino",
-            "name": "DINOv2",
-            "description": "Meta의 자기지도 비전 트랜스포머. 범용 시각 특징 추출",
-            "categoryId": "vision-model",
-            "moduleId": "model-algorithm",
-            "license": "Apache-2.0",
-            "githubUrl": "https://github.com/facebookresearch/dinov2",
-            "docsUrl": "https://github.com/facebookresearch/dinov2#readme",
-            "websiteUrl": "https://dinov2.metademolab.com/",
-            "koreanSupport": false,
-            "tags": [
-                "vision",
-                "self-supervised",
-                "features"
-            ],
-            "meta": {
-                "stars": 12100,
-                "lastUpdated": "2025-12-22T03:58:22Z",
-                "fetchedAt": "2025-12-22T04:19:21.087Z",
-                "forks": 1145,
-                "lastCommit": "2025-12-17T14:25:43Z"
-            }
-        },
-        {
-            "id": "sentence-transformers",
-            "name": "Sentence Transformers",
-            "description": "문장, 텍스트, 이미지 임베딩을 위한 프레임워크",
-            "categoryId": "embedding-model",
-            "moduleId": "model-algorithm",
-            "license": "Apache-2.0",
-            "githubUrl": "https://github.com/UKPLab/sentence-transformers",
-            "docsUrl": "https://www.sbert.net",
-            "websiteUrl": "https://www.sbert.net",
-            "koreanSupport": true,
-            "tags": [
-                "embedding",
-                "sentence",
-                "semantic-search"
-            ],
-            "meta": {
-                "stars": 18024,
-                "lastUpdated": "2025-12-22T02:07:59Z",
-                "fetchedAt": "2025-12-22T04:19:21.895Z",
-                "forks": 2720,
-                "lastCommit": "2025-12-18T12:02:11Z"
-            }
-        },
-        {
-            "id": "bge",
-            "name": "BGE",
-            "description": "BAAI의 다국어 임베딩 모델",
-            "categoryId": "embedding-model",
-            "moduleId": "model-algorithm",
-            "license": "MIT",
-            "githubUrl": "https://github.com/FlagOpen/FlagEmbedding",
-            "docsUrl": "https://github.com/FlagOpen/FlagEmbedding#readme",
-            "websiteUrl": "https://github.com/FlagOpen/FlagEmbedding",
-            "koreanSupport": true,
-            "tags": [
-                "embedding",
-                "multilingual",
-                "retrieval"
-            ],
-            "meta": {
-                "stars": 11034,
-                "lastUpdated": "2025-12-22T04:17:38Z",
-                "fetchedAt": "2025-12-22T04:19:22.343Z",
-                "forks": 812,
-                "lastCommit": "2025-12-15T08:54:38Z"
-            }
-        },
-        {
-            "id": "jina-embeddings",
-            "name": "Jina Embeddings",
-            "description": "Jina AI의 오픈소스 임베딩 모델. 8K 토큰 지원",
-            "categoryId": "embedding-model",
-            "moduleId": "model-algorithm",
-            "license": "Apache-2.0",
-            "githubUrl": "https://github.com/jina-ai/jina",
-            "docsUrl": "https://jina.ai/embeddings/",
-            "websiteUrl": "https://jina.ai/",
-            "koreanSupport": false,
-            "tags": [
-                "embedding",
-                "long-context",
-                "multilingual"
-            ],
-            "meta": {
-                "stars": 21808,
-                "lastUpdated": "2025-12-20T08:48:45Z",
-                "fetchedAt": "2025-12-22T04:19:23.108Z",
-                "forks": 2239,
-                "lastCommit": "2025-03-24T13:59:54Z"
-            }
-        },
-        {
-            "id": "llava",
-            "name": "LLaVA",
-            "description": "Large Language-and-Vision Assistant. 멀티모달 대화",
-            "categoryId": "multimodal",
-            "moduleId": "model-algorithm",
-            "license": "Apache-2.0",
-            "githubUrl": "https://github.com/haotian-liu/LLaVA",
-            "docsUrl": "https://llava-vl.github.io/",
-            "websiteUrl": "https://llava-vl.github.io/",
-            "koreanSupport": false,
-            "tags": [
-                "multimodal",
-                "vision-language",
-                "conversation"
-            ],
-            "meta": {
-                "stars": 24198,
-                "lastUpdated": "2025-12-21T18:21:40Z",
-                "fetchedAt": "2025-12-22T04:19:23.488Z",
-                "forks": 2685,
-                "lastCommit": "2024-08-12T09:52:38Z"
-            }
-        },
-        {
-            "id": "whisper",
-            "name": "Whisper",
-            "description": "OpenAI의 범용 음성 인식 모델. 다국어 지원",
-            "categoryId": "multimodal",
-            "moduleId": "model-algorithm",
-            "license": "MIT",
-            "githubUrl": "https://github.com/openai/whisper",
-            "docsUrl": "https://github.com/openai/whisper#readme",
-            "websiteUrl": "https://openai.com/research/whisper",
-            "koreanSupport": true,
-            "tags": [
-                "speech",
-                "transcription",
-                "multilingual"
-            ],
-            "meta": {
-                "stars": 92210,
-                "lastUpdated": "2025-12-22T03:45:50Z",
-                "fetchedAt": "2025-12-22T04:19:23.976Z",
-                "forks": 11556,
-                "lastCommit": "2025-12-15T10:18:21Z"
-            }
-        },
-        {
-            "id": "cogvlm",
-            "name": "CogVLM",
-            "description": "Tsinghua/Zhipu AI의 비전-언어 모델",
-            "categoryId": "multimodal",
-            "moduleId": "model-algorithm",
-            "license": "Apache-2.0",
-            "githubUrl": "https://github.com/THUDM/CogVLM",
-            "docsUrl": "https://github.com/THUDM/CogVLM#readme",
-            "websiteUrl": "https://github.com/THUDM/CogVLM",
-            "koreanSupport": false,
-            "tags": [
-                "multimodal",
-                "vision-language",
-                "chinese"
-            ],
-            "meta": {
-                "stars": 6710,
-                "lastUpdated": "2025-12-21T13:59:19Z",
-                "fetchedAt": "2025-12-22T04:19:24.760Z",
-                "forks": 449,
-                "lastCommit": "2024-05-29T10:01:33Z"
-            }
-        },
-        {
-            "id": "qwen-vl",
-            "name": "Qwen-VL",
-            "description": "Alibaba의 비전-언어 모델. 이미지 이해 및 대화",
-            "categoryId": "multimodal",
-            "moduleId": "model-algorithm",
-            "license": "Apache-2.0",
-            "githubUrl": "https://github.com/QwenLM/Qwen-VL",
-            "docsUrl": "https://github.com/QwenLM/Qwen-VL#readme",
-            "websiteUrl": "https://github.com/QwenLM/Qwen-VL",
-            "koreanSupport": false,
-            "tags": [
-                "multimodal",
-                "vision-language",
-                "qwen"
-            ],
-            "meta": {
-                "stars": 6437,
-                "lastUpdated": "2025-12-22T03:10:57Z",
-                "fetchedAt": "2025-12-22T04:19:25.242Z",
-                "forks": 479,
-                "lastCommit": "2024-08-07T02:37:06Z"
-            }
-        },
-        {
-            "id": "imagebind",
-            "name": "ImageBind",
-            "description": "One embedding space to bind all modalities — image, text, audio, depth, thermal, IMU",
-            "categoryId": "multimodal",
-            "moduleId": "model-algorithm",
-            "license": "CC-BY-NC-4.0",
-            "githubUrl": "https://github.com/facebookresearch/ImageBind",
-            "koreanSupport": false,
-            "tags": [
-                "multimodal",
-                "embedding",
-                "audio",
-                "vision",
-                "meta"
-            ],
-            "meta": {
-                "stars": 8500,
-                "forks": 820,
-                "lastUpdated": "2025-08-01T00:00:00Z",
-                "fetchedAt": "2026-03-01T00:00:00.000Z"
-            }
-        },
-        {
-            "id": "audiocraft",
-            "name": "AudioCraft",
-            "description": "Meta's library for audio processing and generation — MusicGen, AudioGen, EnCodec",
-            "categoryId": "multimodal",
-            "moduleId": "model-algorithm",
-            "license": "MIT",
-            "githubUrl": "https://github.com/facebookresearch/audiocraft",
-            "koreanSupport": false,
-            "tags": [
-                "audio",
-                "music-generation",
-                "text-to-audio",
-                "meta"
-            ],
-            "meta": {
-                "stars": 20500,
-                "forks": 2100,
-                "lastUpdated": "2025-10-01T00:00:00Z",
-                "fetchedAt": "2026-03-01T00:00:00.000Z"
-            }
-        },
-        {
-            "id": "bark",
-            "name": "Bark",
-            "description": "Transformer-based text-to-audio model — generates speech, music, and audio effects from text",
-            "categoryId": "multimodal",
-            "moduleId": "model-algorithm",
-            "license": "MIT",
-            "githubUrl": "https://github.com/suno-ai/bark",
-            "koreanSupport": false,
-            "tags": [
-                "text-to-speech",
-                "audio-generation",
-                "transformer",
-                "tts"
-            ],
-            "meta": {
-                "stars": 36000,
-                "forks": 4200,
-                "lastUpdated": "2025-09-01T00:00:00Z",
-                "fetchedAt": "2026-03-01T00:00:00.000Z"
-            }
-        },
-        {
-            "id": "chatglm",
-            "name": "ChatGLM",
-            "description": "An open bilingual (Chinese-English) language model based on GLM framework with 6B-130B parameters",
-            "categoryId": "llm",
-            "moduleId": "model-algorithm",
-            "license": "Apache-2.0",
-            "githubUrl": "https://github.com/THUDM/ChatGLM3",
-            "koreanSupport": false,
-            "tags": [
-                "llm",
-                "chinese",
-                "bilingual",
-                "glm",
-                "tsinghua"
-            ],
-            "meta": {
-                "stars": 13000,
-                "forks": 1700,
-                "lastUpdated": "2025-10-01T00:00:00Z",
-                "fetchedAt": "2026-03-01T00:00:00.000Z"
-            }
-        },
-        {
-            "id": "gpt-neox",
-            "name": "GPT-NeoX",
-            "description": "EleutherAI's library for training large-scale language models on GPUs — PyTorch + DeepSpeed",
-            "categoryId": "llm",
-            "moduleId": "model-algorithm",
-            "license": "Apache-2.0",
-            "githubUrl": "https://github.com/EleutherAI/gpt-neox",
-            "koreanSupport": false,
-            "tags": [
-                "llm",
-                "training",
-                "eleutherai",
-                "deepspeed",
-                "gpt"
-            ],
-            "meta": {
-                "stars": 7200,
-                "forks": 1050,
-                "lastUpdated": "2025-10-01T00:00:00Z",
-                "fetchedAt": "2026-03-01T00:00:00.000Z"
-            }
-        },
-        {
-            "id": "olmo",
-            "name": "OLMo",
-            "description": "Allen AI's fully open language model — open weights, open training data, open code for reproducible LLM research",
-            "categoryId": "llm",
-            "moduleId": "model-algorithm",
-            "license": "Apache-2.0",
-            "githubUrl": "https://github.com/allenai/OLMo",
-            "koreanSupport": false,
-            "tags": [
-                "llm",
-                "open-source",
-                "research",
-                "allenai",
-                "reproducible"
-            ],
-            "meta": {
-                "stars": 5200,
-                "forks": 560,
-                "lastUpdated": "2025-12-01T00:00:00Z",
-                "fetchedAt": "2026-03-01T00:00:00.000Z"
-            }
-        },
-        {
-            "id": "e5",
-            "name": "E5 Text Embeddings",
-            "description": "State-of-the-art text embeddings model from Microsoft for semantic search and retrieval tasks",
-            "categoryId": "embedding-model",
-            "moduleId": "model-algorithm",
-            "license": "MIT",
-            "githubUrl": "https://github.com/microsoft/unilm",
-            "koreanSupport": false,
-            "tags": ["embedding", "semantic-search", "text-representation"],
-            "meta": {
-                "stars": 19000,
-                "forks": 2200,
-                "lastUpdated": "2025-01-01T00:00:00Z",
-                "lastCommit": "2025-01-01T00:00:00Z",
-                "fetchedAt": "2026-03-01T00:00:00Z"
-            }
-        }
-    ]
+  "tools": [
+    {
+      "id": "huggingface-transformers",
+      "name": "Transformers",
+      "description": "Hugging Face의 트랜스포머 모델 라이브러리. 수천 개의 사전학습 모델",
+      "categoryId": "llm",
+      "moduleId": "model-algorithm",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/huggingface/transformers",
+      "docsUrl": "https://huggingface.co/docs/transformers",
+      "websiteUrl": "https://huggingface.co/transformers",
+      "koreanSupport": true,
+      "tags": [
+        "transformers",
+        "pretrained",
+        "nlp"
+      ],
+      "meta": {
+        "stars": 154117,
+        "lastUpdated": "2025-12-22T04:07:29Z",
+        "fetchedAt": "2025-12-22T04:19:15.676Z",
+        "forks": 31500,
+        "lastCommit": "2025-12-21T17:06:00Z"
+      }
+    },
+    {
+      "id": "llama",
+      "name": "Llama",
+      "description": "Meta의 오픈소스 대규모 언어 모델 시리즈",
+      "categoryId": "llm",
+      "moduleId": "model-algorithm",
+      "license": "Llama Community License",
+      "githubUrl": "https://github.com/meta-llama/llama",
+      "docsUrl": "https://llama.meta.com/docs/",
+      "websiteUrl": "https://llama.meta.com",
+      "koreanSupport": true,
+      "tags": [
+        "llm",
+        "text-generation",
+        "foundation-model"
+      ],
+      "meta": {
+        "stars": 58997,
+        "lastUpdated": "2025-12-22T00:55:15Z",
+        "fetchedAt": "2025-12-22T04:19:16.155Z",
+        "forks": 9816,
+        "lastCommit": "2025-01-26T21:42:26Z"
+      }
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral",
+      "description": "Mistral AI의 효율적인 오픈 웨이트 언어 모델",
+      "categoryId": "llm",
+      "moduleId": "model-algorithm",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/mistralai/mistral-inference",
+      "docsUrl": "https://docs.mistral.ai",
+      "websiteUrl": "https://mistral.ai",
+      "koreanSupport": false,
+      "tags": [
+        "llm",
+        "text-generation",
+        "efficient",
+        "moe"
+      ],
+      "meta": {
+        "stars": 10607,
+        "lastUpdated": "2025-12-21T21:16:02Z",
+        "fetchedAt": "2025-12-22T04:19:16.659Z",
+        "forks": 1002,
+        "lastCommit": "2025-11-21T11:07:09Z"
+      }
+    },
+    {
+      "id": "qwen",
+      "name": "Qwen",
+      "description": "Alibaba의 다국어 대규모 언어 모델",
+      "categoryId": "llm",
+      "moduleId": "model-algorithm",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/QwenLM/Qwen",
+      "docsUrl": "https://qwen.readthedocs.io",
+      "websiteUrl": "https://qwenlm.github.io",
+      "koreanSupport": true,
+      "tags": [
+        "llm",
+        "multilingual",
+        "chinese",
+        "korean"
+      ],
+      "meta": {
+        "stars": 19993,
+        "lastUpdated": "2025-12-22T02:31:11Z",
+        "fetchedAt": "2025-12-22T04:19:17.127Z",
+        "forks": 1670,
+        "lastCommit": "2025-11-26T13:48:46Z"
+      }
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "description": "DeepSeek AI의 오픈소스 LLM. 추론 및 코딩 특화",
+      "categoryId": "llm",
+      "moduleId": "model-algorithm",
+      "license": "MIT",
+      "githubUrl": "https://github.com/deepseek-ai/DeepSeek-LLM",
+      "docsUrl": "https://github.com/deepseek-ai/DeepSeek-LLM#readme",
+      "websiteUrl": "https://www.deepseek.com/",
+      "koreanSupport": false,
+      "tags": [
+        "llm",
+        "reasoning",
+        "coding",
+        "moe"
+      ],
+      "meta": {
+        "stars": 6677,
+        "lastUpdated": "2025-12-21T15:21:40Z",
+        "fetchedAt": "2025-12-22T04:19:17.609Z",
+        "forks": 1042,
+        "lastCommit": "2024-02-04T12:22:16Z"
+      }
+    },
+    {
+      "id": "gemma",
+      "name": "Gemma",
+      "description": "Google의 경량 오픈 모델. Gemini 기술 기반",
+      "categoryId": "llm",
+      "moduleId": "model-algorithm",
+      "license": "Gemma Community License",
+      "githubUrl": "https://github.com/google/gemma_pytorch",
+      "docsUrl": "https://ai.google.dev/gemma/docs",
+      "websiteUrl": "https://ai.google.dev/gemma",
+      "koreanSupport": false,
+      "tags": [
+        "llm",
+        "lightweight",
+        "google"
+      ],
+      "meta": {
+        "stars": 5588,
+        "lastUpdated": "2025-12-19T19:47:28Z",
+        "fetchedAt": "2025-12-22T04:19:18.125Z",
+        "forks": 567,
+        "lastCommit": "2025-05-30T20:45:51Z"
+      }
+    },
+    {
+      "id": "phi",
+      "name": "Phi",
+      "description": "Microsoft의 소형 언어 모델. 모바일 및 엣지용",
+      "categoryId": "llm",
+      "moduleId": "model-algorithm",
+      "license": "MIT",
+      "githubUrl": "https://github.com/microsoft/Phi-3CookBook",
+      "docsUrl": "https://huggingface.co/microsoft/phi-3",
+      "websiteUrl": "https://azure.microsoft.com/en-us/products/ai-services/phi-3/",
+      "koreanSupport": false,
+      "tags": [
+        "llm",
+        "small-model",
+        "edge"
+      ],
+      "meta": {
+        "stars": 3629,
+        "lastUpdated": "2025-12-21T20:53:55Z",
+        "fetchedAt": "2025-12-22T04:19:19.001Z",
+        "forks": 474,
+        "lastCommit": "2025-12-19T09:34:45Z"
+      }
+    },
+    {
+      "id": "clip",
+      "name": "CLIP",
+      "description": "OpenAI의 이미지-텍스트 대조 학습 모델",
+      "categoryId": "vision-model",
+      "moduleId": "model-algorithm",
+      "license": "MIT",
+      "githubUrl": "https://github.com/openai/CLIP",
+      "docsUrl": "https://github.com/openai/CLIP#readme",
+      "websiteUrl": "https://openai.com/research/clip",
+      "koreanSupport": false,
+      "tags": [
+        "vision",
+        "multimodal",
+        "contrastive-learning"
+      ],
+      "meta": {
+        "stars": 32030,
+        "lastUpdated": "2025-12-22T03:58:17Z",
+        "fetchedAt": "2025-12-22T04:19:19.489Z",
+        "forks": 3865,
+        "lastCommit": "2024-07-23T01:30:44Z"
+      }
+    },
+    {
+      "id": "sam",
+      "name": "SAM",
+      "description": "Meta의 Segment Anything Model. 범용 이미지 세그멘테이션",
+      "categoryId": "vision-model",
+      "moduleId": "model-algorithm",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/facebookresearch/segment-anything",
+      "docsUrl": "https://segment-anything.com/",
+      "websiteUrl": "https://segment-anything.com/",
+      "koreanSupport": false,
+      "tags": [
+        "vision",
+        "segmentation",
+        "zero-shot"
+      ],
+      "meta": {
+        "stars": 52972,
+        "lastUpdated": "2025-12-22T03:14:47Z",
+        "fetchedAt": "2025-12-22T04:19:20.060Z",
+        "forks": 6181,
+        "lastCommit": "2024-09-18T17:46:55Z"
+      }
+    },
+    {
+      "id": "yolo",
+      "name": "YOLOv8 (Ultralytics)",
+      "description": "실시간 객체 탐지 모델. 탐지, 세그멘테이션, 포즈 추정",
+      "categoryId": "vision-model",
+      "moduleId": "model-algorithm",
+      "license": "AGPL-3.0",
+      "githubUrl": "https://github.com/ultralytics/ultralytics",
+      "docsUrl": "https://docs.ultralytics.com/",
+      "websiteUrl": "https://ultralytics.com/",
+      "koreanSupport": false,
+      "tags": [
+        "object-detection",
+        "real-time",
+        "computer-vision"
+      ],
+      "meta": {
+        "stars": 50186,
+        "lastUpdated": "2025-12-22T03:28:17Z",
+        "fetchedAt": "2025-12-22T04:19:20.585Z",
+        "forks": 9691,
+        "lastCommit": "2025-12-22T03:11:18Z"
+      }
+    },
+    {
+      "id": "dino",
+      "name": "DINOv2",
+      "description": "Meta의 자기지도 비전 트랜스포머. 범용 시각 특징 추출",
+      "categoryId": "vision-model",
+      "moduleId": "model-algorithm",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/facebookresearch/dinov2",
+      "docsUrl": "https://github.com/facebookresearch/dinov2#readme",
+      "websiteUrl": "https://dinov2.metademolab.com/",
+      "koreanSupport": false,
+      "tags": [
+        "vision",
+        "self-supervised",
+        "features"
+      ],
+      "meta": {
+        "stars": 12100,
+        "lastUpdated": "2025-12-22T03:58:22Z",
+        "fetchedAt": "2025-12-22T04:19:21.087Z",
+        "forks": 1145,
+        "lastCommit": "2025-12-17T14:25:43Z"
+      }
+    },
+    {
+      "id": "sentence-transformers",
+      "name": "Sentence Transformers",
+      "description": "문장, 텍스트, 이미지 임베딩을 위한 프레임워크",
+      "categoryId": "embedding-model",
+      "moduleId": "model-algorithm",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/UKPLab/sentence-transformers",
+      "docsUrl": "https://www.sbert.net",
+      "websiteUrl": "https://www.sbert.net",
+      "koreanSupport": true,
+      "tags": [
+        "embedding",
+        "sentence",
+        "semantic-search"
+      ],
+      "meta": {
+        "stars": 18024,
+        "lastUpdated": "2025-12-22T02:07:59Z",
+        "fetchedAt": "2025-12-22T04:19:21.895Z",
+        "forks": 2720,
+        "lastCommit": "2025-12-18T12:02:11Z"
+      }
+    },
+    {
+      "id": "bge",
+      "name": "BGE",
+      "description": "BAAI의 다국어 임베딩 모델",
+      "categoryId": "embedding-model",
+      "moduleId": "model-algorithm",
+      "license": "MIT",
+      "githubUrl": "https://github.com/FlagOpen/FlagEmbedding",
+      "docsUrl": "https://github.com/FlagOpen/FlagEmbedding#readme",
+      "websiteUrl": "https://github.com/FlagOpen/FlagEmbedding",
+      "koreanSupport": true,
+      "tags": [
+        "embedding",
+        "multilingual",
+        "retrieval"
+      ],
+      "meta": {
+        "stars": 11034,
+        "lastUpdated": "2025-12-22T04:17:38Z",
+        "fetchedAt": "2025-12-22T04:19:22.343Z",
+        "forks": 812,
+        "lastCommit": "2025-12-15T08:54:38Z"
+      }
+    },
+    {
+      "id": "jina-embeddings",
+      "name": "Jina Embeddings",
+      "description": "Jina AI의 오픈소스 임베딩 모델. 8K 토큰 지원",
+      "categoryId": "embedding-model",
+      "moduleId": "model-algorithm",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/jina-ai/jina",
+      "docsUrl": "https://jina.ai/embeddings/",
+      "websiteUrl": "https://jina.ai/",
+      "koreanSupport": false,
+      "tags": [
+        "embedding",
+        "long-context",
+        "multilingual"
+      ],
+      "meta": {
+        "stars": 21808,
+        "lastUpdated": "2025-12-20T08:48:45Z",
+        "fetchedAt": "2025-12-22T04:19:23.108Z",
+        "forks": 2239,
+        "lastCommit": "2025-03-24T13:59:54Z"
+      }
+    },
+    {
+      "id": "llava",
+      "name": "LLaVA",
+      "description": "Large Language-and-Vision Assistant. 멀티모달 대화",
+      "categoryId": "multimodal",
+      "moduleId": "model-algorithm",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/haotian-liu/LLaVA",
+      "docsUrl": "https://llava-vl.github.io/",
+      "websiteUrl": "https://llava-vl.github.io/",
+      "koreanSupport": false,
+      "tags": [
+        "multimodal",
+        "vision-language",
+        "conversation"
+      ],
+      "meta": {
+        "stars": 24198,
+        "lastUpdated": "2025-12-21T18:21:40Z",
+        "fetchedAt": "2025-12-22T04:19:23.488Z",
+        "forks": 2685,
+        "lastCommit": "2024-08-12T09:52:38Z"
+      }
+    },
+    {
+      "id": "whisper",
+      "name": "Whisper",
+      "description": "OpenAI의 범용 음성 인식 모델. 다국어 지원",
+      "categoryId": "multimodal",
+      "moduleId": "model-algorithm",
+      "license": "MIT",
+      "githubUrl": "https://github.com/openai/whisper",
+      "docsUrl": "https://github.com/openai/whisper#readme",
+      "websiteUrl": "https://openai.com/research/whisper",
+      "koreanSupport": true,
+      "tags": [
+        "speech",
+        "transcription",
+        "multilingual"
+      ],
+      "meta": {
+        "stars": 92210,
+        "lastUpdated": "2025-12-22T03:45:50Z",
+        "fetchedAt": "2025-12-22T04:19:23.976Z",
+        "forks": 11556,
+        "lastCommit": "2025-12-15T10:18:21Z"
+      }
+    },
+    {
+      "id": "cogvlm",
+      "name": "CogVLM",
+      "description": "Tsinghua/Zhipu AI의 비전-언어 모델",
+      "categoryId": "multimodal",
+      "moduleId": "model-algorithm",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/THUDM/CogVLM",
+      "docsUrl": "https://github.com/THUDM/CogVLM#readme",
+      "websiteUrl": "https://github.com/THUDM/CogVLM",
+      "koreanSupport": false,
+      "tags": [
+        "multimodal",
+        "vision-language",
+        "chinese"
+      ],
+      "meta": {
+        "stars": 6710,
+        "lastUpdated": "2025-12-21T13:59:19Z",
+        "fetchedAt": "2025-12-22T04:19:24.760Z",
+        "forks": 449,
+        "lastCommit": "2024-05-29T10:01:33Z"
+      }
+    },
+    {
+      "id": "qwen-vl",
+      "name": "Qwen-VL",
+      "description": "Alibaba의 비전-언어 모델. 이미지 이해 및 대화",
+      "categoryId": "multimodal",
+      "moduleId": "model-algorithm",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/QwenLM/Qwen-VL",
+      "docsUrl": "https://github.com/QwenLM/Qwen-VL#readme",
+      "websiteUrl": "https://github.com/QwenLM/Qwen-VL",
+      "koreanSupport": false,
+      "tags": [
+        "multimodal",
+        "vision-language",
+        "qwen"
+      ],
+      "meta": {
+        "stars": 6437,
+        "lastUpdated": "2025-12-22T03:10:57Z",
+        "fetchedAt": "2025-12-22T04:19:25.242Z",
+        "forks": 479,
+        "lastCommit": "2024-08-07T02:37:06Z"
+      }
+    },
+    {
+      "id": "imagebind",
+      "name": "ImageBind",
+      "description": "One embedding space to bind all modalities — image, text, audio, depth, thermal, IMU",
+      "categoryId": "multimodal",
+      "moduleId": "model-algorithm",
+      "license": "CC-BY-NC-4.0",
+      "githubUrl": "https://github.com/facebookresearch/ImageBind",
+      "koreanSupport": false,
+      "tags": [
+        "multimodal",
+        "embedding",
+        "audio",
+        "vision",
+        "meta"
+      ],
+      "meta": {
+        "stars": 8500,
+        "forks": 820,
+        "lastUpdated": "2025-08-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "audiocraft",
+      "name": "AudioCraft",
+      "description": "Meta's library for audio processing and generation — MusicGen, AudioGen, EnCodec",
+      "categoryId": "multimodal",
+      "moduleId": "model-algorithm",
+      "license": "MIT",
+      "githubUrl": "https://github.com/facebookresearch/audiocraft",
+      "koreanSupport": false,
+      "tags": [
+        "audio",
+        "music-generation",
+        "text-to-audio",
+        "meta"
+      ],
+      "meta": {
+        "stars": 20500,
+        "forks": 2100,
+        "lastUpdated": "2025-10-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "bark",
+      "name": "Bark",
+      "description": "Transformer-based text-to-audio model — generates speech, music, and audio effects from text",
+      "categoryId": "multimodal",
+      "moduleId": "model-algorithm",
+      "license": "MIT",
+      "githubUrl": "https://github.com/suno-ai/bark",
+      "koreanSupport": false,
+      "tags": [
+        "text-to-speech",
+        "audio-generation",
+        "transformer",
+        "tts"
+      ],
+      "meta": {
+        "stars": 36000,
+        "forks": 4200,
+        "lastUpdated": "2025-09-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "chatglm",
+      "name": "ChatGLM",
+      "description": "An open bilingual (Chinese-English) language model based on GLM framework with 6B-130B parameters",
+      "categoryId": "llm",
+      "moduleId": "model-algorithm",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/THUDM/ChatGLM3",
+      "koreanSupport": false,
+      "tags": [
+        "llm",
+        "chinese",
+        "bilingual",
+        "glm",
+        "tsinghua"
+      ],
+      "meta": {
+        "stars": 13000,
+        "forks": 1700,
+        "lastUpdated": "2025-10-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "gpt-neox",
+      "name": "GPT-NeoX",
+      "description": "EleutherAI's library for training large-scale language models on GPUs — PyTorch + DeepSpeed",
+      "categoryId": "llm",
+      "moduleId": "model-algorithm",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/EleutherAI/gpt-neox",
+      "koreanSupport": false,
+      "tags": [
+        "llm",
+        "training",
+        "eleutherai",
+        "deepspeed",
+        "gpt"
+      ],
+      "meta": {
+        "stars": 7200,
+        "forks": 1050,
+        "lastUpdated": "2025-10-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "olmo",
+      "name": "OLMo",
+      "description": "Allen AI's fully open language model — open weights, open training data, open code for reproducible LLM research",
+      "categoryId": "llm",
+      "moduleId": "model-algorithm",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/allenai/OLMo",
+      "koreanSupport": false,
+      "tags": [
+        "llm",
+        "open-source",
+        "research",
+        "allenai",
+        "reproducible"
+      ],
+      "meta": {
+        "stars": 5200,
+        "forks": 560,
+        "lastUpdated": "2025-12-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "e5",
+      "name": "E5 Text Embeddings",
+      "description": "State-of-the-art text embeddings model from Microsoft for semantic search and retrieval tasks",
+      "categoryId": "embedding-model",
+      "moduleId": "model-algorithm",
+      "license": "MIT",
+      "githubUrl": "https://github.com/microsoft/unilm",
+      "koreanSupport": false,
+      "tags": [
+        "embedding",
+        "semantic-search",
+        "text-representation"
+      ],
+      "meta": {
+        "stars": 19000,
+        "forks": 2200,
+        "lastUpdated": "2025-01-01T00:00:00Z",
+        "lastCommit": "2025-01-01T00:00:00Z",
+        "fetchedAt": "2026-03-01T00:00:00Z"
+      }
+    },
+    {
+      "id": "qwenlm-qwen3-tts",
+      "name": "Qwen3-TTS",
+      "description": "안정적이고 표현력 있는 음성 생성, 자유로운 음성 디자인 및 음성 복제를 지원하는 Alibaba Cloud Qwen 팀의 오픈소스 TTS 모델입니다.",
+      "categoryId": "multimodal",
+      "moduleId": "model-algorithm",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/QwenLM/Qwen3-TTS",
+      "koreanSupport": false,
+      "tags": [],
+      "meta": {
+        "stars": 8877,
+        "forks": 1104,
+        "lastUpdated": "2026-03-02T12:25:40Z",
+        "lastCommit": "2026-02-06T04:11:37Z",
+        "fetchedAt": "2026-03-02T12:27:58.249Z"
+      }
+    }
+  ]
 }

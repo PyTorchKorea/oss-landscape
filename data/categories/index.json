@@ -220,7 +220,8 @@
         "qwen-vl",
         "imagebind",
         "audiocraft",
-        "bark"
+        "bark",
+        "qwenlm-qwen3-tts"
       ]
     },
     {
