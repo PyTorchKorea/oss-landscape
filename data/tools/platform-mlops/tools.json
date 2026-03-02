@@ -866,6 +866,30 @@
         "lastCommit": "2026-02-26T18:10:24Z",
         "fetchedAt": "2026-03-02T12:26:07.802Z"
       }
+    },
+    {
+      "id": "droidrun-droidrun",
+      "name": "droidrun",
+      "description": "자연어 명령으로 모바일 기기를 제어하는 LLM 기반 에이전트 프레임워크로, 다양한 LLM과 호환됩니다.",
+      "categoryId": "agent-orchestration",
+      "moduleId": "platform-mlops",
+      "license": "MIT",
+      "githubUrl": "https://github.com/droidrun/droidrun",
+      "koreanSupport": false,
+      "tags": [
+        "ai-agents",
+        "android",
+        "android-automation",
+        "hacktoberfest",
+        "mobile-automation"
+      ],
+      "meta": {
+        "stars": 7806,
+        "forks": 794,
+        "lastUpdated": "2026-03-02T11:36:59Z",
+        "lastCommit": "2026-03-02T03:34:19Z",
+        "fetchedAt": "2026-03-02T12:28:28.069Z"
+      }
     }
   ]
 }
