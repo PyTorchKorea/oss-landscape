@@ -52,15 +52,24 @@ jobs:
 
             // Extract module_id (first word before space/parenthesis)
             const moduleMatch = body.match(/### 분류 \(모듈\)\s*\n+([^\s(]+)/)
-            const moduleId = moduleMatch?.[1]?.trim()
+            let moduleId = moduleMatch?.[1]?.trim()
 
             // Extract category_id (first word before space/parenthesis)
             const catMatch = body.match(/### 카테고리\s*\n+([^\s(]+)/)
-            const categoryId = catMatch?.[1]?.trim()
+            let categoryId = catMatch?.[1]?.trim()
 
             // Extract optional description
             const descMatch = body.match(/### 설명 \(선택\)\s*\n+([\s\S]+?)(?:\n###|$)/)
             const description = descMatch?.[1]?.trim()
+
+            // Override module/category from comment if provided: /approve <moduleId> <categoryId>
+            const commentBody = context.payload.comment.body ?? ''
+            const overrideMatch = commentBody.match(/\/approve\s+(\S+)\s+(\S+)/)
+            if (overrideMatch) {
+              moduleId = overrideMatch[1]
+              categoryId = overrideMatch[2]
+              core.info(`모듈/카테고리 오버라이드: ${moduleId} → ${categoryId}`)
+            }
 
             if (!githubUrl || !moduleId || !categoryId) {
               core.setFailed(`Could not parse issue body. URL: ${githubUrl}, Module: ${moduleId}, Category: ${categoryId}`)
