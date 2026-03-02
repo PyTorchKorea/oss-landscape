@@ -961,6 +961,38 @@
         "lastCommit": "2026-03-02T11:24:15Z",
         "fetchedAt": "2026-03-02T12:29:23.697Z"
       }
+    },
+    {
+      "id": "blaizzy-mlx-vlm",
+      "name": "mlx-vlm",
+      "description": "Apple Silicon에서 MLX를 활용한 비전-언어 모델(VLM) 추론 및 파인튜닝을 지원하는 패키지입니다.",
+      "categoryId": "on-device-runtime",
+      "moduleId": "platform-mlops",
+      "license": "MIT",
+      "githubUrl": "https://github.com/Blaizzy/mlx-vlm",
+      "koreanSupport": false,
+      "tags": [
+        "apple-silicon",
+        "florence2",
+        "idefics",
+        "llava",
+        "llm",
+        "local-ai",
+        "mlx",
+        "molmo",
+        "paligemma",
+        "pixtral",
+        "vision-framework",
+        "vision-language-model",
+        "vision-transformer"
+      ],
+      "meta": {
+        "stars": 2194,
+        "forks": 278,
+        "lastUpdated": "2026-03-02T11:04:42Z",
+        "lastCommit": "2026-02-25T15:12:18Z",
+        "fetchedAt": "2026-03-02T12:29:55.956Z"
+      }
     }
   ]
 }

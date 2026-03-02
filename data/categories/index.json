@@ -498,7 +498,8 @@
         "mlc-llm",
         "mnn",
         "ncnn",
-        "cactus-compute-cactus"
+        "cactus-compute-cactus",
+        "blaizzy-mlx-vlm"
       ]
     },
     {
