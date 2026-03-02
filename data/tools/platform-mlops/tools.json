@@ -922,6 +922,45 @@
         "lastCommit": "2026-03-02T12:08:46Z",
         "fetchedAt": "2026-03-02T12:28:58.261Z"
       }
+    },
+    {
+      "id": "cactus-compute-cactus",
+      "name": "cactus",
+      "description": "스마트폰 및 웨어러블 디바이스에 최적화된 고성능 온디바이스 AI 추론 엔진 및 커널 라이브러리입니다.",
+      "categoryId": "on-device-runtime",
+      "moduleId": "platform-mlops",
+      "license": "NOASSERTION",
+      "githubUrl": "https://github.com/cactus-compute/cactus",
+      "koreanSupport": false,
+      "tags": [
+        "ai",
+        "android",
+        "arm",
+        "edge",
+        "edge-ai",
+        "framework",
+        "ios",
+        "llamacpp",
+        "llm",
+        "llm-inference",
+        "llms",
+        "mobile",
+        "mobile-inference",
+        "on-device-ai",
+        "quantiz",
+        "rag",
+        "smartphone",
+        "speech",
+        "transformer",
+        "whisper"
+      ],
+      "meta": {
+        "stars": 4401,
+        "forks": 322,
+        "lastUpdated": "2026-03-02T12:13:18Z",
+        "lastCommit": "2026-03-02T11:24:15Z",
+        "fetchedAt": "2026-03-02T12:29:23.697Z"
+      }
     }
   ]
 }
