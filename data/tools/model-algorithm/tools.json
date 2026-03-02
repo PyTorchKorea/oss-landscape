@@ -610,6 +610,28 @@
         "lastCommit": "2026-02-06T04:11:37Z",
         "fetchedAt": "2026-03-02T12:27:58.249Z"
       }
+    },
+    {
+      "id": "zai-org-glm-ocr",
+      "name": "GLM-OCR",
+      "description": "0.9B 파라미터로 SOTA 성능을 달성한 Zhipu AI의 초경량 오픈소스 OCR 모델입니다.",
+      "categoryId": "vision-model",
+      "moduleId": "model-algorithm",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/zai-org/GLM-OCR",
+      "koreanSupport": false,
+      "tags": [
+        "glm",
+        "image2text",
+        "ocr"
+      ],
+      "meta": {
+        "stars": 1830,
+        "forks": 128,
+        "lastUpdated": "2026-03-02T10:16:00Z",
+        "lastCommit": "2026-02-26T05:03:09Z",
+        "fetchedAt": "2026-03-02T12:30:22.630Z"
+      }
     }
   ]
 }

@@ -191,7 +191,8 @@
         "clip",
         "sam",
         "yolo",
-        "dino"
+        "dino",
+        "zai-org-glm-ocr"
       ]
     },
     {
