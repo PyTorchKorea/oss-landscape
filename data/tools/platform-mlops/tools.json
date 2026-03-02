@@ -993,6 +993,28 @@
         "lastCommit": "2026-02-25T15:12:18Z",
         "fetchedAt": "2026-03-02T12:29:55.956Z"
       }
+    },
+    {
+      "id": "stair-lab-kg-gen",
+      "name": "kg-gen",
+      "description": "텍스트로부터 고품질 지식 그래프를 자동 추출하는 NeurIPS '25 오픈소스 프레임워크입니다.",
+      "categoryId": "memory-knowledge",
+      "moduleId": "platform-mlops",
+      "license": "Unknown",
+      "githubUrl": "https://github.com/stair-lab/kg-gen",
+      "koreanSupport": false,
+      "tags": [
+        "benchmark",
+        "knowledge-graph",
+        "llm"
+      ],
+      "meta": {
+        "stars": 1044,
+        "forks": 150,
+        "lastUpdated": "2026-03-02T03:32:14Z",
+        "lastCommit": "2026-01-09T05:55:11Z",
+        "fetchedAt": "2026-03-02T12:32:22.568Z"
+      }
     }
   ]
 }

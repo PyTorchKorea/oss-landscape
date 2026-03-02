@@ -456,7 +456,8 @@
         "memary",
         "txtai",
         "memorilabs-memori",
-        "volcengine-openviking"
+        "volcengine-openviking",
+        "stair-lab-kg-gen"
       ]
     },
     {
