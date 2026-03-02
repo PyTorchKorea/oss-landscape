@@ -890,6 +890,38 @@
         "lastCommit": "2026-03-02T03:34:19Z",
         "fetchedAt": "2026-03-02T12:28:28.069Z"
       }
+    },
+    {
+      "id": "volcengine-openviking",
+      "name": "OpenViking",
+      "description": "AI 에이전트를 위한 파일 시스템 기반 오픈소스 컨텍스트 데이터베이스로, 메모리, 리소스, 스킬 등의 컨텍스트를 통합 관리합니다.",
+      "categoryId": "memory-knowledge",
+      "moduleId": "platform-mlops",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/volcengine/OpenViking",
+      "koreanSupport": false,
+      "tags": [
+        "agent",
+        "agentic-rag",
+        "ai-agents",
+        "clawbot",
+        "context-database",
+        "context-engineering",
+        "filesystem",
+        "llm",
+        "memory",
+        "openclaw",
+        "opencode",
+        "rag",
+        "skill"
+      ],
+      "meta": {
+        "stars": 4399,
+        "forks": 342,
+        "lastUpdated": "2026-03-02T12:22:20Z",
+        "lastCommit": "2026-03-02T12:08:46Z",
+        "fetchedAt": "2026-03-02T12:28:58.261Z"
+      }
     }
   ]
 }
