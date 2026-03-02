@@ -729,7 +729,12 @@
       "docsUrl": "https://openclaw.ai",
       "websiteUrl": "https://openclaw.ai",
       "koreanSupport": false,
-      "tags": ["ai-assistant", "personal-ai", "own-your-data", "cross-platform"],
+      "tags": [
+        "ai-assistant",
+        "personal-ai",
+        "own-your-data",
+        "cross-platform"
+      ],
       "meta": {
         "stars": 240661,
         "lastUpdated": "2026-03-01T03:33:17Z",
@@ -749,13 +754,49 @@
       "docsUrl": "https://www.aionui.com",
       "websiteUrl": "https://www.aionui.com",
       "koreanSupport": false,
-      "tags": ["ai-agent", "webui", "cowork", "chatbot", "local"],
+      "tags": [
+        "ai-agent",
+        "webui",
+        "cowork",
+        "chatbot",
+        "local"
+      ],
       "meta": {
         "stars": 17424,
         "lastUpdated": "2026-03-01T03:36:42Z",
         "fetchedAt": "2026-03-01T03:36:00.000Z",
         "forks": 1332,
         "lastCommit": "2026-03-01T00:36:19Z"
+      }
+    },
+    {
+      "id": "tambo-ai-tambo",
+      "name": "tambo",
+      "description": "React 기반의 생성형 UI를 구축할 수 있는 오픈소스 SDK로, AI 챗봇 및 어시스턴트의 인터페이스 개발을 지원합니다.",
+      "categoryId": "ai-chatbot",
+      "moduleId": "application-service",
+      "license": "MIT",
+      "githubUrl": "https://github.com/tambo-ai/tambo",
+      "koreanSupport": false,
+      "tags": [
+        "agent",
+        "agents",
+        "ai",
+        "assistant",
+        "assistant-chat-bots",
+        "generative-ui",
+        "js",
+        "react",
+        "reactjs",
+        "ui",
+        "ui-components"
+      ],
+      "meta": {
+        "stars": 10992,
+        "forks": 544,
+        "lastUpdated": "2026-03-02T11:20:06Z",
+        "lastCommit": "2026-03-02T09:29:29Z",
+        "fetchedAt": "2026-03-02T12:26:39.508Z"
       }
     }
   ]
