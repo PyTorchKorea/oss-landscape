@@ -69,6 +69,10 @@ async function main() {
           fetchedAt: now,
         }
 
+        if (repoData.description) {
+          tool.description = repoData.description
+        }
+
         console.log(`✓ ${tool.name}: ${repoData.stargazers_count.toLocaleString()} stars`)
         totalUpdated++
         modified = true
