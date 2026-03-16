@@ -466,6 +466,32 @@
                 "forks": 167,
                 "lastCommit": "2026-03-01T03:03:43Z"
             }
+        },
+        {
+            "id": "alibaba-opensandbox",
+            "name": "OpenSandbox",
+            "description": "AI 애플리케이션을 위한 범용 샌드박스 플랫폼. 다국어 SDK, 통합 샌드박스 API, Docker/Kubernetes 런타임을 제공하여 코딩 에이전트, GUI 에이전트, 평가, 코드 실행 등에 활용",
+            "categoryId": "container-orchestration",
+            "moduleId": "infra-computing",
+            "license": "Apache-2.0",
+            "githubUrl": "https://github.com/alibaba/OpenSandbox",
+            "docsUrl": "https://open-sandbox.ai/",
+            "websiteUrl": "https://open-sandbox.ai",
+            "koreanSupport": false,
+            "tags": [
+                "sandbox",
+                "ai-agent",
+                "kubernetes",
+                "docker",
+                "code-execution"
+            ],
+            "meta": {
+                "stars": 7939,
+                "lastUpdated": "2026-03-16T15:32:00Z",
+                "fetchedAt": "2026-03-17T00:00:00.000Z",
+                "forks": 593,
+                "lastCommit": "2026-03-16T06:25:05Z"
+            }
         }
     ]
 }
