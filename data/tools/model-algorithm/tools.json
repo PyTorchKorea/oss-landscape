@@ -632,6 +632,31 @@
         "lastCommit": "2026-02-26T05:03:09Z",
         "fetchedAt": "2026-03-02T12:30:22.630Z"
       }
+    },
+    {
+      "id": "sam3",
+      "name": "SAM 3",
+      "description": "Meta의 Segment Anything Model 3. 이미지·비디오 세그멘테이션을 위한 추론 및 파인튜닝 코드, 사전학습 체크포인트, 예제 노트북을 제공합니다.",
+      "categoryId": "vision-model",
+      "moduleId": "model-algorithm",
+      "license": "NOASSERTION",
+      "githubUrl": "https://github.com/facebookresearch/sam3",
+      "docsUrl": "https://github.com/facebookresearch/sam3",
+      "websiteUrl": "https://ai.meta.com/sam3/",
+      "koreanSupport": false,
+      "tags": [
+        "segmentation",
+        "vision",
+        "foundation-model",
+        "meta"
+      ],
+      "meta": {
+        "stars": 8832,
+        "forks": 1277,
+        "lastUpdated": "2026-04-09T08:02:38Z",
+        "lastCommit": "2026-03-31T10:18:35Z",
+        "fetchedAt": "2026-04-09T00:00:00.000Z"
+      }
     }
   ]
 }
