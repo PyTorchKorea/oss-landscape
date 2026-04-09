@@ -31,13 +31,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: '22'
+          cache: 'pnpm'
 
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Parse issue body
         id: parse
@@ -108,7 +112,7 @@ jobs:
           if [ -n "$TOOL_DESCRIPTION" ]; then
             ARGS+=(--description "$TOOL_DESCRIPTION")
           fi
-          npm run add-tool -- "${ARGS[@]}"
+          pnpm run add-tool -- "${ARGS[@]}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TOOL_GITHUB_URL: ${{ steps.parse.outputs.github_url }}
