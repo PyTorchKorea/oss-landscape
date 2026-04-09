@@ -10,7 +10,8 @@
         "kubernetes",
         "docker",
         "helm",
-        "containerd"
+        "containerd",
+        "alibaba-opensandbox"
       ]
     },
     {
@@ -192,7 +193,8 @@
         "sam",
         "yolo",
         "dino",
-        "zai-org-glm-ocr"
+        "zai-org-glm-ocr",
+        "sam3"
       ]
     },
     {
@@ -400,7 +402,8 @@
         "camel",
         "kortix-ai-suna",
         "emcie-co-parlant",
-        "droidrun-droidrun"
+        "droidrun-droidrun",
+        "openai-symphony"
       ]
     },
     {
