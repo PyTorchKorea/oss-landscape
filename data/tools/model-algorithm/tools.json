@@ -657,6 +657,58 @@
         "lastCommit": "2026-03-31T10:18:35Z",
         "fetchedAt": "2026-04-09T00:00:00.000Z"
       }
+    },
+    {
+      "id": "nv-tlabs-kimodo",
+      "name": "Kimodo",
+      "description": "NVIDIA Toronto AI Lab에서 공개한 키네마틱 모션 디퓨전 모델로, 텍스트 프롬프트와 키네마틱 제약 조건을 기반으로 고품질 3D 휴먼·휴머노이드 모션을 생성합니다. 로보틱스, 애니메이션, 시뮬레이션 파이프라인에 모션 생성 컴포넌트로 통합할 수 있습니다.",
+      "categoryId": "multimodal",
+      "moduleId": "model-algorithm",
+      "license": "Apache-2.0",
+      "githubUrl": "https://github.com/nv-tlabs/kimodo",
+      "docsUrl": "https://research.nvidia.com/labs/sil/projects/kimodo/docs",
+      "websiteUrl": "https://research.nvidia.com/labs/sil/projects/kimodo/",
+      "koreanSupport": false,
+      "tags": [
+        "motion-generation",
+        "diffusion-model",
+        "humanoid",
+        "pytorch",
+        "nvidia"
+      ],
+      "meta": {
+        "stars": 1692,
+        "forks": 163,
+        "lastUpdated": "2026-04-09T10:54:43Z",
+        "lastCommit": "2026-04-06T17:53:15Z",
+        "fetchedAt": "2026-04-09T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "nvidia-personaplex",
+      "name": "PersonaPlex",
+      "description": "NVIDIA에서 공개한 full-duplex 음성 대화 모델로, 실시간 음성 인식과 합성을 동시에 처리하여 자연스러운 양방향 음성 인터랙션을 지원합니다. 다른 AI 서비스에 음성 대화 인터페이스를 통합할 때 기반 모델로 활용할 수 있습니다.",
+      "categoryId": "multimodal",
+      "moduleId": "model-algorithm",
+      "license": "MIT",
+      "githubUrl": "https://github.com/NVIDIA/personaplex",
+      "docsUrl": "https://github.com/NVIDIA/personaplex",
+      "websiteUrl": "https://research.nvidia.com/labs/adlr/personaplex/",
+      "koreanSupport": false,
+      "tags": [
+        "speech",
+        "full-duplex",
+        "voice-ai",
+        "multimodal",
+        "nvidia"
+      ],
+      "meta": {
+        "stars": 8660,
+        "forks": 1230,
+        "lastUpdated": "2026-04-09T11:32:01Z",
+        "lastCommit": "2026-03-02T16:07:10Z",
+        "fetchedAt": "2026-04-09T00:00:00.000Z"
+      }
     }
   ]
 }

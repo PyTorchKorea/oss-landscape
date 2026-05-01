@@ -42,7 +42,8 @@
                 "llm",
                 "vision-model",
                 "embedding-model",
-                "multimodal"
+                "multimodal",
+                "time-series-model"
             ]
         },
         {
